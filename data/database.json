@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T18:02:19Z",
+  "updated_at": "2026-10-05T18:12:32Z",
   "count": 12,
   "manga_files": [
     "all-around-type-moon.json",
@@ -19,16 +19,16 @@
   "publisher_files": [],
   "file_revs": {
     "manga/all-around-type-moon.json": "1791214418706227700:3972",
-    "manga/canaan-comic-anthology.json": "1791223339926483200:1116",
+    "manga/canaan-comic-anthology.json": "1791223905721258600:1027",
     "manga/dotsuki-manzai.json": "1791218317759999000:6732",
     "manga/fate-grand-order-interlude.json": "1791201324614863600:3620",
     "manga/gekka.json": "1791214367469933600:2546",
-    "manga/mahoutsukai-no-yoru-comic-anthology.json": "1791223339928478000:1207",
+    "manga/mahoutsukai-no-yoru-comic-anthology.json": "1791223905722256300:1105",
     "manga/melty-blood-back-alley-nightmare.json": "1791197678789998800:4352",
-    "manga/melty-blood-comic-anthology.json": "1791222157364829600:5236",
+    "manga/melty-blood-comic-anthology.json": "1791223905724251100:4951",
     "manga/melty-blood-type-lumina-piece-in-paradise.json": "1791197678790997700:6758",
     "manga/melty-blood-x.json": "1791202528392089400:4281",
     "manga/tsuki-no-sango.json": "1791220058491955800:3058",
-    "manga/tsukihime-comic-anthology.json": "1791222157366801100:5796"
+    "manga/tsukihime-comic-anthology.json": "1791223905725248500:5703"
   }
 }
