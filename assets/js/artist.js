@@ -247,7 +247,7 @@ async function openArtistPage(nameOrSlug, pushHistory = true) {
   if (publisherFullPageView) publisherFullPageView.classList.add('hidden');
   if (artistFullPageView) artistFullPageView.classList.remove('hidden');
 
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  scrollToWikiPriority();
 }
 
 function closeArtistPageView(updateHistory = true) {
@@ -398,13 +398,13 @@ function renderArtistPageContent(artist) {
     if (rawNotes) {
       notesEl.innerHTML = renderMarkdown(rawNotes);
     } else {
-      notesEl.innerHTML = '<span class="no-data-badge">[no data]</span> <span class="text-cafe-muted text-xs">No specific editorial notes or trivia recorded yet. Contributions are welcome!</span>';
+      notesEl.innerHTML = '<span class="no-data-badge">[no data]</span>';
     }
   }
 
   const sourcesContainer = document.getElementById('artistSourcesSection');
   if (sourcesContainer) {
-    sourcesContainer.innerHTML = renderSourcesList(artist.sources, 'No sources or citations recorded for this artist yet. Edit to add references.');
+    sourcesContainer.innerHTML = renderSourcesList(artist.sources);
   }
 
   const circleEl = document.getElementById('artistCircleDisplay');
@@ -635,6 +635,7 @@ function renderArtistWorksEmptyState() {
 let dummyTitleIdEdited = false;
 
 function openAddDummyTitleModal() {
+  if (typeof isEditModeEnabled === 'function' && !isEditModeEnabled()) return;
   dummyTitleIdEdited = false;
   const modal = document.getElementById('addDummyTitleModal');
   const titleInput = document.getElementById('dummyTitleInput');
@@ -753,7 +754,7 @@ function confirmAddDummyTitle() {
     notes: null,
     sources: [],
     artists: artistName ? [artistName] : [],
-    custom_roles: [{ role: 'Story:', names: 'TYPE-MOON' }],
+    custom_roles: [],
     publisher: null,
     status: 'Unknown',
     type: 'Unknown',
@@ -868,6 +869,7 @@ function updateArtistAvatarLive(url) {
 }
 
 function startDirectArtistEdit() {
+  if (typeof isEditModeEnabled === 'function' && !isEditModeEnabled()) return;
   if (!currentArtistDoc) return;
   const a = currentArtistDoc;
 
@@ -1095,7 +1097,7 @@ function openPublisherPage(publisherName, pushHistory = true) {
   if (artistFullPageView) artistFullPageView.classList.add('hidden');
   if (publisherFullPageView) publisherFullPageView.classList.remove('hidden');
 
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  scrollToWikiPriority();
 
   const nameEl = document.getElementById('publisherHeroName');
   if (nameEl) nameEl.textContent = publisherName;
@@ -1187,6 +1189,7 @@ function openPublisherPage(publisherName, pushHistory = true) {
 }
 
 function startDirectPublisherEdit() {
+  if (typeof isEditModeEnabled === 'function' && !isEditModeEnabled()) return;
   if (!currentPublisherData) return;
   const p = currentPublisherData;
 

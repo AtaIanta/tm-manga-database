@@ -67,6 +67,17 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
+// Opening a wiki page should start at the top of the content.
+function scrollToWikiPriority() {
+  if (window.scrollY <= 0) return;
+
+  const root = document.documentElement;
+  const previous = root.style.scrollBehavior;
+  root.style.scrollBehavior = 'auto';
+  window.scrollTo(0, 0);
+  root.style.scrollBehavior = previous;
+}
+
 function linkCitationMarkers(html) {
   if (!html || typeof html !== 'string') return '';
   const parts = html.split(/(<[^>]+>)/g);
@@ -329,6 +340,45 @@ function getPrimaryCover(manga) {
   return '';
 }
 
+function getMangaMissingFields(manga) {
+  if (!manga) return [];
+  const missingFields = [];
+  const displayCover = getPrimaryCover(manga);
+  if (!isNA(displayCover) && !hasValidCover(displayCover)) missingFields.push('Cover Art');
+
+  const volumes = manga.volumes || [];
+  const isIsbnNA = volumes.length > 0 && volumes.every(v => isNA(v.isbn) || v.is_uncollected);
+  const volsMissingIsbn = volumes.filter(v => !v.is_uncollected && !isNA(v.isbn) && (!v.isbn || v.isbn === '[no data]')).length;
+  if (!isIsbnNA && volsMissingIsbn > 0) {
+    missingFields.push(`ISBN (${volsMissingIsbn} vols)`);
+  }
+
+  const isArtistNA = Array.isArray(manga.artists) && manga.artists.length > 0 && manga.artists.every(isNA);
+  const hasValidArtist = (manga.artists || []).some(a => a && a !== '[no data]' && a !== '[insufficient data]' && !isNA(a));
+  const hasValidRole = (manga.custom_roles || []).some(r => r.names && r.names !== '[no data]' && !isNA(r.names));
+  if (!isArtistNA && !hasValidArtist && !hasValidRole) missingFields.push('Artist Attribution');
+
+  const serVal = manga.magazine;
+  if (!isNA(serVal) && (!serVal || serVal === '[no data]')) missingFields.push('Magazine Serialization');
+
+  const status = manga.status;
+  if (!isNA(status) && (!status || status === '[no data]' || String(status).toLowerCase() === 'unknown')) {
+    missingFields.push('Status Validation');
+  }
+
+  const synVal = (manga.synopsis || '').trim();
+  if (!isNA(synVal) && (!synVal || synVal === '[no data]')) missingFields.push('Synopsis');
+
+  if (volumes.length > 0) {
+    const volsWithoutChapters = volumes.filter(v => !isNA(v.chapters) && !v.is_uncollected && (!v.chapters || v.chapters.length === 0));
+    if (volsWithoutChapters.length > 0) {
+      missingFields.push(`Chapter Lists (${volsWithoutChapters.length} vols)`);
+    }
+  }
+
+  return missingFields;
+}
+
 function resolveDisplayTitles(titleEn, titleRomaji, titleJp, fallback = '') {
   const cleanEn = (titleEn || '').trim();
   const cleanRomaji = (titleRomaji || '').trim();
@@ -501,7 +551,7 @@ function renderChapterRow(ch, trailingHtml = '') {
   `;
 }
 
-function renderSourcesList(rawSources, emptyMessage) {
+function renderSourcesList(rawSources) {
   const validSources = [];
   if (Array.isArray(rawSources)) {
     rawSources.forEach(s => {
@@ -516,7 +566,7 @@ function renderSourcesList(rawSources, emptyMessage) {
   }
 
   if (validSources.length === 0) {
-    return `<span class="no-data-badge">[no data]</span> <span class="text-cafe-muted text-xs">${escapeHtml(emptyMessage)}</span>`;
+    return `<span class="no-data-badge">[no data]</span>`;
   }
 
   return `
@@ -797,13 +847,104 @@ function initAmbientCanvas() {
   animate();
 }
 
+const EDIT_MODE_KEY = 'tmEditMode';
+let editModeEnabled = false;
+
+function isEditModeEnabled() {
+  return editModeEnabled;
+}
+
+function syncEditModeToggle() {
+  const toggle = document.getElementById('editModeToggle');
+  if (!toggle) return;
+  toggle.classList.toggle('is-on', editModeEnabled);
+  toggle.setAttribute('aria-checked', editModeEnabled ? 'true' : 'false');
+}
+
+function closeActiveEditors() {
+  const mangaEdit = document.getElementById('mangaEditActions');
+  if (mangaEdit && !mangaEdit.classList.contains('hidden') && typeof cancelDirectMangaEdit === 'function') {
+    cancelDirectMangaEdit();
+  }
+  const artistEdit = document.getElementById('artistEditActions');
+  if (artistEdit && !artistEdit.classList.contains('hidden') && typeof cancelDirectArtistEdit === 'function') {
+    cancelDirectArtistEdit(false);
+  }
+  const publisherEdit = document.getElementById('publisherEditActions');
+  if (publisherEdit && !publisherEdit.classList.contains('hidden') && typeof cancelDirectPublisherEdit === 'function') {
+    cancelDirectPublisherEdit();
+  }
+  const dummyModal = document.getElementById('addDummyTitleModal');
+  if (dummyModal && !dummyModal.classList.contains('hidden') && typeof closeAddDummyTitleModal === 'function') {
+    closeAddDummyTitleModal();
+  }
+}
+
+function setEditMode(enabled) {
+  const next = Boolean(enabled);
+  const turningOff = editModeEnabled && !next;
+  editModeEnabled = next;
+  document.body.classList.toggle('edit-mode', editModeEnabled);
+  if (turningOff) closeActiveEditors();
+  try {
+    localStorage.setItem(EDIT_MODE_KEY, editModeEnabled ? '1' : '0');
+  } catch (e) {}
+  syncEditModeToggle();
+  if (typeof applyFilters === 'function') applyFilters();
+}
+
+function toggleEditMode() {
+  setEditMode(!editModeEnabled);
+}
+
+function initEditMode() {
+  try {
+    editModeEnabled = localStorage.getItem(EDIT_MODE_KEY) === '1';
+  } catch (e) {
+    editModeEnabled = false;
+  }
+  document.body.classList.toggle('edit-mode', editModeEnabled);
+  syncEditModeToggle();
+}
+
 function isModalOpen() {
+  const aboutModal = document.getElementById('aboutModal');
+  const aboutOpen = aboutModal && !aboutModal.classList.contains('hidden');
   const missingOpen = missingDataModal && !missingDataModal.classList.contains('hidden');
   const aiOpen = aiDisclosureModal && !aiDisclosureModal.classList.contains('hidden');
   const lightboxModal = document.getElementById('coverLightboxModal');
   const lightboxOpen = lightboxModal && !lightboxModal.classList.contains('hidden');
-  return Boolean(missingOpen || aiOpen || lightboxOpen);
+  return Boolean(aboutOpen || missingOpen || aiOpen || lightboxOpen);
 }
+
+function openAboutModal() {
+  const modal = document.getElementById('aboutModal');
+  if (!modal) return;
+  syncEditModeToggle();
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeAboutModal() {
+  const modal = document.getElementById('aboutModal');
+  if (modal) modal.classList.add('hidden');
+  if (!isModalOpen()) document.body.style.overflow = '';
+}
+
+function openMissingDataFromAbout() {
+  closeAboutModal();
+  openMissingDataModal();
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  const modal = document.getElementById('aboutModal');
+  if (!modal || modal.classList.contains('hidden')) return;
+  event.preventDefault();
+  closeAboutModal();
+});
+
+initEditMode();
 
 function openAiDisclosureModal() {
   const m = document.getElementById('aiDisclosureModal');
@@ -823,9 +964,13 @@ function openMissingDataModal() {
   document.body.style.overflow = 'hidden';
 }
 
-function closeMissingDataModal() {
+function closeMissingDataModal(returnToAbout = true) {
   if (missingDataModal) missingDataModal.classList.add('hidden');
-  document.body.style.overflow = '';
+  if (returnToAbout) {
+    openAboutModal();
+    return;
+  }
+  if (!isModalOpen()) document.body.style.overflow = '';
 }
 
 function setMissingDataFilter(category) {
@@ -965,7 +1110,7 @@ function renderMissingDataReport() {
         </div>
 
         <div class="flex items-center gap-2 shrink-0 self-start sm:self-auto">
-          <button onclick="closeMissingDataModal(); openArtistPage('${escapeHtml(artist.slug)}');" class="px-3 py-1.5 rounded-lg bg-cafe-950 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-gold font-semibold text-xs transition-colors flex items-center gap-1">
+          <button onclick="closeMissingDataModal(false); openArtistPage('${escapeHtml(artist.slug)}');" class="px-3 py-1.5 rounded-lg bg-cafe-950 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-gold font-semibold text-xs transition-colors flex items-center gap-1">
             <span>Inspect Artist</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7m0 0l-7 7"/></svg>
           </button>
@@ -1020,7 +1165,7 @@ function renderMissingDataReport() {
         </div>
       </div>
 
-      <button onclick="closeMissingDataModal(); openMangaDetail('${m.id}');" class="px-3 py-1.5 rounded-lg bg-cafe-950 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-gold font-semibold text-xs transition-colors shrink-0 flex items-center gap-1">
+      <button onclick="closeMissingDataModal(false); openMangaDetail('${m.id}');" class="px-3 py-1.5 rounded-lg bg-cafe-950 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-gold font-semibold text-xs transition-colors shrink-0 flex items-center gap-1">
         <span>Inspect Entry</span>
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7m0 0l-7 7"/></svg>
       </button>

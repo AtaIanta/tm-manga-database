@@ -174,10 +174,17 @@ function isArtistLocallyEdited(artist) {
   return Boolean(artist && artist._isLocallyModified);
 }
 
+function isMangaMissingMetadata(manga) {
+  if (typeof isEditModeEnabled === 'function' && !isEditModeEnabled()) return false;
+  return getMangaMissingFields(manga).length > 0;
+}
+
 function sortManga() {
   filteredManga.sort((a, b) => {
     const editedDelta = Number(isMangaLocallyEdited(b)) - Number(isMangaLocallyEdited(a));
     if (editedDelta) return editedDelta;
+    const missingDelta = Number(isMangaMissingMetadata(b)) - Number(isMangaMissingMetadata(a));
+    if (missingDelta) return missingDelta;
     if (currentSort === 'year-desc') {
       return (b.release_year || 0) - (a.release_year || 0);
     }
@@ -222,8 +229,9 @@ function renderMangaGrid() {
 
   filteredManga.forEach((manga) => {
     const edited = isMangaLocallyEdited(manga);
+    const missing = !edited && isMangaMissingMetadata(manga);
     const card = document.createElement('div');
-    card.className = `glass-card rounded-xl p-3.5 sm:p-4 flex flex-col justify-between group cursor-pointer relative${edited ? ' local-edit-card' : ''}`;
+    card.className = `glass-card rounded-xl p-3.5 sm:p-4 flex flex-col justify-between group cursor-pointer relative${edited ? ' local-edit-card' : missing ? ' local-missing-card' : ''}`;
     card.onclick = () => openMangaDetail(manga.id);
 
     const hasCover = hasValidCover(manga.cover);
@@ -255,7 +263,7 @@ function renderMangaGrid() {
         </div>
 
         <div class="mt-3">
-          ${edited ? `<div class="local-edit-badge mb-1.5">Edited</div>` : ''}
+          ${edited ? `<div class="local-edit-badge mb-1.5">Edited</div>` : missing ? `<div class="local-missing-badge mb-1.5">Missing</div>` : ''}
           <h3 class="font-cinzel font-bold text-sm text-cafe-cream group-hover:text-cafe-gold transition-colors leading-snug line-clamp-2" title="${escapeHtml(mainTitle)}">
             ${escapeHtml(mainTitle)}
           </h3>
@@ -396,8 +404,9 @@ function renderMangaTable() {
 
   filteredManga.forEach(manga => {
     const edited = isMangaLocallyEdited(manga);
+    const missing = !edited && isMangaMissingMetadata(manga);
     const tr = document.createElement('tr');
-    tr.className = `border-b border-cafe-gold/15 hover:bg-cafe-900/60 transition-colors cursor-pointer text-xs sm:text-sm group${edited ? ' local-edit-row' : ''}`;
+    tr.className = `border-b border-cafe-gold/15 hover:bg-cafe-900/60 transition-colors cursor-pointer text-xs sm:text-sm group${edited ? ' local-edit-row' : missing ? ' local-missing-row' : ''}`;
     tr.onclick = () => openMangaDetail(manga.id);
 
     let coverHtml = '';
@@ -422,7 +431,7 @@ function renderMangaTable() {
       <td class="py-2.5 px-3 min-w-[240px]">
         <div class="font-cinzel font-bold text-cafe-cream group-hover:text-cafe-gold text-sm line-clamp-1 leading-snug flex items-center gap-2">
           <span class="truncate">${escapeHtml(mainTitle)}</span>
-          ${edited ? `<span class="local-edit-badge shrink-0">Edited</span>` : ''}
+          ${edited ? `<span class="local-edit-badge shrink-0">Edited</span>` : missing ? `<span class="local-missing-badge shrink-0">Missing</span>` : ''}
         </div>
         ${jpSubtitle ? `
           <div class="text-[11px] text-cafe-gold/90 font-japanese font-medium truncate max-w-[280px] mt-0.5" title="${escapeHtml(jpSubtitle)}">

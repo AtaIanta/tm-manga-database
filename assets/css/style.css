@@ -84,12 +84,6 @@ body {
   font-family: 'JetBrains Mono', 'Consolas', monospace;
 }
 
-.gold-gradient-text {
-  background: linear-gradient(90deg, #d49a3d 0%, #e2b662 25%, #eed090 55%, #fbf5e6 82%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .glass-panel {
   background: var(--glass-panel);
   backdrop-filter: blur(16px);
@@ -164,6 +158,41 @@ body {
   border: 1px solid rgba(125, 211, 252, 0.7);
   background: rgba(14, 116, 184, 0.35);
   color: #e0f2fe;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.local-missing-card {
+  background: rgba(92, 58, 8, 0.82);
+  border-color: rgba(245, 197, 66, 0.9);
+  box-shadow: 0 0 0 1px rgba(234, 179, 8, 0.5), 0 12px 28px -8px rgba(180, 120, 20, 0.45);
+}
+
+.local-missing-card:hover {
+  border-color: rgba(253, 224, 71, 1);
+  box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.75), 0 18px 36px -10px rgba(180, 120, 20, 0.6);
+}
+
+.local-missing-row {
+  background: rgba(92, 58, 8, 0.5);
+  box-shadow: inset 3px 0 0 rgba(245, 197, 66, 0.95);
+}
+
+.local-missing-row:hover {
+  background: rgba(120, 78, 12, 0.65);
+}
+
+.local-missing-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.75);
+  background: rgba(161, 98, 7, 0.4);
+  color: #fef3c7;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -687,6 +716,43 @@ sup.reference:target {
 .artist-suggest-item:hover {
   background: rgba(229, 193, 88, 0.18);
   color: var(--cafe-gold);
+}
+
+body:not(.edit-mode) .requires-edit-mode {
+  display: none !important;
+}
+
+.edit-mode-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(10, 38, 23, 0.9);
+  border: 1px solid rgba(229, 193, 88, 0.35);
+  flex-shrink: 0;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.edit-mode-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #a3cfb1;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.edit-mode-switch.is-on {
+  background: rgba(229, 193, 88, 0.35);
+  border-color: #e5c158;
+}
+
+.edit-mode-switch.is-on::after {
+  transform: translateX(20px);
+  background: #e5c158;
 }
 
 .hidden,

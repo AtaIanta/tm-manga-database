@@ -83,7 +83,7 @@ async function openMangaDetail(id, pushHistory = true) {
   if (publisherFullPageView) publisherFullPageView.classList.add('hidden');
   if (mangaFullPageView) mangaFullPageView.classList.remove('hidden');
 
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  scrollToWikiPriority();
 }
 
 function closeFullPageView(updateHistory = true) {
@@ -175,9 +175,6 @@ function finishCloseFullPageView(updateHistory = true) {
 }
 
 function renderDetailContent(manga) {
-  const displayCover = getPrimaryCover(manga);
-  const hasCover = hasValidCover(displayCover);
-
   const artistsList = (manga.artists || []).filter(a => a && !a.toLowerCase().includes('various') && a !== '[no data]' && a !== '[insufficient data]');
 
   const titleRomaji = manga.title_romaji || manga.id;
@@ -198,44 +195,7 @@ function renderDetailContent(manga) {
   const mangaMissingNotice = document.getElementById('mangaMissingNotice');
   const mangaMissingNoticeDetails = document.getElementById('mangaMissingNoticeDetails');
   if (mangaMissingNotice) {
-    const missingFields = [];
-    if (!isNA(displayCover) && !hasCover) missingFields.push('Cover Art');
-
-    const isIsbnNA = manga.volumes && manga.volumes.length > 0 && manga.volumes.every(v => isNA(v.isbn) || v.is_uncollected);
-    const volsMissingIsbn = (manga.volumes || []).filter(v => !v.is_uncollected && !isNA(v.isbn) && (!v.isbn || v.isbn === '[no data]')).length;
-    const hasMissingIsbn = !isIsbnNA && volsMissingIsbn > 0;
-    if (hasMissingIsbn) {
-      missingFields.push(volsMissingIsbn > 0 ? `ISBN (${volsMissingIsbn} vols)` : 'ISBN');
-    }
-
-    const isArtistNA = Array.isArray(manga.artists) && manga.artists.length > 0 && manga.artists.every(isNA);
-    const hasValidArtist = (manga.artists || []).some(a => a && a !== '[no data]' && a !== '[insufficient data]' && !isNA(a));
-    const hasValidRole = (manga.custom_roles || []).some(r => r.names && r.names !== '[no data]' && !isNA(r.names));
-    if (!isArtistNA && !hasValidArtist && !hasValidRole) {
-      missingFields.push('Artist Attribution');
-    }
-
-    const serVal = manga.magazine;
-    if (!isNA(serVal) && (!serVal || serVal === '[no data]')) {
-      missingFields.push('Magazine Serialization');
-    }
-
-    if (!isNA(manga.status) && (!manga.status || manga.status === '[no data]' || manga.status.toLowerCase() === 'unknown')) {
-      missingFields.push('Status Validation');
-    }
-
-    const synVal = (manga.synopsis || '').trim();
-    if (!isNA(synVal) && (!synVal || synVal === '[no data]')) {
-      missingFields.push('Synopsis');
-    }
-
-    if (manga.volumes && manga.volumes.length > 0) {
-      const volsWithoutChapters = manga.volumes.filter(v => !isNA(v.chapters) && !v.is_uncollected && (!v.chapters || v.chapters.length === 0));
-      if (volsWithoutChapters.length > 0) {
-        missingFields.push(`Chapter Lists (${volsWithoutChapters.length} vols)`);
-      }
-    }
-
+    const missingFields = getMangaMissingFields(manga);
     if (missingFields.length > 0) {
       mangaMissingNotice.classList.remove('hidden');
       mangaMissingNotice.hidden = false;
@@ -280,13 +240,13 @@ function renderDetailContent(manga) {
     if (rawNotes) {
       notesEl.innerHTML = renderMarkdown(rawNotes);
     } else {
-      notesEl.innerHTML = '<span class="no-data-badge">[no data]</span> <span class="text-cafe-muted text-xs">No specific editorial notes or trivia recorded yet. Contributions are welcome!</span>';
+      notesEl.innerHTML = '<span class="no-data-badge">[no data]</span>';
     }
   }
 
   const sourcesContainer = document.getElementById('modalSourcesSection');
   if (sourcesContainer) {
-    sourcesContainer.innerHTML = renderSourcesList(manga.sources, 'No sources or citations recorded in the archive yet. Edit to add references.');
+    sourcesContainer.innerHTML = renderSourcesList(manga.sources);
   }
 
   const volumesContainer = document.getElementById('modalVolumesContainer');
@@ -1207,6 +1167,7 @@ const syncAuthorFromFirstChapter = (vIdx = 0) => toggleGlobalSyncAuthor(true);
 const toggleShowChapterArtists = (vIdx = 0, checked = true) => toggleGlobalShowArtists(checked);
 
 function startDirectMangaEdit() {
+  if (typeof isEditModeEnabled === 'function' && !isEditModeEnabled()) return;
   if (!currentDetailDoc) return;
   const m = currentDetailDoc;
 
@@ -1229,12 +1190,6 @@ function startDirectMangaEdit() {
   const sourcesEdit = document.getElementById('modalSourcesEdit');
   if (sourcesSection) sourcesSection.classList.add('hidden');
   if (sourcesEdit) sourcesEdit.classList.remove('hidden');
-
-  const missingNotice = document.getElementById('mangaMissingNotice');
-  if (missingNotice) {
-    missingNotice.classList.add('hidden');
-    missingNotice.hidden = true;
-  }
 
   const synView = document.getElementById('modalSynopsis');
   const synEdit = document.getElementById('modalSynopsisEdit');
@@ -1313,9 +1268,7 @@ function startDirectMangaEdit() {
       names: Array.isArray(r.names) ? r.names.join(', ') : (r.names || '')
     }));
   } else {
-    editAuthorRoles = [
-      { role: 'Story:', names: 'TYPE-MOON' }
-    ];
+    editAuthorRoles = [];
   }
   renderAuthorRolesInPlace();
 

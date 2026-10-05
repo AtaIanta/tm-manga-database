@@ -270,30 +270,6 @@ async function downloadCurrentPageZip() {
   await downloadCurrentPageJson();
 }
 
-function backToDatabase() {
-  if (mangaFullPageView && !mangaFullPageView.classList.contains('hidden')) {
-    closeFullPageView(true);
-    return;
-  }
-  if (artistFullPageView && !artistFullPageView.classList.contains('hidden')) {
-    closeArtistPageView(true);
-    return;
-  }
-  if (publisherFullPageView && !publisherFullPageView.classList.contains('hidden')) {
-    closePublisherPageView(true);
-    return;
-  }
-
-  const search = document.getElementById('searchInput');
-  if (search && search.value) {
-    search.value = '';
-    applyFilters();
-  }
-  switchCategory('manga');
-  window.history.pushState(null, '', window.location.pathname);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
 document.addEventListener('DOMContentLoaded', async () => {
   initAmbientCanvas();
   await loadDatabase();
