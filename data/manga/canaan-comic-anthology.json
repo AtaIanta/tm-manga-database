@@ -1,0 +1,40 @@
+{
+  "id": "canaan-comic-anthology",
+  "title_romaji": "Canaan Comic Anthology",
+  "title_jp": "CANAANコミックアンソロジー",
+  "title_en": null,
+  "synopsis": null,
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/WNbC8zwX/small-canaan-comic-anthology-vol-Vol-1.webp",
+      "cover_full": "assets/covers/full/canaan-comic-anthology-vol-Vol. 1.75800520[1]",
+      "volume_number": "Vol. 1",
+      "title": "Canaan Comic Anthology",
+      "title_jp": "CANAANコミックアンソロジー",
+      "release_date": "2009-10-24",
+      "isbn": "978-4758005203",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": null
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "DNA Media Comics",
+  "magazine": "N/A",
+  "serialization_start": "N/A",
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Canaan",
+  "release_year": null
+}

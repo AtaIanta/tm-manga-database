@@ -1,0 +1,203 @@
+{
+  "id": "melty-blood-comic-anthology",
+  "title_romaji": "Melty Blood Comic Anthology",
+  "title_jp": null,
+  "title_en": null,
+  "synopsis": null,
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": null,
+      "volume_number": "Vol. 1",
+      "title": "Melty Blood Comic Anthology",
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": null
+        }
+      ]
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 2",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 3",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 4",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 5",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 6",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 7",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 8",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 9",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 10",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/NfmVbG6/small-melty-blood-comic-anthology-vol-Vol-11.webp",
+      "cover_full": "assets/covers/full/melty-blood-comic-anthology-vol-Vol. 11.75800225[1]",
+      "volume_number": "Vol. 11",
+      "title": null,
+      "title_jp": null,
+      "release_date": "2005-01-08",
+      "isbn": "978-4758002257",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 12",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 13",
+      "title": "MELTY BLOOD Comic Anthology VOL.13",
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/mVVXv6wn/small-melty-blood-comic-anthology-vol-Vol-14.webp",
+      "cover_full": "assets/covers/full/melty-blood-comic-anthology-vol-Vol. 14.75800285[1]",
+      "volume_number": "Vol. 14",
+      "title": "MELTY BLOOD Comic Anthology VOL.14",
+      "title_jp": null,
+      "release_date": "2005-11-25",
+      "isbn": "978-4758002851",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/rfNn9vtM/small-melty-blood-comic-anthology-vol-Vol-15.webp",
+      "cover_full": "assets/covers/full/melty-blood-comic-anthology-vol-Vol. 15.75800300[1]",
+      "volume_number": "Vol. 15",
+      "title": "MELTY BLOOD Comic Anthology VOL.15",
+      "title_jp": "MELTY BLOOD コミックアンソロジー VOL.15",
+      "release_date": "2006-02-25",
+      "isbn": "978-4758003001",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 16",
+      "title": "MELTY BLOOD Comic Anthology VOL.16",
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/7JwtW0Ph/small-melty-blood-comic-anthology-vol-Vol-17.webp",
+      "cover_full": "https://i.ibb.co/VpmCVj9f/full-melty-blood-comic-anthology-vol-Vol-17.webp",
+      "volume_number": "Vol. 17",
+      "title": "MELTY BLOOD Comic Anthology VOL.17",
+      "title_jp": null,
+      "release_date": "2006-10-25",
+      "isbn": "978-4758003469",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "DNA Media Comics",
+  "magazine": "N/A",
+  "serialization_start": "N/A",
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": null
+}

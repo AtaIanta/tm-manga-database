@@ -1,0 +1,260 @@
+{
+  "id": "tsukihime-comic-anthology",
+  "title_romaji": "Tsukihime Comic Anthology",
+  "title_jp": null,
+  "title_en": null,
+  "synopsis": null,
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": null,
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime Comic Anthology",
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": null
+        }
+      ]
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 2",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 3",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 4",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 5",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 6",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 7",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 8",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 9",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 10",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 11",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 12",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 13",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 14",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 15",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 16",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 17",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 18",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 19",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 20",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 21",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 22",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/mVC81S66/small-tsukihime-comic-anthology-vol-Vol-23.webp",
+      "cover_full": "assets/covers/full/tsukihime-comic-anthology-vol-Vol. 23.75800362[1]",
+      "volume_number": "Vol. 23",
+      "title": "Tsukihime Comic Anthology VOL.23",
+      "title_jp": "月姫 コミックアンソロジー VOL.23",
+      "release_date": "2007-01-25",
+      "isbn": "978-4758003629",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "DNA Media Comics",
+  "magazine": "N/A",
+  "serialization_start": "N/A",
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": null
+}

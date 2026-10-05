@@ -1,0 +1,117 @@
+{
+  "id": "tsuki-no-sango",
+  "title_romaji": "Tsuki no Sango",
+  "title_jp": "月の珊瑚",
+  "title_en": null,
+  "alt_titles": [
+    "月の珊瑚 愛蔵版"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/t9VXR61/small-tsuki-no-sango-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/jvBxG3SR/full-tsuki-no-sango-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsuki no Sango (1)",
+      "title_jp": "月の珊瑚（１）",
+      "release_date": "2014-03-10",
+      "isbn": "978-4063695144",
+      "asin": "B07RXNC8PK",
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        },
+        {
+          "chapter_number": 2,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/2JbRHZM/small-tsuki-no-sango-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/21zzQ25p/full-tsuki-no-sango-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Tsuki no Sango (2)",
+      "title_jp": "月の珊瑚（２）",
+      "release_date": "2019-05-26",
+      "isbn": "978-4065157053",
+      "asin": "B07S3ZL7CK",
+      "chapters": [
+        {
+          "chapter_number": 3,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        },
+        {
+          "chapter_number": 4,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/XkWDxK2G/small-tsuki-no-sango-vol-Collector-s-Edition.webp",
+      "cover_full": "https://i.ibb.co/Ldzzjw9k/full-tsuki-no-sango-vol-Collector-s-Edition.webp",
+      "volume_number": "Collector's Edition",
+      "title": "Tsuki no Sango - Collector's Edition",
+      "title_jp": "月の珊瑚 愛蔵版",
+      "release_date": "2019-05-26",
+      "isbn": "978-4065157060",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        },
+        {
+          "chapter_number": 2,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        },
+        {
+          "chapter_number": 3,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        },
+        {
+          "chapter_number": 4,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [
+    {
+      "role": "Story:",
+      "names": "Kinoko Nasu"
+    },
+    {
+      "role": "Character Design:",
+      "names": "Takashi Takeuchi, Chihiro Aikura"
+    }
+  ],
+  "artists": [
+    "Sasaki Shounen"
+  ],
+  "publisher": "Seikaisha Comics",
+  "status": "Finished",
+  "type": "Adaptation",
+  "series": "Nasuverse",
+  "release_year": null
+}

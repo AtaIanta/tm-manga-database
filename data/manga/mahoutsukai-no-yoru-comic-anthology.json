@@ -1,0 +1,40 @@
+{
+  "id": "mahoutsukai-no-yoru-comic-anthology",
+  "title_romaji": "Mahoutsukai no Yoru Comic Anthology",
+  "title_jp": "魔法使いの夜 コミックアンソロジー",
+  "title_en": null,
+  "synopsis": null,
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/XxV1m08N/small-mahoutsukai-no-yoru-comic-anthology-vol-Vol-1.webp",
+      "cover_full": "assets/covers/full/mahoutsukai-no-yoru-comic-anthology-vol-Vol. 1.75800707[1]",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Yoru Comic Anthology",
+      "title_jp": "魔法使いの夜 コミックアンソロジー",
+      "release_date": "2012-07-25",
+      "isbn": "978-4758007078",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": null
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "DNA Media Comics",
+  "magazine": "N/A",
+  "serialization_start": "N/A",
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Mahoyo",
+  "release_year": null
+}
