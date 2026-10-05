@@ -133,7 +133,7 @@ function normalizeMangaDoc(doc, filename) {
     release_date: doc.release_date || null,
     artists: artists,
     publisher: doc.publisher || 'Unknown',
-    magazine: isNA(doc.magazine) ? '' : (doc.magazine || ''),
+    magazine: isNA(doc.magazine) ? String(doc.magazine).trim() : (doc.magazine || ''),
     cover: cover,
     synopsis: doc.synopsis || '',
     notes: doc.notes || '',
@@ -151,7 +151,7 @@ function isEmptyStoredValue(value) {
   if (value === undefined || value === null) return true;
   if (typeof value === 'string') {
     const trimmed = value.trim();
-    return !trimmed || trimmed.toLowerCase() === 'n/a' || trimmed === '[no data]';
+    return !trimmed || trimmed === '[no data]';
   }
   if (Array.isArray(value)) return value.length === 0;
   return false;

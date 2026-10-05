@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T15:27:25Z",
+  "updated_at": "2026-10-05T15:33:57Z",
   "count": 7,
   "manga_files": [
     "all-around-type-moon.json",
@@ -12,10 +12,10 @@
   ],
   "artist_files": [],
   "file_revs": {
-    "manga/all-around-type-moon.json": "1791197678788004500:4069",
-    "manga/dotsuki-manzai.json": "1791214040551546000:6644",
+    "manga/all-around-type-moon.json": "1791214418706227700:3972",
+    "manga/dotsuki-manzai.json": "1791214348440048600:6727",
     "manga/fate-grand-order-interlude.json": "1791201324614863600:3620",
-    "manga/gekka.json": "1791214025658603300:2463",
+    "manga/gekka.json": "1791214367469933600:2546",
     "manga/melty-blood-back-alley-nightmare.json": "1791197678789998800:4352",
     "manga/melty-blood-type-lumina-piece-in-paradise.json": "1791197678790997700:6758",
     "manga/melty-blood-x.json": "1791202528392089400:4281"

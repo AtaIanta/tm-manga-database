@@ -1,29 +1,25 @@
 {
   "id": "all-around-type-moon",
+  "title_romaji": "All Around TYPE-MOON - Ahnenerbe no Nichijou",
+  "title_jp": "ALL AROUND TYPE-MOON ～アーネンエルベの日常～",
+  "title_en": "All Around TYPE-MOON: Daily Life at Ahnenerbe",
   "alt_titles": [
     "All Around TYPE-MOON - Ahnenerbe no Nichijou",
     "All Around TYPE-MOON: Daily Life at Ahnenerbe",
     "ALL AROUND TYPE-MOON ～アーネンエルベの日常～"
   ],
-  "series": "Nasuverse",
-  "type": "Anthology",
-  "status": "Finished",
-  "release_year": null,
-  "artists": [
-    "B-suke"
-  ],
-  "publisher": "Kadokawa Comics Ace",
   "synopsis": "In the space between worlds lies the café Ahnenerbe. There, destinies that should never intersect meet. Will it be a comedy or a tragedy? \"Tsukihime\" x \"Fate\" x \"Kara no Kyoukai\" finally meet!",
-  "notes": null,
+  "show_chapter_artists": false,
   "volumes": [
     {
+      "cover": "https://i.ibb.co/Y48yPsRD/small-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-1.jpg",
+      "cover_full": "https://i.ibb.co/GY79ZSG/full-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-1.jpg",
       "volume_number": "Vol. 1",
       "title": "All Around TYPE-MOON - Everyday Life at Ahnenerbe",
       "title_jp": "ALL AROUND TYPE-MOON　～アーネンエルベの日常～",
       "release_date": "2010-01-09",
       "isbn": "978-4047153554",
       "asin": "B00DI8TTPI",
-      "cover": "https://i.ibb.co/Y48yPsRD/small-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-1.jpg",
       "chapters": [
         {
           "chapter_number": 1,
@@ -55,17 +51,17 @@
           "title_jp": "タイプミシュラン～ひびチカ奮闘記～",
           "artist": "B-suke"
         }
-      ],
-      "cover_full": "https://i.ibb.co/GY79ZSG/full-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-1.jpg"
+      ]
     },
     {
+      "cover": "https://i.ibb.co/zHB2wbNC/small-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-2.jpg",
+      "cover_full": "https://i.ibb.co/b5DCv26Z/full-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-2.jpg",
       "volume_number": "Vol. 2",
       "title": "All Around TYPE-MOON - Ahnenerbe Rhapsody",
       "title_jp": "ALL AROUND TYPE-MOON  ～アーネンエルベ狂詩曲～",
       "release_date": "2012-10-01",
       "isbn": "978-4041203989",
       "asin": "B00DI8TUCK",
-      "cover": "https://i.ibb.co/zHB2wbNC/small-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-2.jpg",
       "chapters": [
         {
           "chapter_number": 1,
@@ -97,21 +93,26 @@
           "title_jp": "10years",
           "artist": "B-suke"
         }
-      ],
-      "cover_full": "https://i.ibb.co/b5DCv26Z/full-all-around-type-moon-daily-life-at-ahnenerbe-vol-Vol-2.jpg"
+      ]
     }
   ],
-  "title_romaji": "All Around TYPE-MOON - Ahnenerbe no Nichijou",
-  "title_en": "All Around TYPE-MOON: Daily Life at Ahnenerbe",
-  "title_jp": "ALL AROUND TYPE-MOON ～アーネンエルベの日常～",
+  "notes": null,
+  "sources": [],
   "custom_roles": [
     {
       "role": "Original Work:",
       "names": "TYPE-MOON"
     }
   ],
-  "sources": [],
-  "show_chapter_artists": false,
+  "artists": [
+    "B-suke"
+  ],
+  "publisher": "Kadokawa Comics Ace",
+  "magazine": "N/A",
   "serialization_start": "N/A",
-  "serialization_end": "N/A"
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Nasuverse",
+  "release_year": null
 }

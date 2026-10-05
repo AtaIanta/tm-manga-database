@@ -342,31 +342,32 @@ function getPrimaryCover(manga) {
 
 function getMangaMissingFields(manga) {
   if (!manga) return [];
+  const record = (typeof sessionMangaDocs !== 'undefined' && manga.id && sessionMangaDocs[manga.id]) || manga;
   const missingFields = [];
-  const displayCover = getPrimaryCover(manga);
+  const displayCover = getPrimaryCover(record);
   if (!isNA(displayCover) && !hasValidCover(displayCover)) missingFields.push('Cover Art');
 
-  const volumes = manga.volumes || [];
+  const volumes = record.volumes || [];
   const isIsbnNA = volumes.length > 0 && volumes.every(v => isNA(v.isbn) || v.is_uncollected);
   const volsMissingIsbn = volumes.filter(v => !v.is_uncollected && !isNA(v.isbn) && (!v.isbn || v.isbn === '[no data]')).length;
   if (!isIsbnNA && volsMissingIsbn > 0) {
     missingFields.push(`ISBN (${volsMissingIsbn} vols)`);
   }
 
-  const isArtistNA = Array.isArray(manga.artists) && manga.artists.length > 0 && manga.artists.every(isNA);
-  const hasValidArtist = (manga.artists || []).some(a => a && a !== '[no data]' && a !== '[insufficient data]' && !isNA(a));
-  const hasValidRole = (manga.custom_roles || []).some(r => r.names && r.names !== '[no data]' && !isNA(r.names));
+  const isArtistNA = Array.isArray(record.artists) && record.artists.length > 0 && record.artists.every(isNA);
+  const hasValidArtist = (record.artists || []).some(a => a && a !== '[no data]' && a !== '[insufficient data]' && !isNA(a));
+  const hasValidRole = (record.custom_roles || []).some(r => r.names && r.names !== '[no data]' && !isNA(r.names));
   if (!isArtistNA && !hasValidArtist && !hasValidRole) missingFields.push('Artist Attribution');
 
-  const serVal = manga.magazine;
+  const serVal = record.magazine;
   if (!isNA(serVal) && (!serVal || serVal === '[no data]')) missingFields.push('Magazine Serialization');
 
-  const status = manga.status;
+  const status = record.status;
   if (!isNA(status) && (!status || status === '[no data]' || String(status).toLowerCase() === 'unknown')) {
     missingFields.push('Status Validation');
   }
 
-  const synVal = (manga.synopsis || '').trim();
+  const synVal = (record.synopsis || '').trim();
   if (!isNA(synVal) && (!synVal || synVal === '[no data]')) missingFields.push('Synopsis');
 
   if (volumes.length > 0) {
