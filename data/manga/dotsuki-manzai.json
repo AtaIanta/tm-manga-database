@@ -1,0 +1,267 @@
+{
+  "id": "dotsuki-manzai",
+  "title_romaji": "Dotsuki Manzai",
+  "title_jp": "弩月万罪",
+  "title_en": null,
+  "alt_titles": [
+    "Dotsuki Manzai [Saishin]",
+    "Type-Moon Works: Dotsuki Manzai",
+    "TYPE-MOON作品集 弩月万罪",
+    "弩月万罪 再審"
+  ],
+  "synopsis": "Dotsuki Manzai is an anthology, compiling the works of Takatou Rui, set in the worlds of Tsukihime, Melty Blood, and Fate/stay night.\n\nLater in 2012 it received a reprint called Dotsuki Manzai Sanshin which contained previously unpublished chapters.",
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/WW8qGXyY/small-dotsuki-manzai-vol-Vol-1.jpg",
+      "cover_full": "https://i.ibb.co/Y762J0yd/full-dotsuki-manzai-vol-Vol-1.jpg",
+      "volume_number": "Vol. 1",
+      "title": "Dotsuki Manzai",
+      "title_jp": "弩月万罪",
+      "release_date": "2005-02-25",
+      "isbn": "978-4758002387",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 2,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 3,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 4,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 5,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 6,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 7,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 8,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 9,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 10,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 11,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 12,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 13,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 14,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 15,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/ZzBp893W/small-dotsuki-manzai-vol-Vol-2.jpg",
+      "cover_full": "https://i.ibb.co/RpP48Vmy/full-dotsuki-manzai-vol-Vol-2.jpg",
+      "volume_number": "Vol. 1 Rerelease",
+      "title": "Dotsuki Manzai Saishin",
+      "title_jp": "弩月万罪 再審",
+      "release_date": "2012-07-01",
+      "isbn": "978-4758007191",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 5,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 6,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 7,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 8,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 9,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 10,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 11,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 12,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 13,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 14,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 15,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 16,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 17,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 18,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 19,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 20,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 21,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 22,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 23,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 24,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        },
+        {
+          "chapter_number": 25,
+          "title": null,
+          "title_jp": null,
+          "artist": "Takatou Rui"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [
+    "Takatou Rui"
+  ],
+  "publisher": "DNA Media Comics",
+  "status": "Finished",
+  "type": "Unknown",
+  "series": "Unknown",
+  "release_year": null
+}

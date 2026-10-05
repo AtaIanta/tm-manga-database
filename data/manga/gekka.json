@@ -1,0 +1,105 @@
+{
+  "id": "gekka",
+  "title_romaji": "Gekka",
+  "title_jp": "月華",
+  "title_en": null,
+  "synopsis": "Peak",
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/FL3mNWvt/small-gekka-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/7x3f0Br5/full-gekka-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gekka",
+      "title_jp": "月華",
+      "release_date": null,
+      "isbn": "978-4776712398",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 2,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 3,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 4,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 5,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 6,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 7,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 8,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 9,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 10,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 11,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        },
+        {
+          "chapter_number": 12,
+          "title": null,
+          "title_jp": null,
+          "artist": "Uchimura Kaname"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [
+    "Uchimura Kaname"
+  ],
+  "publisher": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": null
+}
