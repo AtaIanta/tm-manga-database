@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TYPE-MOON MANGA DATABASE</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/img/favicon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cafe: {
+              950: '#0a2617',
+              900: '#113b24',
+              850: '#174f31',
+              800: '#20653f',
+              700: '#2b7f50',
+              amber: '#c99b2c',
+              gold: '#e5c158',
+              goldlight: '#fef3c7',
+              ruby: '#991b1b',
+              cream: '#ffffff',
+              muted: '#a3cfb1'
+            }
+          }
+        }
+      }
+    }
+</script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="relative min-h-screen text-cafe-cream selection:bg-cafe-gold/30 selection:text-white">
+
+  <div class="parallax-layer bg-arcadian-art bg-restaurant-art"></div>
+  <div class="parallax-layer ambient-overlay"></div>
+  <canvas id="ambientCanvas"></canvas>
+
+  <div class="relative z-10 w-full max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 flex flex-col min-h-screen">
+
+    <header class="w-full flex flex-col items-center justify-center text-center pb-6 border-b border-cafe-gold/20 relative">
+
+      <a href="javascript:void(0)" 
+         onclick="backToDatabase()"
+         class="my-3 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 group cursor-pointer focus:outline-none rounded-2xl p-2 transition-opacity hover:opacity-95"
+         title="Back to Database">
+        <img src="assets/img/logo.webp" 
+             alt="Arcadian Mascot Atalanta reading TYPE-MOON manga" 
+             class="h-16 sm:h-20 md:h-24 w-auto object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] select-none pointer-events-none">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-cinzel font-black tracking-tight gold-gradient-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
+          TYPE-MOON MANGA DATABASE
+        </h1>
+      </a>
+    </header>
+
+    <section id="catalogView" class="w-full">
+
+      <section class="w-full my-6">
+
+        <div class="flex flex-col lg:flex-row gap-3 items-center justify-between">
+
+          <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto justify-between lg:justify-start shrink-0">
+
+            <div class="flex items-center bg-cafe-950/80 rounded-lg p-0.5 border border-cafe-gold/25 shrink-0 gap-0.5 shadow-sm">
+              <button id="tabCategoryManga" onclick="switchCategory('manga')" class="category-tab-btn active px-3 sm:px-3.5 py-1.5 rounded text-xs font-cinzel font-bold tracking-wider uppercase transition-all" title="View Mangas Catalog">
+                MANGAS
+              </button>
+              <button id="tabCategoryArtists" onclick="switchCategory('artists')" class="category-tab-btn px-3 sm:px-3.5 py-1.5 rounded text-xs font-cinzel font-bold tracking-wider uppercase transition-all" title="View Artists Directory">
+                ARTISTS
+              </button>
+            </div>
+
+            <div id="resultsCount" class="px-3 py-1.5 rounded-lg bg-cafe-950/90 border border-cafe-gold/40 text-xs font-mono-isbn text-cafe-cream shadow-inner shrink-0 flex items-center gap-1.5">
+              Loading archive entries...
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 w-full lg:w-auto justify-between lg:justify-end flex-1 max-w-2xl">
+
+            <div class="relative flex-1 min-w-[220px] w-full">
+              <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-cafe-muted pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35"/></svg>
+              <input id="searchInput" 
+                     type="text" 
+                     placeholder="Search by title, connection, type, artist... (use -word to exclude)" 
+                     class="w-full pl-10 pr-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/30 focus:border-cafe-gold text-cafe-cream placeholder-cafe-muted/70 text-xs sm:text-sm outline-none transition-all shadow-inner">
+            </div>
+
+            <div class="relative shrink-0">
+              <select id="sortSelect" class="appearance-none bg-cafe-900/90 border border-cafe-gold/30 rounded-lg pl-3 pr-8 py-2 text-xs text-white outline-none cursor-pointer focus:border-cafe-gold transition-colors">
+                <option value="title-asc" selected>Title (A → Z)</option>
+                <option value="title-desc">Title (Z → A)</option>
+                <option value="vol-desc">Most Volumes</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-cafe-gold">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+
+            <div class="flex items-center bg-cafe-950/80 rounded-lg p-0.5 border border-cafe-gold/25 shrink-0 gap-0.5">
+              <button id="btnGridView" class="filter-btn active px-2.5 py-1.5 rounded text-xs flex items-center gap-1 text-white" title="Grid View">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+              </button>
+              <button id="btnTableView" class="filter-btn px-2.5 py-1.5 rounded text-xs flex items-center gap-1 text-white" title="Wiki Table View">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <main class="w-full flex-1 pb-16">
+
+        <div id="mangaTable" class="hidden w-full overflow-x-auto glass-panel rounded-2xl p-4">
+          <table class="w-full text-left border-collapse wiki-table">
+            <thead id="catalogTableHead">
+              <tr class="border-b-2 border-cafe-gold/30 text-cafe-gold font-cinzel text-xs uppercase tracking-wider">
+                <th class="py-3 px-3">Cover</th>
+                <th class="py-3 px-3">Title</th>
+                <th class="py-3 px-3">Type</th>
+                <th class="py-3 px-3">Artist(s)</th>
+                <th class="py-3 px-3">Status</th>
+              </tr>
+            </thead>
+            <tbody id="mangaTableBody">
+
+            </tbody>
+          </table>
+        </div>
+
+        <div id="mangaGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-5">
+
+        </div>
+
+        <div id="emptyState" class="hidden w-full py-20 text-center glass-panel rounded-2xl">
+          <h3 class="text-lg font-cinzel font-bold text-cafe-gold">No manga found</h3>
+          <p class="text-xs text-cafe-muted max-w-sm mx-auto mt-1">
+            No works match your current search or filter criteria. Try resetting your search terms.
+          </p>
+          <div class="mt-4 flex flex-wrap items-center justify-center gap-2">
+            <button onclick="searchInput.value=''; applyFilters();"
+                    class="px-4 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/30 text-xs text-cafe-cream hover:bg-cafe-800">
+              Reset Search
+            </button>
+            <button id="emptyStateAddTitleBtn" type="button" onclick="openAddDummyTitleModal()"
+                    class="px-4 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/50 text-xs text-cafe-gold hover:text-white hover:border-cafe-gold font-semibold">
+              Add Dummy Title
+            </button>
+          </div>
+        </div>
+
+      </main>
+    </section>
+
+    <section id="mangaFullPageView" class="hidden w-full pb-16 space-y-6">
+
+      <div class="w-full my-6 flex flex-wrap items-center justify-between gap-3">
+        <button onclick="closeFullPageView()" class="px-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-2 transition-all shadow-md group">
+          <svg class="w-4 h-4 text-cafe-gold transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span>Back to Database</span>
+        </button>
+        <div id="mangaViewActions" class="flex items-center gap-2">
+          <button onclick="startDirectMangaEdit()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            <span>Edit Page</span>
+          </button>
+          <button id="mangaRevertBtn" type="button" onclick="revertCurrentMangaChanges()" class="hidden px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-amber-500/50 text-amber-200 hover:border-amber-400 hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Discard local changes and restore the archive file">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a5 5 0 015 5v0a5 5 0 01-5 5H8m-5-10l4-4m-4 4l4 4"/></svg>
+            <span>Revert Changes</span>
+          </button>
+          <button id="mangaDownloadZipBtn" onclick="downloadCurrentPageZip()" class="hidden px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download ZIP archive with updated JSON and cover images">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download ZIP</span>
+          </button>
+          <button onclick="downloadCurrentPageJson()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download JSON file">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download JSON</span>
+          </button>
+        </div>
+        <div id="mangaEditActions" class="hidden flex items-center gap-2">
+          <button type="button" onclick="cancelDirectMangaEdit()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm transition-all shadow-md">
+            Cancel
+          </button>
+          <button type="button" id="mangaEditDownloadZipBtn" onclick="downloadCurrentPageZip()" class="hidden px-3.5 py-2 rounded-xl bg-cafe-900/90 hover:bg-cafe-850 border border-cafe-gold/40 text-white font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download ZIP archive with updated JSON and cover images">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download ZIP</span>
+          </button>
+          <button type="button" onclick="downloadCurrentPageJson()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download JSON file">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download JSON</span>
+          </button>
+          <button type="button" onclick="saveDirectMangaEdit()" class="px-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/60 text-white font-cinzel font-bold text-xs sm:text-sm hover:border-cafe-gold hover:bg-cafe-850 transition-all shadow-md flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Save Changes</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mangaViewSection" class="wiki-page-container flex flex-col gap-5">
+
+        <div class="flex flex-col gap-3.5">
+
+          <div id="mangaLocalWarningBanner" hidden class="hidden bg-sky-950/70 border border-sky-400/50 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs shadow-lg">
+            <div class="flex items-center gap-3">
+              <div class="w-7 h-7 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 shrink-0 text-sm">
+                ℹ️
+              </div>
+              <div>
+                <strong class="text-sky-300 font-semibold text-xs sm:text-sm">Local Display Only</strong>
+                <p id="mangaLocalWarningBannerText" class="text-sky-200/80 text-[11px] mt-0.5 leading-relaxed">
+                  This page is currently displayed with local session changes. Download JSON to preserve your changes or contribute them to the archive.
+                </p>
+              </div>
+            </div>
+            <div class="shrink-0 flex items-center gap-2">
+              <button id="mangaBannerDownloadZipBtn" onclick="downloadCurrentPageZip()" class="hidden px-3 py-1.5 rounded-lg bg-gradient-to-r from-cafe-amber to-cafe-gold hover:brightness-110 text-cafe-950 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Download ZIP (JSON + Covers)</span>
+              </button>
+              <button onclick="downloadCurrentPageJson()" class="px-3 py-1.5 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-200 text-xs font-semibold transition-colors flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Download JSON</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="modalNotesBox" hidden class="hidden bg-red-950/40 border border-red-500/40 rounded-xl p-3 sm:p-4 text-xs shadow-inner">
+            <div class="flex items-start gap-2.5">
+              <span class="text-red-400 text-lg shrink-0">📌</span>
+              <div>
+                <strong class="text-red-300 font-semibold">Custom Warning</strong>
+                <p id="modalNotesContent" class="text-cafe-muted text-[11px] mt-0.5 leading-relaxed"></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="mangaMissingNotice" hidden class="hidden bg-amber-950/40 border border-amber-500/40 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs shadow-inner">
+            <div class="flex items-center gap-2.5">
+              <span class="text-amber-400 text-lg shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 font-semibold">Incomplete Archive Metadata</strong>
+                <p class="text-cafe-muted text-[11px] mt-0.5">
+                  This manga entry is missing archival metadata (<span id="mangaMissingNoticeDetails" class="text-amber-200 font-medium"></span>). Tracked in the <strong class="text-cafe-cream">Missing Data Audit</strong>.
+                </p>
+              </div>
+            </div>
+            <button onclick="startDirectMangaEdit()" class="shrink-0 px-3.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-200 text-xs font-semibold transition-colors flex items-center gap-1.5">
+              <span>Contribute Data</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+          </div>
+
+          <div class="space-y-2 border-b border-cafe-gold/20 pb-3.5">
+
+            <div id="mangaTitleView" class="space-y-1">
+              <h2 id="modalTitleMain" class="text-2xl sm:text-4xl font-cinzel font-black tracking-tight text-white drop-shadow-md">
+                Shingetsutan Tsukihime
+              </h2>
+              <div id="modalTitleSubJp" class="text-sm sm:text-base text-cafe-gold font-japanese font-medium">
+                真月譚 月姫
+              </div>
+            </div>
+
+            <div id="mangaTitleEdit" class="hidden space-y-2">
+              <div>
+                <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Romanized Title *</label>
+                <input id="editTitleRomaji" type="text" class="w-full px-3 py-2 rounded-xl bg-cafe-900/95 border border-cafe-gold/50 text-cafe-cream font-cinzel font-bold text-lg sm:text-2xl outline-none focus:border-cafe-gold">
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div>
+                  <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Japanese Title</label>
+                  <input id="editTitleJp" type="text" class="w-full px-3 py-1.5 rounded-lg bg-cafe-900/90 border border-cafe-gold/35 text-cafe-amber text-xs sm:text-sm outline-none focus:border-cafe-gold">
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">English Title</label>
+                  <input id="editTitleEn" type="text" class="w-full px-3 py-1.5 rounded-lg bg-cafe-900/90 border border-cafe-gold/35 text-cafe-cream text-xs sm:text-sm outline-none focus:border-cafe-gold">
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider">Alternative Titles</label>
+                  <button type="button" onclick="addAltTitleInPlace()" class="text-cafe-gold hover:underline text-[11px] font-semibold">+ Add Title</button>
+                </div>
+                <div id="editAltTitlesList" class="space-y-1.5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <div class="order-2 lg:order-1 lg:col-span-7 xl:col-span-8 space-y-6">
+
+            <div class="space-y-2">
+              <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel border-b border-cafe-gold/20 pb-1.5">
+                Overview &amp; Synopsis
+              </h3>
+              <div id="modalSynopsis" class="text-xs sm:text-sm text-cafe-cream/90 leading-relaxed font-sans markdown-content"></div>
+              <div id="modalSynopsisEdit" class="hidden">
+                <textarea id="editSynopsis" rows="5" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs sm:text-sm leading-relaxed outline-none focus:border-cafe-gold font-sans" placeholder="Archival overview and synopsis (Markdown supported)..."></textarea>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-center justify-between border-b border-cafe-gold/20 pb-2">
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel">
+                  Volume Breakdown &amp; Chapter Details
+                </h3>
+              </div>
+
+              <div id="modalVolumesContainer" class="space-y-3">
+
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-2">
+              <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel border-b border-cafe-gold/20 pb-1.5 flex items-center justify-between">
+                <span>Notes</span>
+              </h3>
+              <div id="modalNotesSection" class="text-xs sm:text-sm text-cafe-cream/90 leading-relaxed font-sans markdown-content">
+
+              </div>
+              <div id="modalNotesEdit" class="hidden">
+                <textarea id="editNotes" rows="3" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs sm:text-sm leading-relaxed outline-none focus:border-cafe-gold font-sans" placeholder="Archival notes, historical context, or trivia (Markdown supported)..."></textarea>
+              </div>
+            </div>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-center justify-between border-b border-cafe-gold/20 pb-1.5">
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel">
+                  Sources
+                </h3>
+              </div>
+              <div id="modalSourcesSection" class="space-y-2">
+
+              </div>
+              <div id="modalSourcesEdit" class="hidden space-y-2">
+                <label class="block text-[11px] font-semibold text-cafe-amber">Sources &amp; References (one entry per line, URLs or citations)</label>
+                <textarea id="editSources" rows="3" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs font-mono-isbn leading-relaxed outline-none focus:border-cafe-gold" placeholder="https://example.com/source&#10;Type-Moon Ace Vol. 1, p. 45"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="order-1 lg:order-2 lg:col-span-5 xl:col-span-4 wiki-infobox">
+
+            <div class="w-full bg-cafe-950/80 p-5 flex flex-col items-center justify-center border-b border-cafe-gold/25">
+              <div id="infoboxCoverWrapper" class="relative group w-full max-w-[240px] rounded-lg overflow-hidden border border-cafe-gold/40 hover:border-cafe-gold shadow-xl hover:shadow-2xl bg-cafe-950 cursor-pointer transition-all duration-300" onclick="openCurrentCoverLightbox()" title="Click to view full size cover">
+                <img id="infoboxCoverImg" src="" alt="" class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105">
+
+                <div class="absolute inset-0 bg-cafe-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                  <span class="px-2.5 py-1 rounded-full bg-cafe-950/90 border border-cafe-gold/60 text-cafe-gold text-[11px] font-semibold shadow-lg flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                    <span>View Full Size</span>
+                  </span>
+                </div>
+              </div>
+              <div id="infoboxCoverControls" class="w-full mt-2 flex flex-col items-center justify-center">
+                <div id="infoboxCoverCaption" class="text-[11px] text-cafe-muted text-center font-medium">Cover</div>
+                <div id="infoboxCoverSelector" class="hidden flex flex-wrap items-center justify-center gap-1.5 mt-2 max-w-full"></div>
+              </div>
+            </div>
+
+            <table class="w-full text-xs">
+              <tbody>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold w-1/3 bg-cafe-900/60">Author(s)</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxAuthors" class="text-white"></div>
+                    <div id="editInfoboxAuthorsContainer" class="hidden space-y-2">
+
+                      <div class="space-y-0.5">
+                        <div class="flex items-center justify-between text-[10px] text-cafe-muted">
+                          <span class="font-semibold text-cafe-amber">Art:</span>
+                          <span class="text-[9px] text-cafe-gold/80 italic">(synced from chapters)</span>
+                        </div>
+                        <input id="editInfoboxArtists" type="text" readonly tabindex="-1" class="w-full px-2 py-1 rounded bg-cafe-950/80 border border-cafe-gold/30 text-cafe-gold text-xs font-semibold outline-none cursor-default select-all" placeholder="[auto-synced from chapters]" title="Artist names are automatically derived and synced from chapter data">
+                      </div>
+
+                      <div class="space-y-1">
+                        <div class="flex items-center justify-between text-[10px] text-cafe-muted">
+                          <span class="font-semibold text-cafe-amber">Roles:</span>
+                          <button type="button" onclick="addAuthorRoleInPlace()" class="text-cafe-gold hover:underline text-[10px] flex items-center gap-0.5">
+                            + Add Role
+                          </button>
+                        </div>
+                        <div id="editAuthorRolesList" class="space-y-1.5">
+
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Publisher</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxPublisher" class="text-cafe-gold"></div>
+                    <div id="editInfoboxPublisherContainer" class="hidden">
+                      <input id="editInfoboxPublisher" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-gold text-xs outline-none focus:border-cafe-gold" placeholder="Publisher">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Serialized In</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxSerializedIn" class="text-white"></div>
+                    <div id="editInfoboxSerializedInContainer" class="hidden">
+                      <input id="editInfoboxSerializedIn" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold" placeholder="Serialized In">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Serialization Start</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxSerializationStart" class="font-mono-isbn text-white"></div>
+                    <div id="editInfoboxSerializationStartContainer" class="hidden">
+                      <input id="editInfoboxSerializationStart" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs font-mono-isbn outline-none focus:border-cafe-gold" placeholder="YYYY-MM-DD">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Serialization End</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxSerializationEnd" class="font-mono-isbn text-white"></div>
+                    <div id="editInfoboxSerializationEndContainer" class="hidden">
+                      <input id="editInfoboxSerializationEnd" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs font-mono-isbn outline-none focus:border-cafe-gold" placeholder="YYYY-MM-DD">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Status</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxStatus"></div>
+                    <div id="editInfoboxStatusContainer" class="hidden">
+                      <select id="editInfoboxStatus" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold">
+                        <option value="Unknown" selected>Unknown</option>
+                        <option value="Finished">Finished</option>
+                        <option value="Ongoing">Ongoing</option>
+                        <option value="Hiatus">Hiatus</option>
+                        <option value="Cancelled">Cancelled</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Type</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxType" class="text-white"></div>
+                    <div id="editInfoboxTypeContainer" class="hidden">
+                      <select id="editInfoboxType" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold">
+                        <option value="Unknown">Unknown</option>
+                        <option value="Adaptation">Adaptation</option>
+                        <option value="Anthology">Anthology</option>
+                        <option value="Spin-Off">Spin-Off</option>
+                        <option value="Doujin">Doujin</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Series / Franchise</th>
+                  <td class="py-2.5 px-3">
+                    <div id="infoboxSeries" class="text-white"></div>
+                    <div id="editInfoboxSeriesContainer" class="hidden">
+                      <select id="editInfoboxSeries" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold">
+                        <option value="Unknown">Unknown</option>
+                        <option value="Fate series">Fate series</option>
+                        <option value="Tsukihime">Tsukihime</option>
+                        <option value="Mahoyo">Mahoyo</option>
+                        <option value="Canaan">Canaan</option>
+                        <option value="Zvezda">Zvezda</option>
+                        <option value="Nasuverse">Nasuverse</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="artistFullPageView" class="hidden w-full pb-16 space-y-6">
+
+      <div class="w-full my-6 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <button onclick="closeArtistPageView()" class="px-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-2 transition-all shadow-md group">
+          <svg class="w-4 h-4 text-cafe-gold transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span id="artistBackText">Back to Database</span>
+        </button>
+
+        <div id="artistViewActions" class="flex items-center gap-2">
+          <button onclick="startDirectArtistEdit()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            <span>Edit Page</span>
+          </button>
+          <button id="artistRevertBtn" type="button" onclick="revertCurrentArtistChanges()" class="hidden px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-amber-500/50 text-amber-200 hover:border-amber-400 hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Discard local changes and restore the archive file">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a5 5 0 015 5v0a5 5 0 01-5 5H8m-5-10l4-4m-4 4l4 4"/></svg>
+            <span>Revert Changes</span>
+          </button>
+          <button onclick="downloadCurrentPageJson()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download JSON file">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download JSON</span>
+          </button>
+        </div>
+        <div id="artistEditActions" class="hidden flex items-center gap-2">
+          <button type="button" onclick="cancelDirectArtistEdit()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm transition-all shadow-md">
+            Cancel
+          </button>
+          <button type="button" onclick="downloadArtistJson()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download JSON file">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download JSON</span>
+          </button>
+          <button type="button" onclick="saveDirectArtistEdit()" class="px-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/60 text-white font-cinzel font-bold text-xs sm:text-sm hover:border-cafe-gold hover:bg-cafe-850 transition-all shadow-md flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Save Changes</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="artistViewSection" class="wiki-page-container flex flex-col gap-5">
+
+        <div class="flex flex-col gap-3.5">
+
+          <div id="artistLocalWarningBanner" hidden class="hidden bg-sky-950/70 border border-sky-400/50 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs shadow-lg">
+            <div class="flex items-center gap-3">
+              <div class="w-7 h-7 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 shrink-0 text-sm">
+                ℹ️
+              </div>
+              <div>
+                <strong class="text-sky-300 font-semibold text-xs sm:text-sm">Local Display Only</strong>
+                <p class="text-sky-200/80 text-[11px] mt-0.5 leading-relaxed">
+                  This artist profile is currently displayed with local session changes. Download JSON to preserve your changes or contribute them to the archive.
+                </p>
+              </div>
+            </div>
+            <button onclick="downloadArtistJson()" class="shrink-0 px-3 py-1.5 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 text-sky-200 text-xs font-semibold transition-colors flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span>Download JSON</span>
+            </button>
+          </div>
+
+          <div id="artistMissingNotice" hidden class="hidden bg-amber-950/40 border border-amber-500/40 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs shadow-inner">
+            <div class="flex items-center gap-2.5">
+              <span class="text-amber-400 text-lg shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 font-semibold">Incomplete Artist Archive Metadata</strong>
+                <p class="text-cafe-muted text-[11px] mt-0.5">
+                  This illustrator profile is missing archival metadata (<span id="artistMissingNoticeDetails" class="text-amber-200 font-medium"></span>). Tracked in the <strong class="text-cafe-cream">Missing Data Audit</strong>.
+                </p>
+              </div>
+            </div>
+            <button onclick="startDirectArtistEdit()" class="shrink-0 px-3.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-200 text-xs font-semibold transition-colors flex items-center gap-1.5">
+              <span>Contribute Data</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+          </div>
+
+          <div class="space-y-2 border-b border-cafe-gold/20 pb-3.5">
+            <div id="artistTitleView" class="space-y-1">
+              <h1 id="artistHeroName" class="text-2xl sm:text-4xl font-cinzel font-black tracking-tight text-white drop-shadow-md">
+                Artist Name
+              </h1>
+              <div id="artistKanjiBadge" class="text-sm sm:text-base text-cafe-gold font-japanese font-medium"></div>
+            </div>
+            <div id="artistTitleEdit" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Romanized Name *</label>
+                <input id="editArtistName" type="text" class="w-full px-3 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/40 text-white font-cinzel font-bold text-lg outline-none focus:border-cafe-gold">
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Kanji / Japanese Name</label>
+                <input id="editArtistKanji" type="text" class="w-full px-3 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/30 text-white text-sm outline-none focus:border-cafe-gold">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <div class="order-2 lg:order-1 lg:col-span-7 xl:col-span-8 space-y-6">
+
+            <div class="space-y-2">
+              <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel border-b border-cafe-gold/20 pb-1.5">
+                Overview
+              </h3>
+              <div id="artistHeroBio" class="text-xs sm:text-sm text-cafe-cream/90 leading-relaxed font-sans markdown-content"></div>
+              <div id="artistBioEdit" class="hidden">
+                <textarea id="editArtistBio" rows="4" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs sm:text-sm leading-relaxed outline-none focus:border-cafe-gold font-sans" placeholder="Artist overview and background (Markdown supported)..."></textarea>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div class="border-b border-cafe-gold/20 pb-2">
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel">
+                  Manga Contributions
+                </h3>
+              </div>
+
+              <div id="artistWorksList" class="space-y-3">
+
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-2">
+              <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel border-b border-cafe-gold/20 pb-1.5 flex items-center justify-between">
+                <span>Notes</span>
+              </h3>
+              <div id="artistNotesSection" class="text-xs sm:text-sm text-cafe-cream/90 leading-relaxed font-sans markdown-content">
+
+              </div>
+              <div id="artistNotesEdit" class="hidden">
+                <textarea id="editArtistNotes" rows="3" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs sm:text-sm leading-relaxed outline-none focus:border-cafe-gold font-sans" placeholder="Archival notes, editorial trivia, or historical context (Markdown supported)..."></textarea>
+              </div>
+            </div>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-center justify-between border-b border-cafe-gold/20 pb-1.5">
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel">
+                  Sources
+                </h3>
+              </div>
+              <div id="artistSourcesSection" class="space-y-2">
+
+              </div>
+              <div id="artistSourcesEdit" class="hidden space-y-2">
+                <label class="block text-[11px] font-semibold text-cafe-amber">Sources &amp; References (one entry per line, URLs or citations)</label>
+                <textarea id="editArtistSources" rows="3" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs font-mono-isbn leading-relaxed outline-none focus:border-cafe-gold" placeholder="https://example.com/artist-interview&#10;Type-Moon Ace Vol. 2, p. 110"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="order-1 lg:order-2 lg:col-span-5 xl:col-span-4 wiki-infobox">
+
+            <div class="w-full bg-cafe-950/80 p-5 flex flex-col items-center justify-center border-b border-cafe-gold/25">
+              <div id="artistAvatarContainer" class="relative group w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden border-2 border-cafe-gold/40 shadow-xl bg-cafe-950 flex items-center justify-center">
+                <img id="artistAvatarImg" src="" alt="Artist Portrait" class="w-full h-full object-cover hidden transition-transform duration-200 group-hover:scale-105">
+                <div id="artistAvatarPlaceholder" class="w-full h-full flex flex-col items-center justify-center text-center p-3 bg-cafe-950">
+                  <span class="text-4xl font-cinzel font-bold text-cafe-gold/60" id="artistAvatarInitial">?</span>
+                  <span class="no-data-badge text-[9px] mt-2">[no image]</span>
+                </div>
+              </div>
+              <div id="artistInfoboxNameCaption" class="text-xs font-cinzel font-bold text-cafe-gold mt-2.5 text-center"></div>
+
+              <div id="editArtistAvatarContainer" class="hidden w-full mt-3">
+                <label class="block text-[10px] font-semibold text-cafe-amber mb-1">Avatar Image URL</label>
+                <input id="editArtistAvatar" type="text" oninput="updateArtistAvatarLive(this.value)" class="w-full px-2.5 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/40 text-cafe-cream text-xs font-mono-isbn outline-none focus:border-cafe-gold" placeholder="https://... or assets/...">
+              </div>
+            </div>
+
+            <table class="w-full text-xs">
+              <tbody>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold w-1/3 bg-cafe-900/60">Circle / Group</th>
+                  <td class="py-2.5 px-3">
+                    <div id="artistCircleDisplay" class="text-cafe-gold"></div>
+                    <div id="editArtistCircleContainer" class="hidden">
+                      <input id="editArtistCircle" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-gold text-xs outline-none focus:border-cafe-gold" placeholder="e.g. Studio Nimble">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Works Documented</th>
+                  <td class="py-2.5 px-3">
+                    <span id="artistStatWorks" class="font-mono-isbn font-bold text-cafe-gold text-sm">0</span>
+                    <span class="text-cafe-muted text-[11px] ml-1">titles</span>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Chapters Tracked</th>
+                  <td class="py-2.5 px-3">
+                    <span id="artistStatChapters" class="font-mono-isbn font-bold text-cafe-amber text-sm">0</span>
+                    <span class="text-cafe-muted text-[11px] ml-1">chapters</span>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Socials &amp; Profiles</th>
+                  <td class="py-2.5 px-3">
+                    <div id="artistSocialLinks" class="flex flex-wrap items-center gap-1.5">
+
+                    </div>
+                    <div id="editArtistSocialsContainer" class="hidden space-y-1.5 pt-1">
+                      <input id="editArtistTwitter" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold" placeholder="Twitter URL or handle">
+                      <input id="editArtistPixiv" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold" placeholder="Pixiv URL or ID">
+                      <input id="editArtistWebsite" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold" placeholder="Website URL">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="publisherFullPageView" class="hidden w-full pb-16 space-y-6">
+
+      <div class="w-full my-6 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <button onclick="closePublisherPageView()" class="px-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-2 transition-all shadow-md group">
+          <svg class="w-4 h-4 text-cafe-gold transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          <span id="publisherBackText">Back to Database</span>
+        </button>
+
+        <div id="publisherViewActions" class="flex items-center gap-2">
+          <button onclick="startDirectPublisherEdit()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            <span>Edit Page</span>
+          </button>
+          <button onclick="downloadCurrentPageJson()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download JSON file">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download JSON</span>
+          </button>
+        </div>
+        <div id="publisherEditActions" class="hidden flex items-center gap-2">
+          <button type="button" onclick="cancelDirectPublisherEdit()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm transition-all shadow-md">
+            Cancel
+          </button>
+          <button type="button" onclick="downloadCurrentPageJson()" class="px-3.5 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/40 text-white hover:border-cafe-gold hover:bg-cafe-850 font-cinzel font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-md" title="Download JSON file">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download JSON</span>
+          </button>
+          <button type="button" onclick="saveDirectPublisherEdit()" class="px-4 py-2 rounded-xl bg-cafe-900/90 border border-cafe-gold/60 text-white font-cinzel font-bold text-xs sm:text-sm hover:border-cafe-gold hover:bg-cafe-850 transition-all shadow-md flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-cafe-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Save Changes</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="publisherViewSection" class="wiki-page-container flex flex-col gap-5">
+
+        <div class="flex flex-col gap-3.5">
+
+          <div id="publisherMissingNotice" hidden class="hidden bg-amber-950/40 border border-amber-500/40 rounded-xl p-3 sm:p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs shadow-inner">
+            <div class="flex items-center gap-2.5">
+              <span class="text-amber-400 text-lg shrink-0">⚠️</span>
+              <div>
+                <strong class="text-amber-300 font-semibold">Incomplete Publisher Archive Metadata</strong>
+                <p class="text-cafe-muted text-[11px] mt-0.5">
+                  This publisher entry is missing archival metadata (<span id="publisherMissingNoticeDetails" class="text-amber-200 font-medium"></span>). Tracked in the <strong class="text-cafe-cream">Missing Data Audit</strong>.
+                </p>
+              </div>
+            </div>
+            <button onclick="startDirectPublisherEdit()" class="shrink-0 px-3.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-200 text-xs font-semibold transition-colors flex items-center gap-1.5">
+              <span>Contribute Data</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+          </div>
+
+          <div class="space-y-2 border-b border-cafe-gold/20 pb-3.5">
+            <div id="publisherTitleView" class="space-y-1">
+              <h1 id="publisherHeroName" class="text-2xl sm:text-4xl font-cinzel font-black tracking-tight text-white drop-shadow-md">
+                Publisher Name
+              </h1>
+              <div class="text-xs sm:text-sm text-cafe-gold mt-1 uppercase tracking-wider font-semibold">
+                Official Manga Publisher / Imprint
+              </div>
+            </div>
+            <div id="publisherTitleEdit" class="hidden">
+              <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Publisher Name *</label>
+              <input id="editPublisherName" type="text" class="w-full px-3 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/40 text-white font-cinzel font-bold text-lg outline-none focus:border-cafe-gold">
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <div class="order-2 lg:order-1 lg:col-span-7 xl:col-span-8 space-y-6">
+
+            <div class="space-y-2">
+              <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel border-b border-cafe-gold/20 pb-1.5">
+                Overview &amp; Profile
+              </h3>
+              <p id="publisherHeroDesc" class="text-xs sm:text-sm text-cafe-cream/90 leading-relaxed">
+                Official publisher and imprint for TYPE-MOON manga publications, tankōbon compilations, and anthology releases.
+              </p>
+              <div id="publisherDescEdit" class="hidden">
+                <textarea id="editPublisherDesc" rows="4" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs sm:text-sm leading-relaxed outline-none focus:border-cafe-gold font-sans" placeholder="Corporate overview, publication focus, or history..."></textarea>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-center justify-between border-b border-cafe-gold/20 pb-2">
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel">
+                  Published TYPE-MOON Works
+                </h3>
+                <span id="publisherWorksCountPill" class="text-[10px] bg-cafe-950 px-2.5 py-0.5 rounded border border-cafe-gold/25 text-cafe-amber font-mono-isbn font-semibold">0 works</span>
+              </div>
+
+              <div id="publisherWorksList" class="space-y-3">
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="order-1 lg:order-2 lg:col-span-5 xl:col-span-4 wiki-infobox">
+
+            <div class="w-full bg-cafe-950/80 p-6 flex flex-col items-center justify-center border-b border-cafe-gold/25">
+              <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-cafe-gold/40 shadow-xl bg-cafe-950 flex items-center justify-center text-4xl sm:text-5xl text-cafe-amber">
+                🏛️
+              </div>
+              <div id="publisherInfoboxNameCaption" class="text-xs font-cinzel font-bold text-cafe-gold mt-3 text-center"></div>
+            </div>
+
+            <table class="w-full text-xs">
+              <tbody>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold w-1/3 bg-cafe-900/60">Entity Type</th>
+                  <td class="py-2.5 px-3 text-cafe-cream">Publishing Company / Imprint</td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Publications</th>
+                  <td class="py-2.5 px-3">
+                    <span id="publisherStatWorks" class="font-mono-isbn font-bold text-cafe-gold text-sm">0</span>
+                    <span class="text-cafe-muted text-[11px] ml-1">works</span>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Volumes Released</th>
+                  <td class="py-2.5 px-3">
+                    <span id="publisherStatVolumes" class="font-mono-isbn font-bold text-cafe-amber text-sm">0</span>
+                    <span class="text-cafe-muted text-[11px] ml-1">vols</span>
+                  </td>
+                </tr>
+                <tr class="border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Years Active</th>
+                  <td class="py-2.5 px-3">
+                    <span id="publisherStatYears" class="font-mono-isbn font-bold text-white text-xs">—</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer class="w-full pt-8 pb-6 border-t border-cafe-gold/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cafe-muted">
+      <div class="flex items-center gap-2">
+        <span>Created and maintained by <strong class="text-cafe-cream">iv</strong></span>
+        <span class="text-cafe-gold/30">•</span>
+        <button type="button" onclick="openAiDisclosureModal()" class="text-cafe-cream hover:text-cafe-gold transition-colors flex items-center gap-1.5 font-medium group">
+          <svg class="w-3.5 h-3.5 text-cafe-cream group-hover:text-cafe-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Generative AI Disclosure</span>
+        </button>
+      </div>
+      <div class="flex items-center gap-4">
+        <button onclick="openMissingDataModal()" class="text-cafe-cream hover:text-cafe-gold transition-colors flex items-center gap-1.5 font-medium group">
+          <svg class="w-3.5 h-3.5 text-cafe-cream group-hover:text-cafe-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          <span>Missing Data</span>
+          <span id="missingDataBadgeCount" class="px-1.5 py-0.2 rounded-full bg-cafe-950 border border-cafe-gold/30 text-[10px] font-mono-isbn text-cafe-gold group-hover:border-cafe-gold transition-colors">...</span>
+        </button>
+        <span class="text-cafe-gold/30">•</span>
+        <a href="https://github.com/AtaIanta/tm-manga-database" target="_blank" rel="noopener noreferrer"
+           class="text-cafe-cream hover:text-cafe-gold transition-colors flex items-center gap-1.5 font-medium group">
+          <svg class="w-4 h-4 fill-current text-cafe-cream group-hover:text-cafe-gold transition-colors" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="aiDisclosureModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-overlay flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) closeAiDisclosureModal()">
+    <div class="relative w-full max-w-md glass-panel rounded-2xl border border-cafe-gold/40 shadow-2xl modal-content-animated overflow-hidden my-auto">
+      <div class="wiki-infobox-header px-5 py-4 flex items-center justify-between text-cafe-cream">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-cafe-gold/20 border border-cafe-gold/40 flex items-center justify-center text-cafe-gold">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h2 class="text-base font-cinzel font-bold text-cafe-gold">Generative AI Disclosure</h2>
+        </div>
+        <button onclick="closeAiDisclosureModal()" class="text-cafe-muted hover:text-white text-2xl font-bold leading-none p-1">&times;</button>
+      </div>
+      <div class="p-6 space-y-3 text-xs text-cafe-cream/90 leading-relaxed">
+        <p class="text-sm">
+          The mascot logo and background artwork for this project were created using <strong class="text-cafe-gold font-semibold">Google Gemini</strong>. Application code was created using <strong class="text-cafe-gold font-semibold">Google Gemini</strong> and <strong class="text-cafe-gold font-semibold">Grok</strong> (xAI).
+        </p>
+      </div>
+      <div class="px-6 py-3.5 bg-cafe-950/80 border-t border-cafe-gold/20 flex justify-end">
+        <button onclick="closeAiDisclosureModal()" class="px-4 py-2 rounded-xl bg-cafe-gold hover:bg-cafe-amber text-cafe-950 font-cinzel font-bold text-xs transition-colors shadow">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="missingDataModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-overlay flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) closeMissingDataModal()">
+    <div class="relative w-full max-w-4xl glass-panel rounded-2xl border border-cafe-gold/40 shadow-2xl modal-content-animated overflow-hidden my-auto max-h-[90vh] flex flex-col">
+
+      <div class="wiki-infobox-header px-6 py-4 flex items-center justify-between text-cafe-cream flex-shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-cafe-amber">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-base sm:text-lg font-cinzel font-bold text-cafe-gold">Archive Missing Data Audit</h2>
+            <p class="text-xs text-cafe-muted">Audit of works requiring covers, ISBN numbers, or chapter rosters</p>
+          </div>
+        </div>
+        <button onclick="closeMissingDataModal()" class="text-cafe-muted hover:text-white text-2xl font-bold leading-none p-1">&times;</button>
+      </div>
+
+      <div class="p-4 sm:p-6 pb-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3 flex-shrink-0 border-b border-cafe-gold/15 bg-cafe-950/40">
+        <div class="bg-cafe-900/70 border border-cafe-gold/20 rounded-xl p-2.5 sm:p-3 text-center">
+          <div id="missingStatIncompleteWorks" class="text-lg sm:text-xl font-cinzel font-bold text-cafe-gold">0</div>
+          <div class="text-[10px] text-cafe-muted uppercase tracking-wider mt-0.5 font-medium">Incomplete Works</div>
+        </div>
+        <div class="bg-cafe-900/70 border border-cafe-gold/20 rounded-xl p-2.5 sm:p-3 text-center">
+          <div id="missingStatCovers" class="text-lg sm:text-xl font-cinzel font-bold text-cafe-gold">0</div>
+          <div class="text-[10px] text-cafe-muted uppercase tracking-wider mt-0.5 font-medium">Missing Covers</div>
+        </div>
+        <div class="bg-cafe-900/70 border border-cafe-gold/20 rounded-xl p-2.5 sm:p-3 text-center">
+          <div id="missingStatIsbn" class="text-lg sm:text-xl font-cinzel font-bold text-cafe-gold">0</div>
+          <div class="text-[10px] text-cafe-muted uppercase tracking-wider mt-0.5 font-medium">Missing ISBNs</div>
+        </div>
+        <div class="bg-cafe-900/70 border border-cafe-gold/20 rounded-xl p-2.5 sm:p-3 text-center">
+          <div id="missingStatChapters" class="text-lg sm:text-xl font-cinzel font-bold text-cafe-gold">0</div>
+          <div class="text-[10px] text-cafe-muted uppercase tracking-wider mt-0.5 font-medium">Missing Chapters</div>
+        </div>
+        <div class="bg-cafe-900/70 border border-cafe-gold/20 rounded-xl p-2.5 sm:p-3 text-center">
+          <div id="missingStatArtists" class="text-lg sm:text-xl font-cinzel font-bold text-purple-400">0</div>
+          <div class="text-[10px] text-cafe-muted uppercase tracking-wider mt-0.5 font-medium">Missing Artist Pages</div>
+        </div>
+      </div>
+
+      <div class="p-4 pb-3 flex flex-col sm:flex-row gap-2.5 items-center justify-between border-b border-cafe-gold/15 bg-cafe-950/60 flex-shrink-0">
+
+        <div class="flex flex-wrap items-center gap-1.5 w-full sm:w-auto">
+          <button onclick="setMissingDataFilter('all')" id="missingFilterBtn-all" class="missing-filter-btn active px-3 py-1 rounded-lg text-xs font-medium transition-all bg-cafe-gold text-cafe-950">
+            All Incomplete (<span id="countFilterAll">0</span>)
+          </button>
+          <button onclick="setMissingDataFilter('artists')" id="missingFilterBtn-artists" class="missing-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-cafe-900/80 text-cafe-cream/80 hover:text-cafe-gold border border-cafe-gold/20">
+            Artists (<span id="countFilterArtists">0</span>)
+          </button>
+          <button onclick="setMissingDataFilter('covers')" id="missingFilterBtn-covers" class="missing-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-cafe-900/80 text-cafe-cream/80 hover:text-cafe-gold border border-cafe-gold/20">
+            Covers (<span id="countFilterCovers">0</span>)
+          </button>
+          <button onclick="setMissingDataFilter('isbn')" id="missingFilterBtn-isbn" class="missing-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-cafe-900/80 text-cafe-cream/80 hover:text-cafe-gold border border-cafe-gold/20">
+            ISBNs (<span id="countFilterIsbn">0</span>)
+          </button>
+          <button onclick="setMissingDataFilter('chapters')" id="missingFilterBtn-chapters" class="missing-filter-btn px-3 py-1 rounded-lg text-xs font-medium transition-all bg-cafe-900/80 text-cafe-cream/80 hover:text-cafe-gold border border-cafe-gold/20">
+            Chapters (<span id="countFilterChapters">0</span>)
+          </button>
+        </div>
+
+        <div class="w-full sm:w-64 relative">
+          <input type="text" id="missingDataSearchInput" oninput="handleMissingDataSearch()" placeholder="Filter by title..." class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/30 text-xs text-cafe-cream focus:border-cafe-gold focus:outline-none placeholder-cafe-muted">
+          <svg class="w-3.5 h-3.5 text-cafe-muted absolute left-2.5 top-2.5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+      </div>
+
+      <div id="missingDataList" class="p-4 sm:p-6 space-y-3 overflow-y-auto flex-1 text-xs">
+
+      </div>
+
+      <div class="px-6 py-3 bg-cafe-950/90 border-t border-cafe-gold/20 flex items-center justify-between text-xs text-cafe-muted flex-shrink-0">
+        <span id="missingShowingCount">Showing 0 works</span>
+        <button onclick="closeMissingDataModal()" class="px-3 py-1 rounded bg-cafe-900 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-cream text-xs transition-colors">
+          Close Report
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="coverLightboxModal" class="hidden fixed inset-0 z-[100] bg-black/92 backdrop-blur-md flex flex-col justify-between p-3 sm:p-5 transition-opacity duration-200 select-none" onclick="if(event.target===this || event.target.id==='coverLightboxBackdrop') closeCoverLightbox()">
+
+    <div class="w-full flex items-center justify-between text-cafe-cream px-2 sm:px-4 py-2 z-10">
+      <div class="min-w-0 pr-4">
+        <h3 id="coverLightboxTitle" class="font-cinzel font-bold text-sm sm:text-base text-cafe-gold truncate">Manga Title</h3>
+        <div class="flex items-center gap-2 mt-0.5">
+          <span id="coverLightboxCaption" class="text-xs text-cafe-cream/90 font-medium">Vol. 1 Cover</span>
+          <span id="coverLightboxCounter" class="px-2 py-0.5 rounded-full bg-cafe-900 border border-cafe-gold/30 text-[10px] text-cafe-gold font-mono-isbn">1 / 3</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2.5 shrink-0">
+        <a id="coverLightboxOpenRaw" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-cafe-900/90 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-gold text-xs font-medium flex items-center gap-1.5 transition-colors" title="Open full resolution in new tab">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          <span class="hidden sm:inline">Original Size</span>
+        </a>
+        <button type="button" onclick="closeCoverLightbox()" class="w-9 h-9 rounded-lg bg-cafe-900/90 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-cream hover:text-white flex items-center justify-center text-xl font-bold transition-colors" title="Close">
+          &times;
+        </button>
+      </div>
+    </div>
+
+    <div id="coverLightboxBackdrop" class="relative flex-1 flex items-center justify-center p-2 sm:p-4 min-h-0 overflow-hidden cursor-zoom-out">
+
+      <button type="button" id="coverLightboxPrevBtn" onclick="navigateCoverLightbox(-1); event.stopPropagation();" class="absolute left-3 sm:left-6 z-20 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-cafe-950/85 hover:bg-cafe-900 border-2 border-cafe-gold/60 hover:border-cafe-gold text-cafe-gold hover:text-white flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 active:scale-95 group focus:outline-none cursor-pointer" title="Previous Cover">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 -ml-0.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <div class="relative max-h-full max-w-full flex items-center justify-center cursor-default" onclick="event.stopPropagation()">
+        <img id="coverLightboxImg" src="" alt="Full Cover" class="max-h-[72vh] sm:max-h-[78vh] max-w-[85vw] sm:max-w-[76vw] w-auto h-auto object-contain rounded-lg shadow-2xl border border-cafe-gold/40 transition-opacity duration-150">
+      </div>
+
+      <button type="button" id="coverLightboxNextBtn" onclick="navigateCoverLightbox(1); event.stopPropagation();" class="absolute right-3 sm:right-6 z-20 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-cafe-950/85 hover:bg-cafe-900 border-2 border-cafe-gold/60 hover:border-cafe-gold text-cafe-gold hover:text-white flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 active:scale-95 group focus:outline-none cursor-pointer" title="Next Cover">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 -mr-0.5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+    </div>
+
+    <div class="w-full flex flex-col items-center justify-center py-1.5 z-10">
+      <div id="coverLightboxThumbnails" class="flex flex-wrap items-center justify-center gap-2 max-w-full px-4 overflow-x-auto py-1">
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="unsavedLeaveModal" class="hidden fixed inset-0 z-[60] overflow-y-auto modal-overlay flex items-center justify-center p-3 sm:p-6">
+    <div class="relative bg-cafe-950 border border-amber-500/50 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+      <div>
+        <h3 id="unsavedLeaveTitle" class="text-base font-cinzel font-bold text-amber-200">Changes will not be saved</h3>
+        <p id="unsavedLeaveIntro" class="text-[11px] text-cafe-muted mt-1.5 leading-relaxed">If you leave now, the items below stay only in this browser session and will be lost.</p>
+      </div>
+      <ul id="unsavedLeaveList" class="space-y-1.5 max-h-48 overflow-y-auto text-xs text-cafe-cream"></ul>
+      <div class="flex items-center justify-end gap-2 pt-1">
+        <button type="button" onclick="stayOnUnsavedPage()" class="px-3.5 py-2 rounded-xl bg-cafe-900 border border-cafe-gold/40 text-cafe-cream text-xs font-semibold hover:border-cafe-gold transition-colors">Stay</button>
+        <button type="button" id="unsavedLeaveConfirmBtn" onclick="confirmUnsavedLeave()" class="px-4 py-2 rounded-xl bg-amber-950 border border-amber-500/60 text-amber-100 font-cinzel font-bold text-xs hover:border-amber-400 transition-colors">Leave without saving</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="artistSuggestMenu" class="artist-suggest-menu hidden" role="listbox"></div>
+
+  <div id="addDummyTitleModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-overlay flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) closeAddDummyTitleModal()">
+    <div class="relative bg-cafe-950 border border-cafe-gold/40 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between gap-3">
+        <div>
+          <h3 class="text-base font-cinzel font-bold text-cafe-cream">Add Dummy Title</h3>
+          <p class="text-[11px] text-cafe-muted mt-1 leading-relaxed">Create a placeholder manga for a title the archive does not have yet. The archive ID is the JSON filename.</p>
+        </div>
+        <button type="button" onclick="closeAddDummyTitleModal()" class="text-cafe-muted hover:text-cafe-cream p-1 transition-colors" title="Close">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="space-y-3">
+        <div>
+          <label for="dummyTitleInput" class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Romanized Title</label>
+          <input id="dummyTitleInput" type="text" oninput="onDummyTitleInput()" class="w-full px-3 py-2 rounded-xl bg-cafe-900 border border-cafe-gold/40 text-cafe-cream text-sm outline-none focus:border-cafe-gold" placeholder="Fate/stay night">
+        </div>
+        <div>
+          <label for="dummyIdInput" class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">New ID</label>
+          <input id="dummyIdInput" type="text" oninput="onDummyIdInput()" class="w-full px-3 py-2 rounded-xl bg-cafe-900 border border-cafe-gold/40 text-cafe-gold text-sm font-mono-isbn outline-none focus:border-cafe-gold" placeholder="fate-stay-night" spellcheck="false">
+          <p class="text-[11px] text-cafe-muted mt-1.5 leading-relaxed">Fate/stay night should be <span class="font-mono-isbn text-cafe-gold">fate-stay-night</span>. The ID updates from the title until you edit it.</p>
+        </div>
+        <p id="dummyTitleError" class="hidden text-xs text-red-300"></p>
+      </div>
+
+      <div class="flex items-center justify-end gap-2 pt-1">
+        <button type="button" onclick="closeAddDummyTitleModal()" class="px-3.5 py-2 rounded-xl bg-cafe-900 border border-cafe-gold/30 text-cafe-cream text-xs font-semibold hover:border-cafe-gold transition-colors">Cancel</button>
+        <button type="button" onclick="confirmAddDummyTitle()" class="px-4 py-2 rounded-xl bg-cafe-900 border border-cafe-gold/60 text-white font-cinzel font-bold text-xs hover:border-cafe-gold hover:bg-cafe-850 transition-colors">Add Title</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="exportMangaPackageModal" class="hidden fixed inset-0 z-50 overflow-y-auto modal-overlay flex items-center justify-center p-3 sm:p-6" onclick="if(event.target===this) closeExportPackageModal()">
+    <div class="relative bg-cafe-950 border border-cafe-gold/40 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between gap-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-cafe-gold/20 border border-cafe-gold/40 flex items-center justify-center text-cafe-gold">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          </div>
+          <h3 class="text-base font-cinzel font-bold text-cafe-cream">Export Manga Package</h3>
+        </div>
+        <button type="button" onclick="closeExportPackageModal()" class="text-cafe-muted hover:text-cafe-cream p-1 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <p id="exportPackageModalDesc" class="text-xs text-cafe-cream/80 leading-relaxed">
+        This title contains newly uploaded cover images. You can download the complete ZIP archive containing the updated JSON and all cover images, or download the JSON file only.
+      </p>
+
+      <div class="space-y-2.5 pt-2">
+        <button type="button" onclick="confirmDownloadZip()" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-cafe-amber to-cafe-gold hover:brightness-110 text-cafe-950 font-cinzel font-bold text-xs shadow-md flex items-center justify-center gap-2 transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Download ZIP Package (JSON + Covers)</span>
+        </button>
+        <button type="button" onclick="confirmDownloadJsonOnly()" class="w-full py-2 px-4 rounded-xl bg-cafe-900 border border-cafe-gold/30 hover:border-cafe-gold text-cafe-gold hover:text-cafe-cream font-cinzel text-xs font-semibold flex items-center justify-center gap-2 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Download JSON Only</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/marked.min.js"></script>
+  <script src="assets/js/jszip.min.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/manga.js"></script>
+  <script src="assets/js/artist.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

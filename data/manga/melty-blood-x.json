@@ -1,0 +1,140 @@
+{
+  "id": "melty-blood-x",
+  "title_romaji": "MELTY BLOOD X",
+  "title_jp": "MELTY BLOOD X",
+  "title_en": null,
+  "synopsis": "A crisis looms over the peaceful town of Misaki. The now-lively \"Back Alley Alliance,\" joined by Riesbyfe, takes on a self-expanding pyramid!? A slapstick comedy from Melty Blood's comedic relief team begins here!\n\nThe adaptation of Melty Blood: Back Alley Pyramid Night Drama CD.",
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/PzY7JTKS/small-dummy-vol-Vol-1.jpg",
+      "cover_full": "https://i.ibb.co/nMxjMr8s/full-dummy-vol-Vol-1.jpg",
+      "volume_number": "Vol. 1",
+      "title": "MELTY BLOOD X (1)",
+      "title_jp": null,
+      "release_date": "2011-05-26",
+      "isbn": "978-4047157026",
+      "asin": "B09LCCXRQN",
+      "chapters": [
+        {
+          "chapter_number": "Route 1",
+          "title": "Back Alley Pyramid Night",
+          "title_jp": "路地裏ピラミッドナイト",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 2",
+          "title": "Misaki Town - 19:20",
+          "title_jp": "三咲町～19:20～",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 3",
+          "title": "Misaki Town - 20:30",
+          "title_jp": "三咲町～20:30～",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 4",
+          "title": "Misaki Town - 21:00",
+          "title_jp": "三咲町～21:00～",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 5",
+          "title": "Misaki Town - 21:35",
+          "title_jp": "三咲町～21:35～",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 6",
+          "title": "Misaki Town - 22:00",
+          "title_jp": "三咲町～22:00～",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Special Route 1",
+          "title": "Knight of the Wallet",
+          "title_jp": "お財布の騎士",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Afterword",
+          "title": null,
+          "title_jp": null,
+          "artist": "Kirishima Takeru"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/vvV3tnY2/small-dummy-vol-Vol-2.jpg",
+      "cover_full": "https://i.ibb.co/Ps796Nv0/full-dummy-vol-Vol-2.jpg",
+      "volume_number": "Vol. 2",
+      "title": "MELTY BLOOD X (2)",
+      "title_jp": null,
+      "release_date": "2011-11-21",
+      "isbn": "978-4041200063",
+      "asin": "B09LC829N1",
+      "chapters": [
+        {
+          "chapter_number": "Route 7",
+          "title": "Misaki Town - 22:40",
+          "title_jp": "三咲町～22:40～",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 8",
+          "title": "Dining Table of C",
+          "title_jp": "Cの食卓",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 9",
+          "title": "Continued: Dining Table of G",
+          "title_jp": "続・Gの食卓",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 10",
+          "title": "Dining Table of G Final",
+          "title_jp": "Gの食卓 Final",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 11",
+          "title": "Osiris Modified",
+          "title_jp": "オシリス改",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Route 12",
+          "title": "Viva! Back Alley",
+          "title_jp": "ビバ！路地裏",
+          "artist": "Kirishima Takeru"
+        },
+        {
+          "chapter_number": "Afterword",
+          "title": null,
+          "title_jp": null,
+          "artist": "Kirishima Takeru"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [
+    {
+      "role": "Original Work:",
+      "names": "TYPE-MOON, French Bread"
+    }
+  ],
+  "artists": [
+    "Kirishima Takeru"
+  ],
+  "publisher": "Kadokawa Comics Ace",
+  "status": "Finished",
+  "type": "Adaptation",
+  "series": "Tsukihime",
+  "release_year": null
+}

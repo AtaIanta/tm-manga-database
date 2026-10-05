@@ -1,0 +1,105 @@
+{
+  "id": "fate-grand-order-interlude",
+  "title_romaji": "Fate/Grand Order - Makai no Monogatari",
+  "title_jp": "Fate/Grand Order 幕間の物語",
+  "title_en": "Fate/Grand Order Interlude",
+  "alt_titles": [
+    "Fate/Grand Order 幕間の物語",
+    "Fate/Grand Order Interlude",
+    "Fate/Grand Order - Makai no Monogatari",
+    "FGO 幕間の物語"
+  ],
+  "synopsis": "An official adaptation collection of the Servant \"Interlude\" (幕間の物語) quest stories from the hit mobile game \"Fate/Grand Order\", originally featured in TYPE-MOON Ace by a star-studded lineup of renowned mangaka.",
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/237B4tWg/small-fate-grand-order-interlude-vol-Vol-1.jpg",
+      "cover_full": "https://i.ibb.co/N65Yx8k4/full-fate-grand-order-interlude-vol-Vol-1.jpg",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Interlude I",
+      "title_jp": "Fate/Grand Order 幕間の物語 I",
+      "release_date": "2025-09-26",
+      "isbn": "978-4041165270",
+      "asin": "B0FQT4CG6P",
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": "Shi Huang Di: The Arbiter's Melancholy",
+          "title_jp": "幕間の物語：始皇帝「裁定者の憂鬱」",
+          "artist": "Toh Azuma"
+        },
+        {
+          "chapter_number": 2,
+          "title": "Penthesilea: Phantom of Troy",
+          "title_jp": "幕間の物語：ペンテシレイア「トロイアの幻影」",
+          "artist": "Shinjiro"
+        },
+        {
+          "chapter_number": 3,
+          "title": "Okita Souji: Here",
+          "title_jp": "幕間の物語：沖田総司「ここに」",
+          "artist": "Ryouji Hirano"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/Ps2GWJRK/small-fate-grand-order-interlude-vol-Vol-2.jpg",
+      "cover_full": "https://i.ibb.co/Vcm4LmZk/full-fate-grand-order-interlude-vol-Vol-2.jpg",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Interlude II",
+      "title_jp": "Fate/Grand Order 幕間の物語 II",
+      "release_date": "2025-09-26",
+      "isbn": "978-4041165522",
+      "asin": "B0FQMW96L1",
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": "Christopher Columbus: Him",
+          "title_jp": "幕間の物語：クリストファー・コロンブス「彼」",
+          "artist": "Hideo Takenaka"
+        },
+        {
+          "chapter_number": 2,
+          "title": "Bartholomew Roberts: Dream Treasure",
+          "title_jp": "幕間の物語：バーソロミュー・ロバーツ「ドリーム・トレジャー」",
+          "artist": "Mata"
+        },
+        {
+          "chapter_number": 3,
+          "title": "Dobrynya Nikitich: Cooking Nikitich!",
+          "title_jp": "幕間の物語：ドブルイニャ・ニキチッチ「クッキング・ニキチッチ！」",
+          "artist": "Robina"
+        },
+        {
+          "chapter_number": 4,
+          "title": "Edward Teach: Men's Battle",
+          "title_jp": "幕間の物語：エドワード・ティーチ「男の戦い」",
+          "artist": "B-suke"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [
+    {
+      "role": "Original Work:",
+      "names": "TYPE-MOON"
+    }
+  ],
+  "artists": [
+    "Toh Azuma",
+    "Shinjiro",
+    "Ryouji Hirano",
+    "Hideo Takenaka",
+    "Mata",
+    "Robina",
+    "B-suke"
+  ],
+  "publisher": "Kadokawa Comics Ace",
+  "magazine": "TYPE-MOON Ace",
+  "status": "Finished",
+  "type": "Adaptation",
+  "series": "Fate series",
+  "release_year": null
+}

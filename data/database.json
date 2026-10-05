@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-10-05T12:15:53Z",
+  "count": 5,
+  "manga_files": [
+    "all-around-type-moon.json",
+    "fate-grand-order-interlude.json",
+    "melty-blood-back-alley-nightmare.json",
+    "melty-blood-type-lumina-piece-in-paradise.json",
+    "melty-blood-x.json"
+  ],
+  "artist_files": [],
+  "file_revs": {
+    "manga/all-around-type-moon.json": "1791197678788004500:4069",
+    "manga/fate-grand-order-interlude.json": "1791201324614863600:3620",
+    "manga/melty-blood-back-alley-nightmare.json": "1791197678789998800:4352",
+    "manga/melty-blood-type-lumina-piece-in-paradise.json": "1791197678790997700:6758",
+    "manga/melty-blood-x.json": "1791202528392089400:4281"
+  }
+}
