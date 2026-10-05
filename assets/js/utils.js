@@ -601,7 +601,7 @@ function getMangaCoversList(manga) {
       if (isValidUrl(v.cover) && !seenUrls.has(v.cover)) {
         seenUrls.add(v.cover);
         const vNum = (v.volume_number !== undefined && v.volume_number !== null) ? String(v.volume_number).trim() : (v.volume || (idx + 1));
-        const vLabel = (typeof vNum === 'string' && /^(vol|volume)\b/i.test(vNum)) ? vNum : `Vol. ${vNum}`;
+        const vLabel = /^\d+(\.\d+)?$/.test(String(vNum)) ? `Vol. ${vNum}` : String(vNum);
         covers.push({
           label: `${vLabel} Cover`,
           shortLabel: vLabel,

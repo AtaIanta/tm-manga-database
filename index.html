@@ -391,7 +391,7 @@
                   <td class="py-2.5 px-3">
                     <div id="infoboxPublisher" class="text-cafe-gold"></div>
                     <div id="editInfoboxPublisherContainer" class="hidden">
-                      <input id="editInfoboxPublisher" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-gold text-xs outline-none focus:border-cafe-gold" placeholder="Publisher">
+                      <input id="editInfoboxPublisher" type="text" data-publisher-suggest="true" autocomplete="off" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-gold text-xs outline-none focus:border-cafe-gold" placeholder="Publisher">
                     </div>
                   </td>
                 </tr>
@@ -756,9 +756,6 @@
               <h1 id="publisherHeroName" class="text-2xl sm:text-4xl font-cinzel font-black tracking-tight text-white drop-shadow-md">
                 Publisher Name
               </h1>
-              <div class="text-xs sm:text-sm text-cafe-gold mt-1 uppercase tracking-wider font-semibold">
-                Official Manga Publisher / Imprint
-              </div>
             </div>
             <div id="publisherTitleEdit" class="hidden">
               <label class="block text-[11px] font-semibold text-cafe-amber uppercase tracking-wider mb-1">Publisher Name *</label>
@@ -771,24 +768,11 @@
 
           <div class="order-2 lg:order-1 lg:col-span-7 xl:col-span-8 space-y-6">
 
-            <div class="space-y-2">
-              <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel border-b border-cafe-gold/20 pb-1.5">
-                Overview &amp; Profile
-              </h3>
-              <p id="publisherHeroDesc" class="text-xs sm:text-sm text-cafe-cream/90 leading-relaxed">
-                Official publisher and imprint for TYPE-MOON manga publications, tankōbon compilations, and anthology releases.
-              </p>
-              <div id="publisherDescEdit" class="hidden">
-                <textarea id="editPublisherDesc" rows="4" class="w-full px-3 py-2.5 rounded-xl bg-cafe-900/95 border border-cafe-gold/40 text-cafe-cream text-xs sm:text-sm leading-relaxed outline-none focus:border-cafe-gold font-sans" placeholder="Corporate overview, publication focus, or history..."></textarea>
-              </div>
-            </div>
-
             <div class="space-y-4 pt-2">
-              <div class="flex items-center justify-between border-b border-cafe-gold/20 pb-2">
+              <div class="border-b border-cafe-gold/20 pb-2">
                 <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-cafe-gold font-cinzel">
                   Published TYPE-MOON Works
                 </h3>
-                <span id="publisherWorksCountPill" class="text-[10px] bg-cafe-950 px-2.5 py-0.5 rounded border border-cafe-gold/25 text-cafe-amber font-mono-isbn font-semibold">0 works</span>
               </div>
 
               <div id="publisherWorksList" class="space-y-3">
@@ -800,19 +784,16 @@
 
           <div class="order-1 lg:order-2 lg:col-span-5 xl:col-span-4 wiki-infobox">
 
-            <div class="w-full bg-cafe-950/80 p-6 flex flex-col items-center justify-center border-b border-cafe-gold/25">
-              <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-cafe-gold/40 shadow-xl bg-cafe-950 flex items-center justify-center text-4xl sm:text-5xl text-cafe-amber">
-                🏛️
+            <div id="publisherLogoBlock" class="hidden w-full bg-cafe-950/80 p-5 flex flex-col items-center justify-center border-b border-cafe-gold/25">
+              <img id="publisherLogoImg" src="" alt="" class="hidden max-h-24 max-w-[220px] w-auto object-contain">
+              <div id="editPublisherLogoContainer" class="hidden w-full mt-3">
+                <label class="block text-[10px] font-semibold text-cafe-amber mb-1">Logo URL</label>
+                <input id="editPublisherLogo" type="text" oninput="updatePublisherLogoLive(this.value)" class="w-full px-2.5 py-1.5 rounded-lg bg-cafe-900 border border-cafe-gold/40 text-cafe-cream text-xs font-mono-isbn outline-none focus:border-cafe-gold" placeholder="https://... or assets/img/...">
               </div>
-              <div id="publisherInfoboxNameCaption" class="text-xs font-cinzel font-bold text-cafe-gold mt-3 text-center"></div>
             </div>
 
             <table class="w-full text-xs">
               <tbody>
-                <tr class="border-b border-cafe-gold/15">
-                  <th class="py-2.5 px-3 text-cafe-amber font-semibold w-1/3 bg-cafe-900/60">Entity Type</th>
-                  <td class="py-2.5 px-3 text-cafe-cream">Publishing Company / Imprint</td>
-                </tr>
                 <tr class="border-b border-cafe-gold/15">
                   <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Publications</th>
                   <td class="py-2.5 px-3">
@@ -827,10 +808,13 @@
                     <span class="text-cafe-muted text-[11px] ml-1">vols</span>
                   </td>
                 </tr>
-                <tr class="border-b border-cafe-gold/15">
-                  <th class="py-2.5 px-3 text-cafe-amber font-semibold bg-cafe-900/60">Years Active</th>
+                <tr id="publisherWebsiteRow" class="hidden border-b border-cafe-gold/15">
+                  <th class="py-2.5 px-3 text-cafe-amber font-semibold w-1/3 bg-cafe-900/60">Official Site</th>
                   <td class="py-2.5 px-3">
-                    <span id="publisherStatYears" class="font-mono-isbn font-bold text-white text-xs">—</span>
+                    <div id="publisherWebsiteDisplay" class="text-cafe-gold break-all"></div>
+                    <div id="editPublisherWebsiteContainer" class="hidden">
+                      <input id="editPublisherWebsite" type="text" class="w-full px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-gold text-xs outline-none focus:border-cafe-gold" placeholder="https://publisher.example">
+                    </div>
                   </td>
                 </tr>
               </tbody>

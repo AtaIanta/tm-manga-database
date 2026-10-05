@@ -1,6 +1,7 @@
 
 let currentArtistDoc = null;
 let currentPublisherData = null;
+const sessionPublisherDocs = {};
 
 function isChapterByArtist(ch, vol, manga, targetArtist) {
   if (!targetArtist) return false;
@@ -388,7 +389,7 @@ function renderArtistPageContent(artist) {
     if (rawBio) {
       bioEl.innerHTML = renderMarkdown(rawBio);
     } else {
-      bioEl.innerHTML = '<span class="no-data-badge">[no data]</span> <span class="text-cafe-muted text-xs">No archival profile or overview recorded for this artist yet. Contributions are welcome!</span>';
+      bioEl.innerHTML = '<span class="no-data-badge">[no data]</span>';
     }
   }
 
@@ -1070,21 +1071,20 @@ function openPublisherPage(publisherName, pushHistory = true) {
   pubWorks.sort((a, b) => (b.release_year || 0) - (a.release_year || 0));
 
   let totalVolumes = 0;
-  const years = [];
   pubWorks.forEach(m => {
-    if (m.release_year) years.push(m.release_year);
     totalVolumes += (m.volumes || []).length;
   });
 
-  const yearsStr = years.length > 0
-    ? (Math.min(...years) === Math.max(...years) ? `${Math.min(...years)}` : `${Math.min(...years)} – ${Math.max(...years)}`)
-    : '—';
+  const compiled = (allPublishers || []).find(p => (p.name || '').trim().toLowerCase() === pLower);
+  const profile = typeof publisherProfileFor === 'function' ? publisherProfileFor(publisherName) : null;
 
   currentPublisherData = {
-    name: publisherName,
+    name: (profile && profile.name) || publisherName,
+    slug: (profile && profile.slug) || (compiled && compiled.slug) || slugify(publisherName),
+    logo: (profile && profile.logo) || (compiled && compiled.logo) || '',
+    website: (profile && profile.website) || (compiled && compiled.website) || '',
     works_count: pubWorks.length,
     volumes_count: totalVolumes,
-    years: yearsStr,
     works: pubWorks
   };
 
@@ -1100,28 +1100,20 @@ function openPublisherPage(publisherName, pushHistory = true) {
   scrollToWikiPriority();
 
   const nameEl = document.getElementById('publisherHeroName');
-  if (nameEl) nameEl.textContent = publisherName;
+  if (nameEl) nameEl.textContent = currentPublisherData.name;
   const breadcrumbEl = document.getElementById('publisherBreadcrumbName');
-  if (breadcrumbEl) breadcrumbEl.textContent = publisherName;
-  const captionEl = document.getElementById('publisherInfoboxNameCaption');
-  if (captionEl) captionEl.textContent = publisherName;
-  const descEl = document.getElementById('publisherHeroDesc');
-  if (descEl) descEl.textContent = `Official publisher and imprint for ${publisherName} TYPE-MOON manga publications, tankōbon compilations, and anthology releases.`;
+  if (breadcrumbEl) breadcrumbEl.textContent = currentPublisherData.name;
+  renderPublisherProfile(currentPublisherData);
 
   const statWorks = document.getElementById('publisherStatWorks');
   if (statWorks) statWorks.textContent = pubWorks.length;
-  const countPill = document.getElementById('publisherWorksCountPill');
-  if (countPill) countPill.textContent = `${pubWorks.length} work${pubWorks.length === 1 ? '' : 's'}`;
   const statVolumes = document.getElementById('publisherStatVolumes');
   if (statVolumes) statVolumes.textContent = totalVolumes;
-  const statYears = document.getElementById('publisherStatYears');
-  if (statYears) statYears.textContent = yearsStr;
 
   const pubNoticeEl = document.getElementById('publisherMissingNotice');
   const pubNoticeDetails = document.getElementById('publisherMissingNoticeDetails');
   if (pubNoticeEl) {
     const missingPubFields = [];
-    missingPubFields.push('Dedicated Corporate Profile & Overview');
 
     const worksMissingCovers = pubWorks.filter(m => !isNA(m.cover) && !hasValidCover(m.cover));
     if (worksMissingCovers.length > 0) {
@@ -1188,6 +1180,51 @@ function openPublisherPage(publisherName, pushHistory = true) {
   }
 }
 
+function normalizeWebUrl(value) {
+  const raw = (value || '').trim();
+  if (!raw) return '';
+  if (/^https?:\/\//i.test(raw)) return raw;
+  return `https://${raw}`;
+}
+
+function updatePublisherLogoLive(val) {
+  const img = document.getElementById('publisherLogoImg');
+  if (!img) return;
+  const logo = (val || '').trim();
+  if (logo) {
+    img.src = logo;
+    img.alt = (currentPublisherData && currentPublisherData.name) || 'Publisher logo';
+    img.classList.remove('hidden');
+  } else {
+    img.classList.add('hidden');
+    img.removeAttribute('src');
+  }
+}
+
+function renderPublisherProfile(publisher) {
+  const p = publisher || {};
+  const editing = document.getElementById('publisherEditActions') && !document.getElementById('publisherEditActions').classList.contains('hidden');
+  const logo = (p.logo || '').trim();
+  const logoBlock = document.getElementById('publisherLogoBlock');
+  if (logoBlock) logoBlock.classList.toggle('hidden', !logo && !editing);
+  updatePublisherLogoLive(logo);
+
+  const site = (p.website || '').trim();
+  const row = document.getElementById('publisherWebsiteRow');
+  const display = document.getElementById('publisherWebsiteDisplay');
+  const siteEdit = document.getElementById('editPublisherWebsiteContainer');
+  if (row) row.classList.toggle('hidden', !site && !editing);
+  if (display) {
+    display.classList.toggle('hidden', !!editing);
+    if (site) {
+      display.innerHTML = `<a href="${escapeHtml(site)}" target="_blank" rel="noopener noreferrer" class="text-cafe-gold hover:underline font-semibold break-all">${escapeHtml(site)}</a>`;
+    } else {
+      display.innerHTML = '';
+    }
+  }
+  if (siteEdit && !editing) siteEdit.classList.add('hidden');
+}
+
 function startDirectPublisherEdit() {
   if (typeof isEditModeEnabled === 'function' && !isEditModeEnabled()) return;
   if (!currentPublisherData) return;
@@ -1206,13 +1243,22 @@ function startDirectPublisherEdit() {
   const editName = document.getElementById('editPublisherName');
   if (editName) editName.value = p.name || '';
 
-  const descView = document.getElementById('publisherHeroDesc');
-  const descEdit = document.getElementById('publisherDescEdit');
-  if (descView) descView.classList.add('hidden');
-  if (descEdit) descEdit.classList.remove('hidden');
+  const logoBlock = document.getElementById('publisherLogoBlock');
+  const logoEdit = document.getElementById('editPublisherLogoContainer');
+  const logoInput = document.getElementById('editPublisherLogo');
+  if (logoBlock) logoBlock.classList.remove('hidden');
+  if (logoEdit) logoEdit.classList.remove('hidden');
+  if (logoInput) logoInput.value = p.logo || '';
+  updatePublisherLogoLive(p.logo || '');
 
-  const editDesc = document.getElementById('editPublisherDesc');
-  if (editDesc) editDesc.value = p.overview || (descView ? descView.textContent.trim() : '');
+  const siteRow = document.getElementById('publisherWebsiteRow');
+  const siteDisplay = document.getElementById('publisherWebsiteDisplay');
+  const siteEdit = document.getElementById('editPublisherWebsiteContainer');
+  const siteInput = document.getElementById('editPublisherWebsite');
+  if (siteRow) siteRow.classList.remove('hidden');
+  if (siteDisplay) siteDisplay.classList.add('hidden');
+  if (siteEdit) siteEdit.classList.remove('hidden');
+  if (siteInput) siteInput.value = p.website || '';
 }
 
 function cancelDirectPublisherEdit() {
@@ -1226,56 +1272,43 @@ function cancelDirectPublisherEdit() {
   if (titleView) titleView.classList.remove('hidden');
   if (titleEdit) titleEdit.classList.add('hidden');
 
-  const descView = document.getElementById('publisherHeroDesc');
-  const descEdit = document.getElementById('publisherDescEdit');
-  if (descView) descView.classList.remove('hidden');
-  if (descEdit) descEdit.classList.add('hidden');
+  const logoEdit = document.getElementById('editPublisherLogoContainer');
+  if (logoEdit) logoEdit.classList.add('hidden');
+  const siteEdit = document.getElementById('editPublisherWebsiteContainer');
+  if (siteEdit) siteEdit.classList.add('hidden');
+
+  if (currentPublisherData) renderPublisherProfile(currentPublisherData);
 }
 
 function saveDirectPublisherEdit() {
   if (!currentPublisherData) return;
   const editName = document.getElementById('editPublisherName');
-  const editDesc = document.getElementById('editPublisherDesc');
-
   const newName = editName ? editName.value.trim() : '';
-  const newDesc = editDesc ? editDesc.value.trim() : '';
+  const logo = (document.getElementById('editPublisherLogo')?.value || '').trim();
+  const website = normalizeWebUrl(document.getElementById('editPublisherWebsite')?.value || '');
+  const prevSlug = currentPublisherData.slug || slugify(currentPublisherData.name || '');
+  const name = newName || currentPublisherData.name;
+  const slug = slugify(name || 'publisher');
 
-  if (newName) {
-    currentPublisherData.name = newName;
-    const heroName = document.getElementById('publisherHeroName');
-    if (heroName) heroName.textContent = newName;
-    const captionEl = document.getElementById('publisherInfoboxNameCaption');
-    if (captionEl) captionEl.textContent = newName;
+  const profile = { slug, name, logo, website };
+  sessionPublisherDocs[slug] = profile;
+  if (prevSlug && prevSlug !== slug) sessionPublisherDocs[prevSlug] = profile;
+
+  const listed = (allPublishers || []).find(p => p.slug === prevSlug || (p.name || '').trim().toLowerCase() === (currentPublisherData.name || '').trim().toLowerCase());
+  if (listed) {
+    listed.slug = slug;
+    listed.name = name;
+    listed.logo = logo;
+    listed.website = website;
   }
 
-  if (newDesc) {
-    currentPublisherData.overview = newDesc;
-    const heroDesc = document.getElementById('publisherHeroDesc');
-    if (heroDesc) heroDesc.textContent = newDesc;
+  currentPublisherData.slug = slug;
+  currentPublisherData.name = name;
+  currentPublisherData.logo = logo;
+  currentPublisherData.website = website;
 
-    const pubNoticeEl = document.getElementById('publisherMissingNotice');
-    if (pubNoticeEl) {
-      const pubNoticeDetails = document.getElementById('publisherMissingNoticeDetails');
-      const missingPubFields = [];
-      const pubWorks = currentPublisherData.works || [];
-      const worksMissingCovers = pubWorks.filter(m => !isNA(m.cover) && !hasValidCover(m.cover));
-      if (worksMissingCovers.length > 0) {
-        missingPubFields.push(`${worksMissingCovers.length} work${worksMissingCovers.length > 1 ? 's' : ''} missing cover art`);
-      }
-      const worksMissingIsbn = pubWorks.filter(m => m.missing_audit && m.missing_audit.missing_isbn);
-      if (worksMissingIsbn.length > 0) {
-        missingPubFields.push(`${worksMissingIsbn.length} work${worksMissingIsbn.length > 1 ? 's' : ''} missing ISBN/ASIN`);
-      }
-      if (missingPubFields.length > 0) {
-        pubNoticeEl.classList.remove('hidden');
-        pubNoticeEl.hidden = false;
-        if (pubNoticeDetails) pubNoticeDetails.textContent = missingPubFields.join(', ');
-      } else {
-        pubNoticeEl.classList.add('hidden');
-        pubNoticeEl.hidden = true;
-      }
-    }
-  }
+  const heroName = document.getElementById('publisherHeroName');
+  if (heroName) heroName.textContent = name;
 
   cancelDirectPublisherEdit();
 }

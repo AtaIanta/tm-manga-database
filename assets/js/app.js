@@ -255,8 +255,11 @@ async function downloadCurrentPageJson() {
     return;
   }
   if (publisherFullPageView && !publisherFullPageView.classList.contains('hidden') && currentPublisherData) {
-    const slug = slugify(currentPublisherData.name || 'publisher');
-    await saveJsonToFile(currentPublisherData, `${slug}.json`);
+    const cleanDoc = typeof sanitizePublisherDocForStorage === 'function'
+      ? sanitizePublisherDocForStorage(currentPublisherData)
+      : currentPublisherData;
+    const slug = cleanDoc.slug || slugify(currentPublisherData.name || 'publisher');
+    await saveJsonToFile(cleanDoc, `${slug}.json`);
     return;
   }
   await saveJsonToFile(allManga, 'type-moon-manga-catalog.json');

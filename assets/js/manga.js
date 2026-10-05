@@ -230,7 +230,7 @@ function renderDetailContent(manga) {
     if (rawSyn) {
       synEl.innerHTML = renderMarkdown(rawSyn);
     } else {
-      synEl.innerHTML = '<span class="no-data-badge">[no data]</span> <span class="text-cafe-muted text-xs">No extensive synopsis recorded in the archive yet. Contributions are welcome!</span>';
+      synEl.innerHTML = '<span class="no-data-badge">[no data]</span>';
     }
   }
 
@@ -1418,6 +1418,46 @@ function removeChapterFromVolumeInPlace(vIdx, cIdx) {
   syncArtToAuthors();
 }
 
+function swapNeighbor(list, index, delta) {
+  const next = index + delta;
+  if (!list || next < 0 || next >= list.length) return false;
+  const item = list[index];
+  list[index] = list[next];
+  list[next] = item;
+  return true;
+}
+
+function rerenderVolumesKeepingPlace() {
+  const y = window.scrollY;
+  renderVolumesInPlaceEdit();
+  window.scrollTo(0, y);
+}
+
+function moveVolumeInPlace(vIdx, delta) {
+  if (!swapNeighbor(editVolumesData, vIdx, delta)) return;
+  rerenderVolumesKeepingPlace();
+  const cover = editVolumesData[0] && editVolumesData[0].cover;
+  if (cover) updateInfoboxCoverLive(cover);
+}
+
+function moveChapterInPlace(vIdx, cIdx, delta) {
+  const chapters = editVolumesData[vIdx] && editVolumesData[vIdx].chapters;
+  if (!swapNeighbor(chapters, cIdx, delta)) return;
+  rerenderVolumesKeepingPlace();
+}
+
+function renderNeighborMoveButtons(upCall, downCall, atStart, atEnd, noun) {
+  const base = 'p-0.5 text-cafe-gold/80 hover:text-cafe-gold transition-colors shrink-0 disabled:opacity-25 disabled:cursor-not-allowed disabled:hover:text-cafe-gold/80';
+  return `
+    <button type="button" onclick="${upCall}" ${atStart ? 'disabled' : ''} title="Move ${noun} up" aria-label="Move ${noun} up" class="${base}">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    </button>
+    <button type="button" onclick="${downCall}" ${atEnd ? 'disabled' : ''} title="Move ${noun} down" aria-label="Move ${noun} down" class="${base}">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+  `;
+}
+
 function renderVolumesInPlaceEdit() {
   const container = document.getElementById('modalVolumesContainer');
   if (!container) return;
@@ -1476,6 +1516,9 @@ function renderVolumesInPlaceEdit() {
                    data-ch-artist-input="true" data-artist-suggest="true" autocomplete="off"
                    oninput="updateChapterArtist(${vIdx}, ${cIdx}, this.value)"
                    class="w-24 sm:w-32 px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-cream text-xs outline-none focus:border-cafe-gold shrink-0">
+            <div class="flex items-center shrink-0">
+              ${renderNeighborMoveButtons(`moveChapterInPlace(${vIdx}, ${cIdx}, -1)`, `moveChapterInPlace(${vIdx}, ${cIdx}, 1)`, cIdx === 0, cIdx === chList.length - 1, 'chapter')}
+            </div>
             <button type="button" onclick="removeChapterFromVolumeInPlace(${vIdx}, ${cIdx})" title="Delete chapter"
                      class="p-1 text-red-400 hover:text-red-300 transition-colors shrink-0">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
@@ -1520,9 +1563,12 @@ function renderVolumesInPlaceEdit() {
                 <span class="text-[11px] text-cafe-muted hover:text-cafe-cream">No volume (holder for uncollected chapters — drops volume tag &amp; identifiers)</span>
               </label>
             </div>
-            <button type="button" onclick="removeVolumeInPlace(${vIdx})" class="text-red-400 hover:text-red-300 p-1 transition-colors shrink-0" title="Delete Volume">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
-            </button>
+            <div class="flex items-center gap-0.5 shrink-0">
+              ${renderNeighborMoveButtons(`moveVolumeInPlace(${vIdx}, -1)`, `moveVolumeInPlace(${vIdx}, 1)`, vIdx === 0, vIdx === editVolumesData.length - 1, 'volume')}
+              <button type="button" onclick="removeVolumeInPlace(${vIdx})" class="text-red-400 hover:text-red-300 p-1 transition-colors shrink-0" title="Delete Volume">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+              </button>
+            </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -1988,6 +2034,7 @@ function renderArtistSuggestMenu() {
     <button type="button" class="artist-suggest-item${idx === artistSuggestIndex ? ' is-active' : ''}" role="option" data-suggest-idx="${idx}">
       ${escapeHtml(artist.name)}
       ${artist.kanji ? `<span>${escapeHtml(artist.kanji)}</span>` : ''}
+      ${artist.subtitle ? `<span>${escapeHtml(artist.subtitle)}</span>` : ''}
     </button>
   `).join('');
   menu.classList.remove('hidden');
@@ -2050,17 +2097,74 @@ function applyArtistSuggestion(name) {
   input.focus();
 }
 
+function collectCachedPublishers() {
+  const list = [];
+  const seen = new Set();
+  const blocked = new Set(['unknown', 'n/a', '[no data]', '[insufficient data]']);
+  const add = (name, worksCount) => {
+    const clean = (name || '').trim();
+    const key = clean.toLowerCase();
+    if (!clean || blocked.has(key) || seen.has(key)) return;
+    seen.add(key);
+    const count = Number(worksCount) || 0;
+    list.push({
+      name: clean,
+      subtitle: count > 0 ? `${count} work${count === 1 ? '' : 's'}` : ''
+    });
+  };
+  (allPublishers || []).forEach(pub => add(pub.name, pub.works_count));
+  (allManga || []).forEach(manga => {
+    if (!seen.has((manga.publisher || '').trim().toLowerCase())) add(manga.publisher, 0);
+  });
+  return list;
+}
+
+function rankPublisherMatch(publisher, query) {
+  const q = query.toLowerCase();
+  const name = publisher.name.toLowerCase();
+  if (name.startsWith(q)) return 0;
+  if (name.includes(q)) return 1;
+  return -1;
+}
+
+function refreshPublisherSuggestions(input, fromFocus = false) {
+  if (!input || !input.hasAttribute('data-publisher-suggest')) return;
+  const query = (input.value || '').trim();
+  if (!query) {
+    hideArtistSuggestMenu();
+    return;
+  }
+  const matches = [];
+  collectCachedPublishers().forEach(publisher => {
+    const rank = rankPublisherMatch(publisher, query);
+    if (rank < 0) return;
+    matches.push({ ...publisher, rank });
+  });
+  matches.sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+  if (fromFocus && matches.some(publisher => publisher.name.toLowerCase() === query.toLowerCase())) {
+    hideArtistSuggestMenu();
+    return;
+  }
+  artistSuggestInput = input;
+  artistSuggestRange = { start: 0, end: (input.value || '').length };
+  artistSuggestMatches = matches.slice(0, 12);
+  artistSuggestIndex = artistSuggestMatches.length ? 0 : -1;
+  renderArtistSuggestMenu();
+}
+
 function onArtistSuggestInput(event) {
   if (artistSuggestSuppress) return;
   const input = event.target;
-  if (!(input instanceof HTMLInputElement) || !input.hasAttribute('data-artist-suggest')) return;
-  refreshArtistSuggestions(input);
+  if (!(input instanceof HTMLInputElement)) return;
+  if (input.hasAttribute('data-artist-suggest')) refreshArtistSuggestions(input);
+  else if (input.hasAttribute('data-publisher-suggest')) refreshPublisherSuggestions(input);
 }
 
 function onArtistSuggestFocus(event) {
   const input = event.target;
-  if (!(input instanceof HTMLInputElement) || !input.hasAttribute('data-artist-suggest')) return;
-  refreshArtistSuggestions(input, true);
+  if (!(input instanceof HTMLInputElement)) return;
+  if (input.hasAttribute('data-artist-suggest')) refreshArtistSuggestions(input, true);
+  else if (input.hasAttribute('data-publisher-suggest')) refreshPublisherSuggestions(input, true);
 }
 
 function onArtistSuggestBlur() {

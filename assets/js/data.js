@@ -5,6 +5,7 @@ let allArtists = [];
 let filteredArtists = [];
 let allPublishers = [];
 let filteredPublishers = [];
+let publisherProfiles = [];
 
 const sessionMangaDocs = {};
 
@@ -235,6 +236,8 @@ const ARTIST_PAGE_KEY_ORDER = [
 
 const SOCIAL_PAGE_KEY_ORDER = ['twitter', 'pixiv', 'website'];
 
+const PUBLISHER_PAGE_KEY_ORDER = ['slug', 'name', 'logo', 'website'];
+
 function sanitizeMangaDocForStorage(doc) {
   if (!doc || typeof doc !== 'object') return doc;
   const out = { ...doc };
@@ -312,6 +315,36 @@ function sanitizeMangaDocForStorage(doc) {
   return orderRecord(out, MANGA_PAGE_KEY_ORDER);
 }
 
+function sanitizePublisherDocForStorage(doc) {
+  if (!doc || typeof doc !== 'object') return doc;
+  const name = (doc.name || '').trim();
+  const slug = doc.slug || (typeof slugify === 'function' ? slugify(name || 'publisher') : name);
+  return orderRecord({
+    slug,
+    name: name || slug,
+    logo: (doc.logo || '').trim() || null,
+    website: (doc.website || '').trim() || null
+  }, PUBLISHER_PAGE_KEY_ORDER);
+}
+
+function publisherProfileFor(name) {
+  const key = (name || '').trim().toLowerCase();
+  const slug = typeof slugify === 'function' ? slugify(name || '') : '';
+  const session = typeof sessionPublisherDocs !== 'undefined' ? sessionPublisherDocs : null;
+  if (session && typeof session === 'object') {
+    const direct = slug && session[slug];
+    if (direct) return direct;
+    const named = Object.values(session).find(profile => profile && (profile.name || '').trim().toLowerCase() === key);
+    if (named) return named;
+  }
+  return (publisherProfiles || []).find(profile =>
+    profile && (
+      (slug && (profile.slug || '').toLowerCase() === slug) ||
+      (profile.name || '').trim().toLowerCase() === key
+    )
+  ) || null;
+}
+
 function sanitizeArtistDocForStorage(doc) {
   if (!doc || typeof doc !== 'object') return doc;
   const slug = doc.slug || slugify(doc.romaji || doc.name || doc.kanji || 'artist');
@@ -379,20 +412,22 @@ async function fetchArchiveManifest() {
       const db = await dbRes.json();
       const mangaFiles = Array.isArray(db.manga_files) ? db.manga_files : [];
       const artistFiles = Array.isArray(db.artist_files) ? db.artist_files : [];
-      if (mangaFiles.length > 0 || artistFiles.length > 0) {
+      const publisherFiles = Array.isArray(db.publisher_files) ? db.publisher_files : [];
+      if (mangaFiles.length > 0 || artistFiles.length > 0 || publisherFiles.length > 0) {
         const fileRevs = db.file_revs && typeof db.file_revs === 'object' && !Array.isArray(db.file_revs)
           ? db.file_revs
           : null;
-        return { mangaFiles, artistFiles, fileRevs };
+        return { mangaFiles, artistFiles, publisherFiles, fileRevs };
       }
     }
   } catch (err) {}
 
-  const [mangaFiles, artistFiles] = await Promise.all([
+  const [mangaFiles, artistFiles, publisherFiles] = await Promise.all([
     listJsonDirectory('data/manga/', 'data/manga/'),
-    listJsonDirectory('data/artists/', 'data/artists/')
+    listJsonDirectory('data/artists/', 'data/artists/'),
+    listJsonDirectory('data/publishers/', 'data/publishers/')
   ]);
-  return { mangaFiles, artistFiles, fileRevs: null };
+  return { mangaFiles, artistFiles, publisherFiles, fileRevs: null };
 }
 
 async function loadArchiveDoc(kind, filename, fileRevs, cache) {
@@ -642,8 +677,12 @@ function compilePublishersList() {
       ? (Math.min(...val.years) === Math.max(...val.years) ? `${Math.min(...val.years)}` : `${Math.min(...val.years)} – ${Math.max(...val.years)}`)
       : '—';
 
+    const profile = publisherProfileFor(key);
     list.push({
       name: key,
+      slug: (profile && profile.slug) || (typeof slugify === 'function' ? slugify(key) : key),
+      logo: (profile && profile.logo) || '',
+      website: (profile && profile.website) || '',
       works_count: val.works.length,
       volumes_count: val.totalVolumes,
       years_str: yearsStr,
@@ -692,7 +731,7 @@ async function loadDatabase() {
   if (resultsCount) resultsCount.textContent = 'Loading archive entries...';
 
   try {
-    const { mangaFiles, artistFiles, fileRevs } = await fetchArchiveManifest();
+    const { mangaFiles, artistFiles, publisherFiles = [], fileRevs } = await fetchArchiveManifest();
     const fileCache = fileRevs ? readArchiveFileCache() : {};
 
     const loadedManga = await mapConcurrent(mangaFiles, 8, async filename => {
@@ -719,10 +758,21 @@ async function loadDatabase() {
     });
     allArtists = compileArtistsDatabase(loadedArtists.filter(Boolean), allManga);
 
+    const loadedPublishers = await mapConcurrent(publisherFiles, 8, async filename => {
+      try {
+        return await loadArchiveDoc('publishers', filename, fileRevs, fileCache);
+      } catch (err) {
+        console.warn(`Failed loading data/publishers/${filename}:`, err);
+        return null;
+      }
+    });
+    publisherProfiles = loadedPublishers.filter(Boolean);
+
     if (fileRevs) {
       const liveKeys = new Set([
         ...mangaFiles.map(filename => `manga/${filename}`),
-        ...artistFiles.map(filename => `artists/${filename}`)
+        ...artistFiles.map(filename => `artists/${filename}`),
+        ...publisherFiles.map(filename => `publishers/${filename}`)
       ]);
       Object.keys(fileCache).forEach(key => {
         if (!liveKeys.has(key)) delete fileCache[key];
