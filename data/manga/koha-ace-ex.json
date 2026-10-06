@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace-ex",
+  "title_romaji": "Koha-Ace EX",
+  "title_jp": "コハエースＥＸ",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace EX"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/3YkWMn7m/small-koha-ace-ex-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/xS1BGy29/full-koha-ace-ex-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace EX",
+      "title_jp": "コハエースＥＸ",
+      "release_date": "2014-07-10",
+      "isbn": "978-4041017562",
+      "asin": "B00LIKL64K",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00LIKL64K"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

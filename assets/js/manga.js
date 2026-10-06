@@ -173,13 +173,9 @@ function finishCloseFullPageView(updateHistory = true) {
   currentDetailDoc = null;
 
   if (updateHistory) {
-    if (typeof currentCategory !== 'undefined' && currentCategory === 'artists') {
-      window.location.hash = 'artists';
-    } else if (typeof currentCategory !== 'undefined' && currentCategory === 'doujins') {
-      window.location.hash = 'doujins';
-    } else {
-      history.pushState('', document.title, window.location.pathname + window.location.search);
-    }
+    const category = currentCategory === 'artists' ? 'artists' : currentCategory === 'doujins' ? 'doujins' : 'manga';
+    if (typeof rememberCatalogCategory === 'function') rememberCatalogCategory(category, false);
+    else window.location.hash = category;
   }
 }
 

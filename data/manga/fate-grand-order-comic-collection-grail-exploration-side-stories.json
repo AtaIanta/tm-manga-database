@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-comic-collection-grail-exploration-side-stories",
+  "title_romaji": "Fate/Grand Order Comic Collection: Grail Exploration Side Stories",
+  "title_jp": "Fate/Grand Order コミックコレクション ～聖杯探索サイドストーリーズ～",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Collection: Grail Exploration Side Stories"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/vxgS5Z01/small-fate-grand-order-comic-collection-grail-exploration-side-stories-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/ZRyLrzKr/full-fate-grand-order-comic-collection-grail-exploration-side-stories-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Collection: Grail Exploration Side Stories",
+      "title_jp": "Fate/Grand Order コミックコレクション ～聖杯探索サイドストーリーズ～",
+      "release_date": "2019-01-07",
+      "isbn": "978-4758020299",
+      "asin": "B07MGZVF1X",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07MGZVF1X"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

@@ -1,0 +1,170 @@
+{
+  "id": "fate-extra-ccc-foxtail",
+  "title_romaji": "Fate/Extra CCC FoxTail",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Extra CCC FoxTail"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/tpCtKw16/small-fate-extra-ccc-foxtail-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/wFjPsMWZ/full-fate-extra-ccc-foxtail-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Extra CCC FoxTail (1)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(1)",
+      "release_date": "2014-03-22",
+      "isbn": "978-4041210550",
+      "asin": "B00J4KDW8Y",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/qY6Q8ytw/small-fate-extra-ccc-foxtail-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/KkB7kLK/full-fate-extra-ccc-foxtail-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Extra CCC FoxTail (2)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(2)",
+      "release_date": "2014-11-21",
+      "isbn": "978-4041022818",
+      "asin": "B00PRPWJ0M",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/VFSKcpq/small-fate-extra-ccc-foxtail-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/G4fBqVY6/full-fate-extra-ccc-foxtail-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Extra CCC FoxTail (3)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(3)",
+      "release_date": "2015-08-26",
+      "isbn": "978-4041033265",
+      "asin": "B0145Z9YA2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/0yFcGBq6/small-fate-extra-ccc-foxtail-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/CKZMLj0F/full-fate-extra-ccc-foxtail-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Extra CCC FoxTail (4)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(4)",
+      "release_date": "2016-04-22",
+      "isbn": "978-4041040911",
+      "asin": "B01EH12C1C",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/rfvZ8Myf/small-fate-extra-ccc-foxtail-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/Xk6WVPzB/full-fate-extra-ccc-foxtail-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Extra CCC FoxTail (5)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(5)",
+      "release_date": "2016-11-26",
+      "isbn": "978-4041050460",
+      "asin": "B01N3TQK3J",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4HDsm7K/small-fate-extra-ccc-foxtail-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/CpmwKhNB/full-fate-extra-ccc-foxtail-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Extra CCC FoxTail (6)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(6)",
+      "release_date": "2017-10-24",
+      "isbn": "978-4041061947",
+      "asin": "B076CC1PHZ",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/mF4mvqDg/small-fate-extra-ccc-foxtail-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/75vry6Z/full-fate-extra-ccc-foxtail-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/Extra CCC FoxTail (7)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(7)",
+      "release_date": "2018-06-25",
+      "isbn": "978-4041071717",
+      "asin": "B07DNP7L58",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/DHN7SZhV/small-fate-extra-ccc-foxtail-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/gLH1Q39j/full-fate-extra-ccc-foxtail-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/Extra CCC FoxTail (8)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(8)",
+      "release_date": "2019-08-26",
+      "isbn": "978-4041082294",
+      "asin": "B07WLLQQF8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/9MygMjb/small-fate-extra-ccc-foxtail-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/sd4t23v6/full-fate-extra-ccc-foxtail-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "Fate/Extra CCC FoxTail (9)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(9)",
+      "release_date": "2020-12-26",
+      "isbn": "978-4041105054",
+      "asin": "B08Q33PN27",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/pB87qc1g/small-fate-extra-ccc-foxtail-vol-Vol-10.webp",
+      "cover_full": "https://i.ibb.co/YBBTMLZm/full-fate-extra-ccc-foxtail-vol-Vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "Fate/Extra CCC FoxTail (10)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(10)",
+      "release_date": "2021-11-26",
+      "isbn": "978-4041121085",
+      "asin": "B09LLMFPXB",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/LzjK4dC9/small-fate-extra-ccc-foxtail-vol-Vol-11.webp",
+      "cover_full": "https://i.ibb.co/Cpz1rLxJ/full-fate-extra-ccc-foxtail-vol-Vol-11.webp",
+      "volume_number": "Vol. 11",
+      "title": "Fate/Extra CCC FoxTail (11)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(11)",
+      "release_date": "2022-12-26",
+      "isbn": "978-4041131565",
+      "asin": "B0BP6766XC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/kVXnNTkd/small-fate-extra-ccc-foxtail-vol-Vol-12.webp",
+      "cover_full": "https://i.ibb.co/B2Gr6ww4/full-fate-extra-ccc-foxtail-vol-Vol-12.webp",
+      "volume_number": "Vol. 12",
+      "title": "Fate/Extra CCC FoxTail (12)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(12)",
+      "release_date": "2024-10-25",
+      "isbn": "978-4041139585",
+      "asin": "B0DJVC8S45",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/mCrCqktm/small-fate-extra-ccc-foxtail-vol-Vol-13.webp",
+      "cover_full": "https://i.ibb.co/DgMDCyC8/full-fate-extra-ccc-foxtail-vol-Vol-13.webp",
+      "volume_number": "Vol. 13",
+      "title": "Fate/Extra CCC FoxTail (13)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ ＦｏｘＴａｉｌ(13)",
+      "release_date": "2026-03-26",
+      "isbn": "978-4041170090",
+      "asin": "B0GS4LFPGP",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07872MNVT"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

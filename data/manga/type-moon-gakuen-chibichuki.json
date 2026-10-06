@@ -1,0 +1,104 @@
+{
+  "id": "type-moon-gakuen-chibichuki",
+  "title_romaji": "TYPE-MOON Gakuen Chibichuki!",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "TYPE-MOON Gakuen Chibichuki!"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Nn9HGF33/small-type-moon-gakuen-chibichuki-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/pjCRY9SB/full-type-moon-gakuen-chibichuki-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "TYPE-MOON Gakuen Chibichuki! (1)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(1)",
+      "release_date": "2014-07-09",
+      "isbn": "978-4041017319",
+      "asin": "B00LIKL5XC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/bgZvKqPc/small-type-moon-gakuen-chibichuki-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/Cp17sRL3/full-type-moon-gakuen-chibichuki-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "TYPE-MOON Gakuen Chibichuki! (2)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(2)",
+      "release_date": "2014-12-08",
+      "isbn": "978-4041022917",
+      "asin": "B00QLR0WR2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/8DqKcQPn/small-type-moon-gakuen-chibichuki-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/4ZhhzLZs/full-type-moon-gakuen-chibichuki-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "TYPE-MOON Gakuen Chibichuki! (3)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(3)",
+      "release_date": "2015-09-10",
+      "isbn": "978-4041034118",
+      "asin": "B014U7T5JK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1tmkVsyw/small-type-moon-gakuen-chibichuki-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/HTTbgSMP/full-type-moon-gakuen-chibichuki-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "TYPE-MOON Gakuen Chibichuki! (4)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(4)",
+      "release_date": "2016-12-10",
+      "isbn": "978-4041048641",
+      "asin": "B01MYPZUKS",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/tMVN14f0/small-type-moon-gakuen-chibichuki-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/kzb37DF/full-type-moon-gakuen-chibichuki-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "TYPE-MOON Gakuen Chibichuki! (5)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(5)",
+      "release_date": "2018-01-26",
+      "isbn": "978-4041064887",
+      "asin": "B079191N32",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/3m1641yv/small-type-moon-gakuen-chibichuki-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/VYNSmspQ/full-type-moon-gakuen-chibichuki-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "TYPE-MOON Gakuen Chibichuki! (6)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(6)",
+      "release_date": "2019-03-09",
+      "isbn": "978-4041077245",
+      "asin": "B07P53M6X5",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Rp0gCCzq/small-type-moon-gakuen-chibichuki-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/BVbnyjgZ/full-type-moon-gakuen-chibichuki-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "TYPE-MOON Gakuen Chibichuki! (7)",
+      "title_jp": "TYPE-MOON学園 ちびちゅき！(7)",
+      "release_date": "2020-03-10",
+      "isbn": "978-4041090909",
+      "asin": "B0854HQ6HY",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074BP5GJF"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

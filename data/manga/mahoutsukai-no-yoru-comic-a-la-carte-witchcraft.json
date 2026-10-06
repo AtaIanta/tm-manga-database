@@ -1,0 +1,112 @@
+{
+  "id": "mahoutsukai-no-yoru-comic-a-la-carte-witchcraft",
+  "title_romaji": "Mahoutsukai no Yoru Comic a la carte: Witchcraft",
+  "title_jp": "魔法使いの夜 コミックアラカルト ウィッチクラフト編",
+  "title_en": "Witch on the Holy Night - Comic à La Carte - Witchcraft",
+  "alt_titles": [
+    "Mahoutsukai no Yoru Comic a la carte: Witchcraft"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/RpwXMmJP/small-mahoutsukai-no-yoru-comic-a-la-carte-witchcraft-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/N2FRP5Rf/full-mahoutsukai-no-yoru-comic-a-la-carte-witchcraft-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Yoru Comic a la carte: Witchcraft",
+      "title_jp": "魔法使いの夜 コミックアラカルト ウィッチクラフト編",
+      "release_date": "2012-12-22",
+      "isbn": "978-4041205389",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": "Who's Sus?",
+          "title_jp": null,
+          "artist": "Tapo"
+        },
+        {
+          "chapter_number": 2,
+          "title": "Nabe?! Come One, Come All!",
+          "title_jp": null,
+          "artist": "Tsutauchi Nikuhachi"
+        },
+        {
+          "chapter_number": 3,
+          "title": "Seeing Eye to Eye",
+          "title_jp": null,
+          "artist": "Yuuei"
+        },
+        {
+          "chapter_number": 4,
+          "title": "Rumors Surrounding Soujuurou",
+          "title_jp": null,
+          "artist": "Ooishi Kou"
+        },
+        {
+          "chapter_number": 5,
+          "title": "Charge! The Security Trap Next Door",
+          "title_jp": null,
+          "artist": "Hazumi Nariyuki"
+        },
+        {
+          "chapter_number": 6,
+          "title": "The \"Immoral\" Witches",
+          "title_jp": null,
+          "artist": "Futaba Masumi"
+        },
+        {
+          "chapter_number": 7,
+          "title": "Dramatic Older Sister",
+          "title_jp": null,
+          "artist": "Mata"
+        },
+        {
+          "chapter_number": 8,
+          "title": "Mahojong",
+          "title_jp": null,
+          "artist": "YOSHIKI"
+        },
+        {
+          "chapter_number": 9,
+          "title": "Tyrannical Struggle for Dominance",
+          "title_jp": null,
+          "artist": "Ijiro Suika"
+        },
+        {
+          "chapter_number": 10,
+          "title": "Currently in Hiding!",
+          "title_jp": null,
+          "artist": "Aona Masao"
+        },
+        {
+          "chapter_number": 11,
+          "title": "The Youth's Dinner Table",
+          "title_jp": null,
+          "artist": "Azuma Shoko"
+        },
+        {
+          "chapter_number": 12,
+          "title": "Supper of the Witches",
+          "title_jp": null,
+          "artist": "Kotora"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4041205387",
+    "https://mangadex.org/title/3aba388e-18f5-4498-a9f2-03462ffd0d67"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

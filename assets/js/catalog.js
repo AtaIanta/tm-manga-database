@@ -22,8 +22,31 @@ function worksForCurrentCategory() {
     : item.archive_kind !== 'doujin');
 }
 
-function switchCategory(category) {
-  if (currentCategory === category) return;
+function catalogHashName(category) {
+  if (category === 'doujins') return 'doujins';
+  if (category === 'artists') return 'artists';
+  return 'manga';
+}
+
+function rememberCatalogCategory(category, replace) {
+  const next = catalogHashName(category);
+  const current = window.location.hash.replace(/^#/, '');
+  if (current === next) return;
+  const url = `${window.location.pathname}${window.location.search}#${next}`;
+  if (replace) history.replaceState(null, document.title, url);
+  else window.location.hash = next;
+}
+
+function switchCategory(category, options) {
+  const fromHash = Boolean(options && options.fromHash);
+  if (currentCategory !== category) {
+    applyCategoryChange(category);
+  }
+  if (!fromHash) rememberCatalogCategory(category, false);
+  else if (!window.location.hash || window.location.hash === '#mangas') rememberCatalogCategory(category, true);
+}
+
+function applyCategoryChange(category) {
   const previous = currentCategory;
   currentCategory = category;
   syncCategoryTabs(category);

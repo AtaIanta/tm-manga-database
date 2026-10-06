@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace-plus",
+  "title_romaji": "Koha-Ace+",
+  "title_jp": "コハエース＋",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace+"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/RkBmZrLT/small-koha-ace-plus-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/d44HvYVV/full-koha-ace-plus-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace+",
+      "title_jp": "コハエース＋",
+      "release_date": "2013-06-26",
+      "isbn": "978-4041207635",
+      "asin": "B00DI8TU3E",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00DI8TU3E"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

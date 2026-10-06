@@ -1,0 +1,38 @@
+{
+  "id": "youkai-parade-piyo",
+  "title_romaji": "Youkai Parade: Piyo Fate/Grand Order Works",
+  "title_jp": "妖怪PARADE ぴよFate/Grand Order作品集 (星海社COMICS)",
+  "title_en": null,
+  "alt_titles": [
+    "Youkai Parade: Piyo Fate/Grand Order Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/YBmj6fZw/small-youkai-parade-piyo-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/tTh02C0s/full-youkai-parade-piyo-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Youkai Parade: Piyo Fate/Grand Order Works",
+      "title_jp": "妖怪PARADE ぴよFate/Grand Order作品集 (星海社COMICS)",
+      "release_date": "2020-10-12",
+      "isbn": "978-4065212882",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/406521288X"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

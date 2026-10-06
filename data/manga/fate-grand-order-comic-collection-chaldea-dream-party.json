@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-comic-collection-chaldea-dream-party",
+  "title_romaji": "Fate/Grand Order Comic Collection: Chaldea Dream Party",
+  "title_jp": "Fate/Grand Order コミックコレクション ～カルデア・ドリーム・パーティーω～",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Collection: Chaldea Dream Party"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/svdXKfHg/small-fate-grand-order-comic-collection-chaldea-dream-party-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/7xdHBdGT/full-fate-grand-order-comic-collection-chaldea-dream-party-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Collection: Chaldea Dream Party",
+      "title_jp": "Fate/Grand Order コミックコレクション ～カルデア・ドリーム・パーティーω～",
+      "release_date": "2018-07-25",
+      "isbn": "978-4758009997",
+      "asin": "B07G32VYKK",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07G32VYKK"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

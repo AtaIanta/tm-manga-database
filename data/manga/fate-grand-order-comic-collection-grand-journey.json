@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-comic-collection-grand-journey",
+  "title_romaji": "Fate/Grand Order Comic Collection: Grand Journey",
+  "title_jp": "Fate/Grand Order コミックコレクション ～Grand Journey～",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Collection: Grand Journey"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/8CkQrkF/small-fate-grand-order-comic-collection-grand-journey-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/yF5D9VSG/full-fate-grand-order-comic-collection-grand-journey-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Collection: Grand Journey",
+      "title_jp": "Fate/Grand Order コミックコレクション ～Grand Journey～",
+      "release_date": "2019-01-07",
+      "isbn": "978-4758020282",
+      "asin": "B07M9T5FLR",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07M9T5FLR"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

@@ -194,7 +194,7 @@ function setupEventListeners() {
 
 function checkUrlHash() {
   const hash = window.location.hash.replace(/^#/, '');
-  if (!hash || hash === 'mangas') {
+  if (!hash || hash === 'manga' || hash === 'mangas') {
     if (mangaFullPageView && !mangaFullPageView.classList.contains('hidden')) {
       closeFullPageView(false);
     }
@@ -204,7 +204,7 @@ function checkUrlHash() {
     if (publisherFullPageView && !publisherFullPageView.classList.contains('hidden')) {
       closePublisherPageView(false);
     }
-    switchCategory('manga');
+    switchCategory('manga', { fromHash: true });
     return;
   }
 
@@ -218,7 +218,7 @@ function checkUrlHash() {
     if (publisherFullPageView && !publisherFullPageView.classList.contains('hidden')) {
       closePublisherPageView(false);
     }
-    switchCategory('doujins');
+    switchCategory('doujins', { fromHash: true });
     return;
   }
 
@@ -232,7 +232,7 @@ function checkUrlHash() {
     if (publisherFullPageView && !publisherFullPageView.classList.contains('hidden')) {
       closePublisherPageView(false);
     }
-    switchCategory('artists');
+    switchCategory('artists', { fromHash: true });
     return;
   }
 

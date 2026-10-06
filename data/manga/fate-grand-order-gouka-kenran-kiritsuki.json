@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-gouka-kenran-kiritsuki",
+  "title_romaji": "Fate/Grand Order: Gouka Kenran: Kiritsuki Works",
+  "title_jp": "Ｆａｔｅ／Grand Order 豪華剣爛 霧月作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order: Gouka Kenran: Kiritsuki Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/wF8pQsxZ/small-fate-grand-order-gouka-kenran-kiritsuki-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/jkzvdvf7/full-fate-grand-order-gouka-kenran-kiritsuki-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order: Gouka Kenran: Kiritsuki Works",
+      "title_jp": "Ｆａｔｅ／Grand Order 豪華剣爛 霧月作品集",
+      "release_date": "2023-10-26",
+      "isbn": "978-4041130506",
+      "asin": "B0CKYGN995",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0CKYGN995"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

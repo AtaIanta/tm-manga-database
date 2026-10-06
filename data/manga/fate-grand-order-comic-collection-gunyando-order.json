@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-comic-collection-gunyando-order",
+  "title_romaji": "Fate/Grand Order Comic Collection: Gunyando Order",
+  "title_jp": "Fate/Grand Order コミックコレクション ～ぐにゃんどおーだー～",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Collection: Gunyando Order"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/RpxY6yRw/small-fate-grand-order-comic-collection-gunyando-order-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/3mnxHfXg/full-fate-grand-order-comic-collection-gunyando-order-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Collection: Gunyando Order",
+      "title_jp": "Fate/Grand Order コミックコレクション ～ぐにゃんどおーだー～",
+      "release_date": "2019-03-25",
+      "isbn": "978-4758020329",
+      "asin": "B07PQBJBCF",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07PQBJBCF"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

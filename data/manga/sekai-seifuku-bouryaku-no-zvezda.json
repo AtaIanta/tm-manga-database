@@ -1,0 +1,60 @@
+{
+  "id": "sekai-seifuku-bouryaku-no-zvezda",
+  "title_romaji": "Sekai Seifuku: Bouryaku no Zvezda",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Sekai Seifuku: Bouryaku no Zvezda"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/vvsbH52X/small-sekai-seifuku-bouryaku-no-zvezda-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/pvdnjjFD/full-sekai-seifuku-bouryaku-no-zvezda-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Sekai Seifuku: Bouryaku no Zvezda (1)",
+      "title_jp": "世界征服～謀略のズヴィズダー～: 1",
+      "release_date": "2014-03-27",
+      "isbn": "978-4758064330",
+      "asin": "B00J7N89IG",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/F4wH4Tcm/small-sekai-seifuku-bouryaku-no-zvezda-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/RpdZ76mK/full-sekai-seifuku-bouryaku-no-zvezda-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Sekai Seifuku: Bouryaku no Zvezda (2)",
+      "title_jp": "世界征服～謀略のズヴィズダー～: 2",
+      "release_date": "2014-07-26",
+      "isbn": "978-4758064620",
+      "asin": "B00M0MZ52Y",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/pjbV09zL/small-sekai-seifuku-bouryaku-no-zvezda-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/rRdm5gng/full-sekai-seifuku-bouryaku-no-zvezda-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Sekai Seifuku: Bouryaku no Zvezda (3)",
+      "title_jp": "世界征服～謀略のズヴィズダー～: 3",
+      "release_date": "2014-11-27",
+      "isbn": "978-4758064811",
+      "asin": "B00PXECTMU",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074CG935X"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

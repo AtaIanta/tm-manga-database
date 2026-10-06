@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-chateau-dif-kurose",
+  "title_romaji": "Fate/Grand Order Chateau d'If: Kurose Kousuke Works",
+  "title_jp": "Fate/Grand Order シャトー・ディフ 黒瀬浩介作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Chateau d'If: Kurose Kousuke Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/jvFkF6ct/small-fate-grand-order-chateau-dif-kurose-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/052FnQD/full-fate-grand-order-chateau-dif-kurose-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Chateau d'If: Kurose Kousuke Works",
+      "title_jp": "Fate/Grand Order シャトー・ディフ 黒瀬浩介作品集",
+      "release_date": "2018-09-22",
+      "isbn": "978-4041070659",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4041070651"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

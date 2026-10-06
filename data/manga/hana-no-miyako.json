@@ -1,0 +1,60 @@
+{
+  "id": "hana-no-miyako",
+  "title_romaji": "Hana no Miyako!",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Hana no Miyako!"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Q3JGZJNF/small-hana-no-miyako-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/Rpf1Jx9h/full-hana-no-miyako-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Hana no Miyako! (1)",
+      "title_jp": "花のみやこ！(1)",
+      "release_date": "2013-06-24",
+      "isbn": "978-4041207444",
+      "asin": "B00DVZRPPO",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/KxYCb9qH/small-hana-no-miyako-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/5XfxTSDV/full-hana-no-miyako-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Hana no Miyako! (2)",
+      "title_jp": "花のみやこ！(2)",
+      "release_date": "2014-02-01",
+      "isbn": "978-4041209226",
+      "asin": "B00IFWA8PC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/PzZgWgkQ/small-hana-no-miyako-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/2045Bp77/full-hana-no-miyako-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Hana no Miyako! (3)",
+      "title_jp": "花のみやこ！(3)",
+      "release_date": "2014-06-25",
+      "isbn": "978-4041017517",
+      "asin": "B00L4XSHE8",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074CFS9XZ"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

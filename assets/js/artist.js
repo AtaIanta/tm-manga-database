@@ -347,11 +347,9 @@ function finishCloseArtistPageView(updateHistory = true) {
     if (mangaFullPageView) mangaFullPageView.classList.add('hidden');
     if (catalogView) catalogView.classList.remove('hidden');
     if (updateHistory) {
-      if (typeof currentCategory !== 'undefined' && currentCategory === 'artists') {
-        window.location.hash = 'artists';
-      } else {
-        history.pushState('', document.title, window.location.pathname + window.location.search);
-      }
+      const category = currentCategory === 'doujins' ? 'doujins' : currentCategory === 'manga' ? 'manga' : 'artists';
+      if (typeof rememberCatalogCategory === 'function') rememberCatalogCategory(category, false);
+      else window.location.hash = category;
     }
   }
 }
@@ -1379,11 +1377,9 @@ function closePublisherPageView(updateHash = true) {
   currentPublisherData = null;
 
   if (updateHash && (window.location.hash.startsWith('#publisher') || window.location.hash.startsWith('#publisher='))) {
-    if (typeof currentCategory !== 'undefined' && currentCategory === 'artists') {
-      window.location.hash = 'artists';
-    } else {
-      history.pushState('', document.title, window.location.pathname + window.location.search);
-    }
+    const category = currentCategory === 'doujins' ? 'doujins' : currentCategory === 'manga' ? 'manga' : 'artists';
+    if (typeof rememberCatalogCategory === 'function') rememberCatalogCategory(category, false);
+    else window.location.hash = category;
   }
 }
 

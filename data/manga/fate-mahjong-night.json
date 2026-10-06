@@ -1,0 +1,38 @@
+{
+  "id": "fate-mahjong-night",
+  "title_romaji": "Fate/mahjong night: Seihai Sensou",
+  "title_jp": "Fate/mahjong night 聖牌戦争(1) (星海社COMICS)",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/mahjong night: Seihai Sensou"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/nqw5wCMh/small-fate-mahjong-night-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/GvPLgdWj/full-fate-mahjong-night-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/mahjong night: Seihai Sensou",
+      "title_jp": "Fate/mahjong night 聖牌戦争(1) (星海社COMICS)",
+      "release_date": "2016-05-11",
+      "isbn": "978-4063695465",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4063695468"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

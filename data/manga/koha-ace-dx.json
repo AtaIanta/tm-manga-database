@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace-dx",
+  "title_romaji": "Koha-Ace DX",
+  "title_jp": "コハエースＤＸ",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace DX"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/s9sW9j8B/small-koha-ace-dx-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/fYdg470G/full-koha-ace-dx-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace DX",
+      "title_jp": "コハエースＤＸ",
+      "release_date": "2018-01-09",
+      "isbn": "978-4041065457",
+      "asin": "B077ZG86QX",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B077ZG86QX"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

@@ -1,0 +1,82 @@
+{
+  "id": "fate-kaleid-liner-prisma-illya-2wei",
+  "title_romaji": "Fate/kaleid liner Prisma☆Illya 2wei!",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/kaleid liner Prisma☆Illya 2wei!"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/F4hK8GRJ/small-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/G4xJ9Xh7/full-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/kaleid liner Prisma☆Illya 2wei! (1)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！(1)",
+      "release_date": "2009-12-26",
+      "isbn": "978-4047153509",
+      "asin": "B00932P5WO",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/jkPstqdT/small-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/F4NJpYhc/full-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/kaleid liner Prisma☆Illya 2wei! (2)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！(2)",
+      "release_date": "2010-07-26",
+      "isbn": "978-4047154865",
+      "asin": "B00932PH0Y",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/F4gZM453/small-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/Q3cFLwGZ/full-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/kaleid liner Prisma☆Illya 2wei! (3)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！(3)",
+      "release_date": "2011-01-26",
+      "isbn": "978-4047156197",
+      "asin": "B0093GALLK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/XfjGL0wd/small-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/Fk5RSVHg/full-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/kaleid liner Prisma☆Illya 2wei! (4)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！(4)",
+      "release_date": "2011-10-07",
+      "isbn": "978-4047157996",
+      "asin": "B0093GALQK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/QFd8cBnB/small-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/V0Vhrybt/full-fate-kaleid-liner-prisma-illya-2wei-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/kaleid liner Prisma☆Illya 2wei! (5)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！(5)",
+      "release_date": "2012-03-23",
+      "isbn": "978-4041201589",
+      "asin": "B0093GAY1C",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B075FTKS7P"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

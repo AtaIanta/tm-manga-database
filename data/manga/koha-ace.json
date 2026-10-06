@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace",
+  "title_romaji": "Koha-Ace",
+  "title_jp": "コハエース",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/fGnVFYry/small-koha-ace-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/60Z48ThB/full-koha-ace-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace",
+      "title_jp": "コハエース",
+      "release_date": "2012-06-23",
+      "isbn": "978-4041202838",
+      "asin": "B00DI8TU02",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00DI8TU02"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

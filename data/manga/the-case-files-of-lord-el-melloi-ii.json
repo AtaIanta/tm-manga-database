@@ -1,0 +1,181 @@
+{
+  "id": "the-case-files-of-lord-el-melloi-ii",
+  "title_romaji": "The Case Files of Lord El-Melloi II",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "The Case Files of Lord El-Melloi II"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/WvDBDgw7/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/pByqjNnQ/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "The Case Files of Lord El-Melloi II (1)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （１）",
+      "release_date": "2018-07-03",
+      "isbn": "978-4041070536",
+      "asin": "B07DVDP57V",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/WWRCPNDH/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/cKTQ49rp/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "The Case Files of Lord El-Melloi II (2)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （２）",
+      "release_date": "2018-08-04",
+      "isbn": "978-4041070543",
+      "asin": "B07FSDLYGP",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/qSkMBp3/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/WNrkp7PV/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "The Case Files of Lord El-Melloi II (3)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （３）",
+      "release_date": "2019-01-10",
+      "isbn": "978-4041077337",
+      "asin": "B07LGKXYD1",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/20hHR8N8/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/FGXS6HV/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "The Case Files of Lord El-Melloi II (4)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （４）",
+      "release_date": "2019-06-24",
+      "isbn": "978-4041081266",
+      "asin": "B07SSRXT28",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/ynHs4q2G/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/P8WyLzC/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "The Case Files of Lord El-Melloi II (5)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （５）",
+      "release_date": "2019-12-28",
+      "isbn": "978-4041081310",
+      "asin": "B082LMXWRX",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/tMVdfLgR/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/KjsZKqwm/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "The Case Files of Lord El-Melloi II (6)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （６）",
+      "release_date": "2020-10-24",
+      "isbn": "978-4041081327",
+      "asin": "B08L2XFTWN",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/G4ssWKcc/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/ycmwqR9V/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "The Case Files of Lord El-Melloi II (7)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （7）",
+      "release_date": "2021-03-04",
+      "isbn": "978-4041110959",
+      "asin": "B08WRWJDV1",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/ZpfSbnrn/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/8g3mXLHb/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "The Case Files of Lord El-Melloi II (8)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （8）",
+      "release_date": "2021-10-04",
+      "isbn": "978-4041117026",
+      "asin": "B09GDVBVZX",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Rp0qVsJ2/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/MDqjJCZF/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "The Case Files of Lord El-Melloi II (9)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （9）",
+      "release_date": "2022-05-02",
+      "isbn": "978-4041117033",
+      "asin": "B09Y14C3Y2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/8L9FYgfM/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-10.webp",
+      "cover_full": "https://i.ibb.co/99mKyC1F/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "The Case Files of Lord El-Melloi II (10)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （10）",
+      "release_date": "2023-03-03",
+      "isbn": "978-4041134139",
+      "asin": "B0BVYVC2CN",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/0y8DKcYM/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-11.webp",
+      "cover_full": "https://i.ibb.co/Y7wdWQ2q/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-11.webp",
+      "volume_number": "Vol. 11",
+      "title": "The Case Files of Lord El-Melloi II (11)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （11）",
+      "release_date": "2023-11-04",
+      "isbn": "978-4041142394",
+      "asin": "B0CLFMPR88",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/gbk361Zf/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-12.webp",
+      "cover_full": "https://i.ibb.co/236S0XDS/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-12.webp",
+      "volume_number": "Vol. 12",
+      "title": "The Case Files of Lord El-Melloi II (12)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （12）",
+      "release_date": "2024-10-04",
+      "isbn": "978-4041152737",
+      "asin": "B0DHJGHP5P",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/BVZmK7hW/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-13.webp",
+      "cover_full": "https://i.ibb.co/84sHC6PQ/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-13.webp",
+      "volume_number": "Vol. 13",
+      "title": "The Case Files of Lord El-Melloi II (13)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （13）",
+      "release_date": "2025-07-26",
+      "isbn": "978-4041163030",
+      "asin": "B0FHGKB6KY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/LhYLrKYK/small-the-case-files-of-lord-el-melloi-ii-vol-Vol-14.webp",
+      "cover_full": "https://i.ibb.co/PZ6gXFpy/full-the-case-files-of-lord-el-melloi-ii-vol-Vol-14.webp",
+      "volume_number": "Vol. 14",
+      "title": "The Case Files of Lord El-Melloi II (14)",
+      "title_jp": "ロード・エルメロイＩＩ世の事件簿 （14）",
+      "release_date": "2026-04-10",
+      "isbn": "978-4041173626",
+      "asin": "B0GHFXQPQR",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07J2VTYW8"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

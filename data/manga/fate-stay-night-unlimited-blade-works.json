@@ -1,0 +1,115 @@
+{
+  "id": "fate-stay-night-unlimited-blade-works",
+  "title_romaji": "Fate/stay night [Unlimited Blade Works]",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night [Unlimited Blade Works]"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/TBgRZjBm/small-fate-stay-night-unlimited-blade-works-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/qwMGjQn/full-fate-stay-night-unlimited-blade-works-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night [Unlimited Blade Works] (1)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 1",
+      "release_date": "2022-08-26",
+      "isbn": "978-4049145564",
+      "asin": "B0B96NDR2X",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/QFcGc9K1/small-fate-stay-night-unlimited-blade-works-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/C5PmXBMy/full-fate-stay-night-unlimited-blade-works-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/stay night [Unlimited Blade Works] (2)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 2",
+      "release_date": "2022-12-09",
+      "isbn": "978-4049147711",
+      "asin": "B0BN9MNYP2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/twVMvZ0C/small-fate-stay-night-unlimited-blade-works-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/zTCLNXVq/full-fate-stay-night-unlimited-blade-works-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/stay night [Unlimited Blade Works] (3)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 3",
+      "release_date": "2023-06-27",
+      "isbn": "978-4049151022",
+      "asin": "B0C7TPM9ZB",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/HWzzVVT/small-fate-stay-night-unlimited-blade-works-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/PsK3TD0m/full-fate-stay-night-unlimited-blade-works-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/stay night [Unlimited Blade Works] (4)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 4",
+      "release_date": "2023-12-26",
+      "isbn": "978-4049154504",
+      "asin": "B0CPPFD52Y",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/S44fhZVy/small-fate-stay-night-unlimited-blade-works-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/LjNb1DB/full-fate-stay-night-unlimited-blade-works-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/stay night [Unlimited Blade Works] (5)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 5",
+      "release_date": "2024-06-27",
+      "isbn": "978-4049157574",
+      "asin": "B0D7BM1B1Y",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/5XvVcTWc/small-fate-stay-night-unlimited-blade-works-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/wrj16nXf/full-fate-stay-night-unlimited-blade-works-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/stay night [Unlimited Blade Works] (6)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 6",
+      "release_date": "2024-12-27",
+      "isbn": "978-4049161168",
+      "asin": "B0DQKLG8WH",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/FLDmWx7R/small-fate-stay-night-unlimited-blade-works-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/MkYq4Tw1/full-fate-stay-night-unlimited-blade-works-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/stay night [Unlimited Blade Works] (7)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 7",
+      "release_date": "2025-07-26",
+      "isbn": "978-4049164923",
+      "asin": "B0FHG8YCWK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/8nF1XWMF/small-fate-stay-night-unlimited-blade-works-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/FL13c9C6/full-fate-stay-night-unlimited-blade-works-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/stay night [Unlimited Blade Works] (8)",
+      "title_jp": "Fate/stay night［Unlimited Blade Works］ 8",
+      "release_date": "2026-03-27",
+      "isbn": "978-4049521627",
+      "asin": "B0GS7MVDXD",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0BHVJJKWP"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

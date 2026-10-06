@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-kuro",
+  "title_romaji": "Fate/Zero: Kuro",
+  "title_jp": "Fate/Zero 黒",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero: Kuro"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/RkNBGGf2/small-fate-zero-kuro-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/pvyQj3Qv/full-fate-zero-kuro-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero: Kuro",
+      "title_jp": "Fate/Zero 黒",
+      "release_date": "2013-07-03",
+      "isbn": "978-4041207994",
+      "asin": "B00DONBTAK",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00DONBTAK"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

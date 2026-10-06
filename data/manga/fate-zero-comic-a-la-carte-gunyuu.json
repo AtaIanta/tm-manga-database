@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-comic-a-la-carte-gunyuu",
+  "title_romaji": "Fate/Zero Comic a la carte: Gunyuu",
+  "title_jp": "Ｆａｔｅ／Ｚｅｒｏ コミックアラカルト 群雄編",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Comic a la carte: Gunyuu"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/zWqCWms0/small-fate-zero-comic-a-la-carte-gunyuu-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/p6FVK5hY/full-fate-zero-comic-a-la-carte-gunyuu-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Comic a la carte: Gunyuu",
+      "title_jp": "Ｆａｔｅ／Ｚｅｒｏ コミックアラカルト 群雄編",
+      "release_date": "2011-09-22",
+      "isbn": "978-4047157828",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4047157821"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

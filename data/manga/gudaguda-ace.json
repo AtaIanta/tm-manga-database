@@ -1,0 +1,60 @@
+{
+  "id": "gudaguda-ace",
+  "title_romaji": "Gudaguda Ace",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Gudaguda Ace"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/7N286sVP/small-gudaguda-ace-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/Cstjcv4d/full-gudaguda-ace-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gudaguda Ace (1)",
+      "title_jp": "ぐだぐだエース（１）",
+      "release_date": "2019-03-09",
+      "isbn": "978-4041077252",
+      "asin": "B07NZMM1RY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/cXMGWKxW/small-gudaguda-ace-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/PGDXBjzt/full-gudaguda-ace-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Gudaguda Ace (2)",
+      "title_jp": "ぐだぐだエース（２）",
+      "release_date": "2020-03-10",
+      "isbn": "978-4041090893",
+      "asin": "B0854KRVZ7",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/ynrR33Zw/small-gudaguda-ace-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/R8q7SJZ/full-gudaguda-ace-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Gudaguda Ace (3)",
+      "title_jp": "ぐだぐだエース（３）",
+      "release_date": "2021-03-10",
+      "isbn": "978-4041111956",
+      "asin": "B08X41ZQ8S",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B08C69NPD8"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

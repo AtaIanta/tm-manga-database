@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-comic-a-la-carte-ranun",
+  "title_romaji": "Fate/Zero Comic a la carte: Ran'un",
+  "title_jp": "Ｆａｔｅ／Ｚｅｒｏ コミックアラカルト 乱雲編",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Comic a la carte: Ran'un"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/HTnS56TJ/small-fate-zero-comic-a-la-carte-ranun-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/YV5dRkF/full-fate-zero-comic-a-la-carte-ranun-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Comic a la carte: Ran'un",
+      "title_jp": "Ｆａｔｅ／Ｚｅｒｏ コミックアラカルト 乱雲編",
+      "release_date": "2011-11-21",
+      "isbn": "978-4041200032",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4041200032"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

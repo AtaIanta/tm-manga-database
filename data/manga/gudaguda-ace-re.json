@@ -1,0 +1,38 @@
+{
+  "id": "gudaguda-ace-re",
+  "title_romaji": "Gudaguda Ace RE",
+  "title_jp": "ぐだぐだエース RE",
+  "title_en": null,
+  "alt_titles": [
+    "Gudaguda Ace RE"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Nd7WzLvM/small-gudaguda-ace-re-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/gMXgZ8rF/full-gudaguda-ace-re-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gudaguda Ace RE",
+      "title_jp": "ぐだぐだエース RE",
+      "release_date": "2022-06-10",
+      "isbn": "978-4041122693",
+      "asin": "B0B2JGSTMB",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0B2JGSTMB"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

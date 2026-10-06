@@ -1,0 +1,71 @@
+{
+  "id": "fate-grand-order-comic-anthology-with-you",
+  "title_romaji": "Fate/Grand Order Comic Anthology With you",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Anthology With you"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/WvZyvBnb/small-fate-grand-order-comic-anthology-with-you-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/wh389Q6C/full-fate-grand-order-comic-anthology-with-you-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Anthology With you (1)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー With you: 1",
+      "release_date": "2019-11-25",
+      "isbn": "978-4758020602",
+      "asin": "B081R3SBKJ",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/TJfHNrV/small-fate-grand-order-comic-anthology-with-you-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/3y9RGTfR/full-fate-grand-order-comic-anthology-with-you-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Comic Anthology With you (2)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー With you: 2",
+      "release_date": "2020-01-27",
+      "isbn": "978-4758020800",
+      "asin": "B0843428FM",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Y7RdpJcS/small-fate-grand-order-comic-anthology-with-you-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/HfWxFY9v/full-fate-grand-order-comic-anthology-with-you-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order Comic Anthology With you (3)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー With you: 3",
+      "release_date": "2020-03-25",
+      "isbn": "978-4758020985",
+      "asin": "B08637K873",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/3yqdZZ8D/small-fate-grand-order-comic-anthology-with-you-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/4wxGvhDc/full-fate-grand-order-comic-anthology-with-you-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Grand Order Comic Anthology With you (4)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー With you: 4",
+      "release_date": "2020-05-25",
+      "isbn": "978-4758021180",
+      "asin": "B088WPMTZQ",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B08BV3L5KY"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-comic-a-la-carte-ken-no-shou",
+  "title_romaji": "Fate/stay night Comic a la carte: Ken no Shou",
+  "title_jp": "Fate/stay night コミックアラカルト 剣の章",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night Comic a la carte: Ken no Shou"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Ld4fjcdn/small-fate-stay-night-comic-a-la-carte-ken-no-shou-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/JwcV78Tg/full-fate-stay-night-comic-a-la-carte-ken-no-shou-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night Comic a la carte: Ken no Shou",
+      "title_jp": "Fate/stay night コミックアラカルト 剣の章",
+      "release_date": "2014-10-09",
+      "isbn": "978-4041021248",
+      "asin": "B00O4QK7EA",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00O4QK7EA"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

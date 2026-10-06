@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace-xp",
+  "title_romaji": "Koha-Ace XP",
+  "title_jp": "コハエースＸＰ",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace XP"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/r2vNpbBQ/small-koha-ace-xp-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/pjtRchZF/full-koha-ace-xp-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace XP",
+      "title_jp": "コハエースＸＰ",
+      "release_date": "2015-09-10",
+      "isbn": "978-4041034125",
+      "asin": "B014U7T5GI",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B014U7T5GI"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

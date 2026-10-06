@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-unlimited-blade-works-comic-a-la-carte-mugen-no-shou",
+  "title_romaji": "Fate/stay night [Unlimited Blade Works] Comic a la carte: Mugen no Shou",
+  "title_jp": "Fate/stay night ［Unlimited Blade Works］ コミックアラカルト 無限の章",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night [Unlimited Blade Works] Comic a la carte: Mugen no Shou"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/NdSG28jF/small-fate-stay-night-unlimited-blade-works-comic-a-la-carte-mugen-no-shou-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/7dvF8rSj/full-fate-stay-night-unlimited-blade-works-comic-a-la-carte-mugen-no-shou-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night [Unlimited Blade Works] Comic a la carte: Mugen no Shou",
+      "title_jp": "Fate/stay night ［Unlimited Blade Works］ コミックアラカルト 無限の章",
+      "release_date": "2015-05-26",
+      "isbn": "978-4041030882",
+      "asin": "B00Y01EGNM",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00Y01EGNM"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

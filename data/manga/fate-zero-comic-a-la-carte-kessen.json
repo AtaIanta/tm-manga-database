@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-comic-a-la-carte-kessen",
+  "title_romaji": "Fate/Zero Comic a la carte: Kessen",
+  "title_jp": "Fate/Zero コミックアラカルト 決戦編",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Comic a la carte: Kessen"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/fVGXfywt/small-fate-zero-comic-a-la-carte-kessen-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/b5JL26s8/full-fate-zero-comic-a-la-carte-kessen-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Comic a la carte: Kessen",
+      "title_jp": "Fate/Zero コミックアラカルト 決戦編",
+      "release_date": "2012-05-25",
+      "isbn": "978-4041202364",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4041202361"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

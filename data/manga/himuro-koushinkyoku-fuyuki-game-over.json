@@ -1,0 +1,38 @@
+{
+  "id": "himuro-koushinkyoku-fuyuki-game-over",
+  "title_romaji": "Himuro Koushinkyoku: Fuyuki Game Over",
+  "title_jp": "氷室行進曲 冬木GameOver",
+  "title_en": null,
+  "alt_titles": [
+    "Himuro Koushinkyoku: Fuyuki Game Over"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/wFCfkqcJ/small-himuro-koushinkyoku-fuyuki-game-over-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/C33gnQRb/full-himuro-koushinkyoku-fuyuki-game-over-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Himuro Koushinkyoku: Fuyuki Game Over",
+      "title_jp": "氷室行進曲 冬木GameOver(1)",
+      "release_date": "2019-07-22",
+      "isbn": "978-4758083294",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4758083290"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

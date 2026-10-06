@@ -1,0 +1,38 @@
+{
+  "id": "fate-samurai-remnant",
+  "title_romaji": "Fate/Samurai Remnant",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Samurai Remnant"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/NgpKD1ZQ/small-fate-samurai-remnant-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/4gwgfLQ2/full-fate-samurai-remnant-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Samurai Remnant",
+      "title_jp": "Fate/Samurai Remnant 1",
+      "release_date": "2026-04-24",
+      "isbn": "978-4041170397",
+      "asin": "B0GWZ7SKNX",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0GWZ7SKNX"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

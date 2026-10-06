@@ -1,0 +1,93 @@
+{
+  "id": "fate-type-redline",
+  "title_romaji": "Fate/type Redline",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/type Redline"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/spjyzWsv/small-fate-type-redline-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/7x1BwWRd/full-fate-type-redline-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/type Redline (1)",
+      "title_jp": "帝都聖杯奇譚 Ｆａｔｅ／ｔｙｐｅ Ｒｅｄｌｉｎｅ（１）",
+      "release_date": "2020-06-03",
+      "isbn": "978-4041094587",
+      "asin": "B088WJVHTZ",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/jkSCLhvg/small-fate-type-redline-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/5Wj2CWWM/full-fate-type-redline-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/type Redline (2)",
+      "title_jp": "帝都聖杯奇譚 Ｆａｔｅ／ｔｙｐｅ Ｒｅｄｌｉｎｅ（２）",
+      "release_date": "2020-12-04",
+      "isbn": "978-4041094594",
+      "asin": "B08NV129P8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/6c5CCgtw/small-fate-type-redline-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/XkG6cQZ5/full-fate-type-redline-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/type Redline (3)",
+      "title_jp": "帝都聖杯奇譚 Ｆａｔｅ／ｔｙｐｅ Ｒｅｄｌｉｎｅ（３）",
+      "release_date": "2021-12-03",
+      "isbn": "978-4041113677",
+      "asin": "B09M6MY5D4",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4wcsCXgh/small-fate-type-redline-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/gLwhqYQF/full-fate-type-redline-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/type Redline (4)",
+      "title_jp": "帝都聖杯奇譚 Ｆａｔｅ／ｔｙｐｅ Ｒｅｄｌｉｎｅ（４）",
+      "release_date": "2023-02-03",
+      "isbn": "978-4041127148",
+      "asin": "B0BSP7YG28",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/YFC1cDDB/small-fate-type-redline-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/xK0xBvnT/full-fate-type-redline-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/type Redline (5)",
+      "title_jp": "帝都聖杯奇譚 Ｆａｔｅ／ｔｙｐｅ Ｒｅｄｌｉｎｅ（５）",
+      "release_date": "2024-03-26",
+      "isbn": "978-4041143469",
+      "asin": "B0CW1JP4SQ",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/yMxfwWf/small-fate-type-redline-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/bjqmddqq/full-fate-type-redline-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/type Redline (6)",
+      "title_jp": "帝都聖杯奇譚 Ｆａｔｅ／ｔｙｐｅ Ｒｅｄｌｉｎｅ（６）",
+      "release_date": "2025-12-04",
+      "isbn": "978-4041156681",
+      "asin": "B0G2VLY8YT",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B08PJVR24Q"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

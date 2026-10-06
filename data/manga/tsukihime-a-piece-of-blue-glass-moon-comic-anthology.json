@@ -1,0 +1,38 @@
+{
+  "id": "tsukihime-a-piece-of-blue-glass-moon-comic-anthology",
+  "title_romaji": "Tsukihime -A piece of blue glass moon- Comic Anthology",
+  "title_jp": "月姫 -A piece of blue glass moon- コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukihime -A piece of blue glass moon- Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/BVHSfXdy/small-tsukihime-a-piece-of-blue-glass-moon-comic-anthology-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/ZRxM8Yng/full-tsukihime-a-piece-of-blue-glass-moon-comic-anthology-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime -A piece of blue glass moon- Comic Anthology",
+      "title_jp": "月姫 -A piece of blue glass moon- コミックアンソロジー",
+      "release_date": "2021-12-25",
+      "isbn": "978-4758023443",
+      "asin": "B09NZKQ8WS",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B09NZKQ8WS"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

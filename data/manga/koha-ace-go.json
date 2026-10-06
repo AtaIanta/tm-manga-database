@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace-go",
+  "title_romaji": "Koha-Ace GO: Teito Haihai Kitan",
+  "title_jp": "コハエースGO 帝都聖杯奇譚",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace GO: Teito Haihai Kitan"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/hFJNMKrF/small-koha-ace-go-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/VY8X2prc/full-koha-ace-go-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace GO: Teito Haihai Kitan",
+      "title_jp": "コハエースGO 帝都聖杯奇譚",
+      "release_date": "2016-11-10",
+      "isbn": "978-4041048658",
+      "asin": "B01M2CHYIC",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B01M2CHYIC"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

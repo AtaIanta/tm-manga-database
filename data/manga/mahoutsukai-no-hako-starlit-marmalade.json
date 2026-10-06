@@ -1,0 +1,38 @@
+{
+  "id": "mahoutsukai-no-hako-starlit-marmalade",
+  "title_romaji": "Mahoutsukai no Hako: Starlit Marmalade",
+  "title_jp": "まほうつかいの箱 スターリット・マーマレード",
+  "title_en": null,
+  "alt_titles": [
+    "Mahoutsukai no Hako: Starlit Marmalade"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/HLxbspJP/small-mahoutsukai-no-hako-starlit-marmalade-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/zWtP4j2s/full-mahoutsukai-no-hako-starlit-marmalade-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Hako: Starlit Marmalade",
+      "title_jp": "まほうつかいの箱 スターリット・マーマレード",
+      "release_date": "2014-02-24",
+      "isbn": "978-4041209776",
+      "asin": "B00IKF50TI",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00IKF50TI"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

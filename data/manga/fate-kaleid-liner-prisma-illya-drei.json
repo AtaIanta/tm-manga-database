@@ -1,0 +1,181 @@
+{
+  "id": "fate-kaleid-liner-prisma-illya-drei",
+  "title_romaji": "Fate/kaleid liner Prisma☆Illya Drei!!",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/kaleid liner Prisma☆Illya Drei!!"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/d4jN2KVp/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/Xfw07qMz/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (1)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(1)",
+      "release_date": "2012-11-19",
+      "isbn": "978-4041205006",
+      "asin": "B00DI8TTQ2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/sp1nTJNH/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/7PH10xv/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (2)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(2)",
+      "release_date": "2013-06-24",
+      "isbn": "978-4041207475",
+      "asin": "B00DI8TTQM",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/MyNr9wg9/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/5g401FmC/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (3)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(3)",
+      "release_date": "2013-07-25",
+      "isbn": "978-4041208021",
+      "asin": "B00E5V5IWA",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/qYP2Yyyt/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/8Dvk45Mb/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (4)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(4)",
+      "release_date": "2014-03-22",
+      "isbn": "978-4041210222",
+      "asin": "B00J4KDFD6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/tMd2Gh4c/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/rKz1dJ7g/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (5)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(5)",
+      "release_date": "2014-10-24",
+      "isbn": "978-4041021224",
+      "asin": "B00OOF33OC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/ym7h5kwV/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/cSX1WQjn/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (6)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(6)",
+      "release_date": "2015-08-06",
+      "isbn": "978-4041021231",
+      "asin": "B013A7GIE6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/35ffPkZd/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/v6PRRNGX/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (7)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(7)",
+      "release_date": "2016-03-24",
+      "isbn": "978-4041040843",
+      "asin": "B01D43MPP2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/GfYgP38J/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/xSLj7q7b/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (8)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(8)",
+      "release_date": "2016-11-26",
+      "isbn": "978-4041046883",
+      "asin": "B01N3LH877",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Mm8MTFW/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/rGZWhFYp/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (9)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(9)",
+      "release_date": "2017-08-25",
+      "isbn": "978-4041060049",
+      "asin": "B074PKK2Z9",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/0yzLPTvw/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-10.webp",
+      "cover_full": "https://i.ibb.co/RGH1fMb0/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (10)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(10)",
+      "release_date": "2018-07-26",
+      "isbn": "978-4041060056",
+      "asin": "B07FDZBT28",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/bRJkjYmj/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-11.webp",
+      "cover_full": "https://i.ibb.co/b5MTN3X8/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-11.webp",
+      "volume_number": "Vol. 11",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (11)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(11)",
+      "release_date": "2020-05-26",
+      "isbn": "978-4041087718",
+      "asin": "B088GY85N7",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/7dd1X0PW/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-12.webp",
+      "cover_full": "https://i.ibb.co/GvtTk3Sc/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-12.webp",
+      "volume_number": "Vol. 12",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (12)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(12)",
+      "release_date": "2021-05-26",
+      "isbn": "978-4041114902",
+      "asin": "B094PSS5TX",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/SXfDDBYs/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-13.webp",
+      "cover_full": "https://i.ibb.co/V0L0Kx2c/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-13.webp",
+      "volume_number": "Vol. 13",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (13)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(13)",
+      "release_date": "2022-06-24",
+      "isbn": "978-4041125144",
+      "asin": "B0B3R4Q56N",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/KpGkhyJV/small-fate-kaleid-liner-prisma-illya-drei-vol-Vol-14.webp",
+      "cover_full": "https://i.ibb.co/VWxhmFPb/full-fate-kaleid-liner-prisma-illya-drei-vol-Vol-14.webp",
+      "volume_number": "Vol. 14",
+      "title": "Fate/kaleid liner Prisma☆Illya Drei!! (14)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!(14)",
+      "release_date": "2024-06-25",
+      "isbn": "978-4041137918",
+      "asin": "B0D7BFD269",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074C9Q9YY"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

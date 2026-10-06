@@ -1,0 +1,49 @@
+{
+  "id": "oshiete-fgo-ijin-to-shinwa-no-grand-order",
+  "title_romaji": "Oshiete FGO! Ijin to Shinwa no Grand Order",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Oshiete FGO! Ijin to Shinwa no Grand Order"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/46h3KDM/small-oshiete-fgo-ijin-to-shinwa-no-grand-order-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/7tN52T9h/full-oshiete-fgo-ijin-to-shinwa-no-grand-order-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Oshiete FGO! Ijin to Shinwa no Grand Order (1)",
+      "title_jp": "教えてＦＧＯ！ 偉人と神話のぐらんどおーだー（１）",
+      "release_date": "2017-04-08",
+      "isbn": "978-4063695687",
+      "asin": "B085XXDSRY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/BVSHLVDX/small-oshiete-fgo-ijin-to-shinwa-no-grand-order-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/PsXX4P8B/full-oshiete-fgo-ijin-to-shinwa-no-grand-order-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Oshiete FGO! Ijin to Shinwa no Grand Order (2)",
+      "title_jp": "教えてＦＧＯ！ 偉人と神話のぐらんどおーだー（２）",
+      "release_date": "2020-03-27",
+      "isbn": "978-4065191491",
+      "asin": "B085XXMNNQ",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B086364ZHQ"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

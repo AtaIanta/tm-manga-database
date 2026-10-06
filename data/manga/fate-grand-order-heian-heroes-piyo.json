@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-heian-heroes-piyo",
+  "title_romaji": "Fate/Grand Order: Heian Heroes: Piyo Works",
+  "title_jp": "Ｆａｔｅ／Grand Order 平安HEROES ぴよ作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order: Heian Heroes: Piyo Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/nsFYw9wC/small-fate-grand-order-heian-heroes-piyo-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/h1WGxDCq/full-fate-grand-order-heian-heroes-piyo-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order: Heian Heroes: Piyo Works",
+      "title_jp": "Ｆａｔｅ／Grand Order 平安HEROES ぴよ作品集",
+      "release_date": "2020-10-10",
+      "isbn": "978-4041108185",
+      "asin": "B08JV4M47N",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B08JV4M47N"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

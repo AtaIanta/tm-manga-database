@@ -1,0 +1,142 @@
+{
+  "id": "mahoutsukai-no-yoru-comic-a-la-carte-nursery-rhyme",
+  "title_romaji": "Mahoutsukai no Yoru Comic a la carte: Nursery Rhyme",
+  "title_jp": "魔法使いの夜 コミックアラカルト ナーサリーライム編",
+  "title_en": "Witch on the Holy Night - Comic à La Carte - Nursery Rhyme",
+  "alt_titles": [
+    "Mahoutsukai no Yoru Comic a la carte: Nursery Rhyme"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/1YRz9KfS/small-mahoutsukai-no-yoru-comic-a-la-carte-nursery-rhyme-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/2xTzP8t/full-mahoutsukai-no-yoru-comic-a-la-carte-nursery-rhyme-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Yoru Comic a la carte: Nursery Rhyme",
+      "title_jp": "魔法使いの夜 コミックアラカルト ナーサリーライム編",
+      "release_date": "2012-09-22",
+      "isbn": "978-4041204573",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": "The Bambi Case",
+          "title_jp": null,
+          "artist": "Tapo"
+        },
+        {
+          "chapter_number": 2,
+          "title": "The Night at the Kunji Mansion is only beginning",
+          "title_jp": null,
+          "artist": "Konno"
+        },
+        {
+          "chapter_number": 3,
+          "title": "The Night Box",
+          "title_jp": null,
+          "artist": "Masumi Futaba"
+        },
+        {
+          "chapter_number": 4,
+          "title": "Mahoyo Summit 2012",
+          "title_jp": null,
+          "artist": "Keikenchi"
+        },
+        {
+          "chapter_number": 5,
+          "title": "Operation Thrift",
+          "title_jp": null,
+          "artist": "Masao Aona"
+        },
+        {
+          "chapter_number": 6,
+          "title": "Best Doll",
+          "title_jp": null,
+          "artist": "Yui Yui"
+        },
+        {
+          "chapter_number": 7,
+          "title": "Lawnmower Man",
+          "title_jp": null,
+          "artist": "Usui Rinno"
+        },
+        {
+          "chapter_number": 8,
+          "title": "The Magic of Calories",
+          "title_jp": null,
+          "artist": "Ryou Namino"
+        },
+        {
+          "chapter_number": 9,
+          "title": "Go Forth, Aoko Puppet!",
+          "title_jp": null,
+          "artist": "Mata"
+        },
+        {
+          "chapter_number": 10,
+          "title": "Sou Funny",
+          "title_jp": null,
+          "artist": "Hazumi Nariyuki"
+        },
+        {
+          "chapter_number": 11,
+          "title": "The Price is 1000 yen",
+          "title_jp": null,
+          "artist": "Seijin Takenoko"
+        },
+        {
+          "chapter_number": 12,
+          "title": "Simpletons on the Unmagical Day",
+          "title_jp": null,
+          "artist": "Nikuhachi Tsutauchi"
+        },
+        {
+          "chapter_number": 13,
+          "title": "Lunch Romcom Meeting",
+          "title_jp": null,
+          "artist": "Tapo"
+        },
+        {
+          "chapter_number": 14,
+          "title": "Melting Sweet Life",
+          "title_jp": null,
+          "artist": "Kouki Shiranami"
+        },
+        {
+          "chapter_number": 15,
+          "title": "Sojuurou and the Videotapes",
+          "title_jp": null,
+          "artist": "Shimesaba"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4041204577",
+    "https://mangadex.org/title/4449fcb6-3a12-487b-b1c7-940c2e47e8d3"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Tapo",
+    "Konno",
+    "Masumi Futaba",
+    "Keikenchi",
+    "Masao Aona",
+    "Yui Yui",
+    "Usui Rinno",
+    "Ryou Namino",
+    "Mata",
+    "Hazumi Nariyuki",
+    "Seijin Takenoko",
+    "Nikuhachi Tsutauchi",
+    "Kouki Shiranami",
+    "Shimesaba"
+  ],
+  "publisher": null,
+  "status": "Unknown",
+  "type": "Unknown",
+  "series": "Unknown",
+  "release_year": null
+}

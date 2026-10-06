@@ -1,0 +1,38 @@
+{
+  "id": "gudaguda-taikou-den-zipang",
+  "title_romaji": "Gudaguda Taikou-den ZIPANG",
+  "title_jp": "ぐだぐだ太閤伝ZIPANG",
+  "title_en": null,
+  "alt_titles": [
+    "Gudaguda Taikou-den ZIPANG"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Qv1m4qSp/small-gudaguda-taikou-den-zipang-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/W4QrgV2V/full-gudaguda-taikou-den-zipang-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gudaguda Taikou-den ZIPANG",
+      "title_jp": "ぐだぐだ太閤伝ZIPANG",
+      "release_date": "2023-12-11",
+      "isbn": "978-4041139578",
+      "asin": "B0CP23JNR1",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0CP23JNR1"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

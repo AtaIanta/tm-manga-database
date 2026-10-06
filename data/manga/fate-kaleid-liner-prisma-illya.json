@@ -1,0 +1,49 @@
+{
+  "id": "fate-kaleid-liner-prisma-illya",
+  "title_romaji": "Fate/kaleid liner Prisma☆Illya",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/kaleid liner Prisma☆Illya"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Vpzx9G1Z/small-fate-kaleid-liner-prisma-illya-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/vCrMJJbr/full-fate-kaleid-liner-prisma-illya-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/kaleid liner Prisma☆Illya (1)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ(1)",
+      "release_date": "2008-04-26",
+      "isbn": "978-4047150485",
+      "asin": "B00932N0DA",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/5xwbMnvy/small-fate-kaleid-liner-prisma-illya-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/wk7Cvqy/full-fate-kaleid-liner-prisma-illya-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/kaleid liner Prisma☆Illya (2)",
+      "title_jp": "Fate/kaleid liner プリズマ☆イリヤ(2)",
+      "release_date": "2008-12-24",
+      "isbn": "978-4047151420",
+      "asin": "B00932OOQW",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0749ZWRYZ"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

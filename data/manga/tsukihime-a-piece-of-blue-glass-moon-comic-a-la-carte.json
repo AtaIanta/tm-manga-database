@@ -1,0 +1,38 @@
+{
+  "id": "tsukihime-a-piece-of-blue-glass-moon-comic-a-la-carte",
+  "title_romaji": "Tsukihime -A piece of blue glass moon- Comic a la carte",
+  "title_jp": "月姫 A piece of blue glass moon コミックアラカルト",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukihime -A piece of blue glass moon- Comic a la carte"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/gZDtytYL/small-tsukihime-a-piece-of-blue-glass-moon-comic-a-la-carte-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/M5VchQcr/full-tsukihime-a-piece-of-blue-glass-moon-comic-a-la-carte-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime -A piece of blue glass moon- Comic a la carte",
+      "title_jp": "月姫 A piece of blue glass moon コミックアラカルト（１）",
+      "release_date": "2022-05-10",
+      "isbn": "978-4041123805",
+      "asin": "B09YCGFSKH",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B09YCGFSKH"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

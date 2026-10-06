@@ -1,0 +1,104 @@
+{
+  "id": "fate-grand-order-comic-anthology-the-next",
+  "title_romaji": "Fate/Grand Order Comic Anthology THE NEXT",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Anthology THE NEXT"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/1fvmB7KR/small-fate-grand-order-comic-anthology-the-next-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/s9twX61Q/full-fate-grand-order-comic-anthology-the-next-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (1)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 1",
+      "release_date": "2018-08-31",
+      "isbn": "978-4758009966",
+      "asin": "B07GVZD8GG",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/mFv8ndhm/small-fate-grand-order-comic-anthology-the-next-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/Txr0XHjG/full-fate-grand-order-comic-anthology-the-next-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (2)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 2",
+      "release_date": "2018-10-25",
+      "isbn": "978-4758020145",
+      "asin": "B07JLTQCLS",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/p6tmFSy8/small-fate-grand-order-comic-anthology-the-next-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/7JqjxqH7/full-fate-grand-order-comic-anthology-the-next-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (3)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 3",
+      "release_date": "2018-12-25",
+      "isbn": "978-4758020220",
+      "asin": "B07L95T42J",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/S4DJt5FX/small-fate-grand-order-comic-anthology-the-next-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/j9XdwZn1/full-fate-grand-order-comic-anthology-the-next-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (4)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 4",
+      "release_date": "2019-02-25",
+      "isbn": "978-4758020305",
+      "asin": "B07NYPMVCK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1VKsjfv/small-fate-grand-order-comic-anthology-the-next-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/W8fYq4H/full-fate-grand-order-comic-anthology-the-next-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (5)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 5",
+      "release_date": "2019-04-25",
+      "isbn": "978-4758020374",
+      "asin": "B07QVJSTGQ",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/gkVrwLD/small-fate-grand-order-comic-anthology-the-next-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/m54X4qck/full-fate-grand-order-comic-anthology-the-next-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (6)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 6",
+      "release_date": "2019-06-25",
+      "isbn": "978-4758020442",
+      "asin": "B07TBD6Y68",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1t5s2BxK/small-fate-grand-order-comic-anthology-the-next-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/SF6msDF/full-fate-grand-order-comic-anthology-the-next-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/Grand Order Comic Anthology THE NEXT (7)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー THE NEXT: 7",
+      "release_date": "2019-08-26",
+      "isbn": "978-4758020480",
+      "asin": "B07WSTB6PF",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07TT8CS7S"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

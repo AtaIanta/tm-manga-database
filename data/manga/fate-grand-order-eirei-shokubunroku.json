@@ -1,0 +1,38 @@
+{
+  "id": "fate-grand-order-eirei-shokubunroku",
+  "title_romaji": "Fate/Grand Order: Eirei Shokubunroku",
+  "title_jp": "Fate/Grand Order 英霊食聞録",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order: Eirei Shokubunroku"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/whdb0XNs/small-fate-grand-order-eirei-shokubunroku-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/FLW1V7MV/full-fate-grand-order-eirei-shokubunroku-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order: Eirei Shokubunroku",
+      "title_jp": "Fate/Grand Order 英霊食聞録 （１）",
+      "release_date": "2021-10-08",
+      "isbn": "978-4041111925",
+      "asin": "B09H2J54LL",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B09H2J54LL"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

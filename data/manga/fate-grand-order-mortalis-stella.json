@@ -1,0 +1,82 @@
+{
+  "id": "fate-grand-order-mortalis-stella",
+  "title_romaji": "Fate/Grand Order -mortalis:stella-",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order -mortalis:stella-"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/NgyCLV94/small-fate-grand-order-mortalis-stella-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/r2jQLxw4/full-fate-grand-order-mortalis-stella-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order -mortalis:stella- (1)",
+      "title_jp": "Fate/Grand Order -mortalis:stella-: 1",
+      "release_date": "2018-01-09",
+      "isbn": "978-4758033282",
+      "asin": "B078JQPM8H",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/9mfppXYM/small-fate-grand-order-mortalis-stella-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/SwvghNW0/full-fate-grand-order-mortalis-stella-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order -mortalis:stella- (2)",
+      "title_jp": "Fate/Grand Order -mortalis:stella-: 2",
+      "release_date": "2019-01-01",
+      "isbn": "978-4758033824",
+      "asin": "B0861TVF76",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1Gm7q7fz/small-fate-grand-order-mortalis-stella-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/V00bk9Xf/full-fate-grand-order-mortalis-stella-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order -mortalis:stella- (3)",
+      "title_jp": "Fate/Grand Order -mortalis:stella-: 3",
+      "release_date": "2021-08-25",
+      "isbn": "978-4758036467",
+      "asin": "B09D73RKJ3",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1fZ1YVY4/small-fate-grand-order-mortalis-stella-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/twsGtFZW/full-fate-grand-order-mortalis-stella-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Grand Order -mortalis:stella- (4)",
+      "title_jp": "Fate/Grand Order -mortalis:stella-: 4",
+      "release_date": "2022-12-23",
+      "isbn": "978-4758038317",
+      "asin": "B0BQLKCR5N",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/RkjxKk2V/small-fate-grand-order-mortalis-stella-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/6RpZbB4J/full-fate-grand-order-mortalis-stella-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Grand Order -mortalis:stella- (5)",
+      "title_jp": "Fate/Grand Order -mortalis:stella-: 5【電子限定描き下ろし付き】",
+      "release_date": "2025-01-27",
+      "isbn": "978-4758086417",
+      "asin": "B0DTNZQJGF",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B08KWMZ3Y8"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

@@ -1,0 +1,49 @@
+{
+  "id": "fate-grand-order-dengeki-comic-anthology-re",
+  "title_romaji": "Fate/Grand Order Dengeki Comic Anthology Re",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Dengeki Comic Anthology Re"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/0j4Dbtv4/small-fate-grand-order-dengeki-comic-anthology-re-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/fGXDkkzt/full-fate-grand-order-dengeki-comic-anthology-re-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Dengeki Comic Anthology Re (1)",
+      "title_jp": "Fate/Grand Order 電撃コミックアンソロジーRe:01",
+      "release_date": "2019-07-26",
+      "isbn": "978-4049125023",
+      "asin": "B07V4K8DKK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/j9DQsSmg/small-fate-grand-order-dengeki-comic-anthology-re-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/zH2C0xW4/full-fate-grand-order-dengeki-comic-anthology-re-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Dengeki Comic Anthology Re (2)",
+      "title_jp": "Fate/Grand Order 電撃コミックアンソロジーRe:02",
+      "release_date": "2019-10-25",
+      "isbn": "978-4049127713",
+      "asin": "B07YWCV634",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0831SR6XS"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

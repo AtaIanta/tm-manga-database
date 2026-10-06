@@ -1,0 +1,38 @@
+{
+  "id": "hibichika-time",
+  "title_romaji": "Hibichika Time",
+  "title_jp": "ひびちかタイム",
+  "title_en": null,
+  "alt_titles": [
+    "Hibichika Time"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/7J28cYqP/small-hibichika-time-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/whnh8JP2/full-hibichika-time-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Hibichika Time",
+      "title_jp": "ひびちかタイム",
+      "release_date": "2013-06-26",
+      "isbn": "978-4041207246",
+      "asin": "B00DVZRP9A",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B00DVZRP9A"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

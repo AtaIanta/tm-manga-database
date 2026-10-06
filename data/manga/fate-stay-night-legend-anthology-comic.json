@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-legend-anthology-comic",
+  "title_romaji": "Fate/stay night LEGEND Anthology Comic",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night LEGEND Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/0y5RP3Fc/small-fate-stay-night-legend-anthology-comic-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/BV3nKpVX/full-fate-stay-night-legend-anthology-comic-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night LEGEND Anthology Comic (1)",
+      "title_jp": "Ｆａｔｅ／ｓｔａｙ ｎｉｇｈｔ ＬＥＧＥＮＤ アンソロジーコミック（１）",
+      "release_date": "2018-09-27",
+      "isbn": "978-4065131145",
+      "asin": "B07J5W9924",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B0GTYS7P47"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

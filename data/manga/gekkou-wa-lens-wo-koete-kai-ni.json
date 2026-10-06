@@ -1,0 +1,38 @@
+{
+  "id": "gekkou-wa-lens-wo-koete-kai-ni",
+  "title_romaji": "Gekkou wa Lens wo Koete Kai Ni",
+  "title_jp": "月光はレンズを越えて 改二",
+  "title_en": null,
+  "alt_titles": [
+    "Gekkou wa Lens wo Koete Kai Ni"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/WpKWCHJb/small-gekkou-wa-lens-wo-koete-kai-ni-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/HTyMBV39/full-gekkou-wa-lens-wo-koete-kai-ni-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gekkou wa Lens wo Koete Kai Ni",
+      "title_jp": "月光はレンズを越えて 改二",
+      "release_date": "2014-04-22",
+      "isbn": "978-4758008020",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4758008027"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}
