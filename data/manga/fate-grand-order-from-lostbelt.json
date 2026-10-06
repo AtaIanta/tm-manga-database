@@ -1,0 +1,93 @@
+{
+  "id": "fate-grand-order-from-lostbelt",
+  "title_romaji": "Fate/Grand Order From Lostbelt",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order From Lostbelt"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/WWsQxzGb/small-fate-grand-order-from-lostbelt-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/8L73g0nT/full-fate-grand-order-from-lostbelt-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order From Lostbelt (1)",
+      "title_jp": "Ｆａｔｅ／Grand Order フロム ロストベルト(1)",
+      "release_date": "2020-09-26",
+      "isbn": "978-4041105061",
+      "asin": "B08HRHLDWT",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/V0Fsc2Qj/small-fate-grand-order-from-lostbelt-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/Y4FhZpnC/full-fate-grand-order-from-lostbelt-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order From Lostbelt (2)",
+      "title_jp": "Ｆａｔｅ／Grand Order フロム ロストベルト(2)",
+      "release_date": "2021-12-25",
+      "isbn": "978-4041121078",
+      "asin": "B09N6KMD5Z",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/RTyysG92/small-fate-grand-order-from-lostbelt-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/GQJfHTm0/full-fate-grand-order-from-lostbelt-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order From Lostbelt (3)",
+      "title_jp": "Ｆａｔｅ／Grand Order フロム ロストベルト(3)",
+      "release_date": "2022-09-09",
+      "isbn": "978-4041130483",
+      "asin": "B0BBZX9QYL",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/RWK6syz/small-fate-grand-order-from-lostbelt-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/W43N4w9G/full-fate-grand-order-from-lostbelt-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Grand Order From Lostbelt (4)",
+      "title_jp": "Ｆａｔｅ／Grand Order フロム ロストベルト(4)",
+      "release_date": "2023-03-10",
+      "isbn": "978-4041135037",
+      "asin": "B0BWHJ1S4X",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/RTW6n35S/small-fate-grand-order-from-lostbelt-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/b5sdvdRx/full-fate-grand-order-from-lostbelt-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Grand Order From Lostbelt (5)",
+      "title_jp": "Ｆａｔｅ／Grand Order フロム ロストベルト(５)",
+      "release_date": "2023-10-10",
+      "isbn": "978-4041139561",
+      "asin": "B0CJR62TPL",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/nqxrqnzN/small-fate-grand-order-from-lostbelt-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/TMH6KRpQ/full-fate-grand-order-from-lostbelt-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Grand Order From Lostbelt (6)",
+      "title_jp": "Ｆａｔｅ／Grand Order フロム ロストベルト(６)",
+      "release_date": "2024-04-26",
+      "isbn": "978-4041149669",
+      "asin": "B0CTHPMPCG",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B09NGLG5ZJ"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

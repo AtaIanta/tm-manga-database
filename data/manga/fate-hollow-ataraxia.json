@@ -1,0 +1,49 @@
+{
+  "id": "fate-hollow-ataraxia",
+  "title_romaji": "Fate/hollow ataraxia",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/hollow ataraxia"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/KxLCwrZX/small-fate-hollow-ataraxia-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/svvjycJF/full-fate-hollow-ataraxia-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/hollow ataraxia (1)",
+      "title_jp": "Fate/hollow ataraxia(1)",
+      "release_date": "2014-02-01",
+      "isbn": "978-4041209264",
+      "asin": "B00IFWA8NE",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/RpFSz3PD/small-fate-hollow-ataraxia-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/gM24PVYh/full-fate-hollow-ataraxia-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/hollow ataraxia (2)",
+      "title_jp": "Fate/hollow ataraxia(2)",
+      "release_date": "2016-06-23",
+      "isbn": "978-4041025574",
+      "asin": "B01GPMSDHS",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074CGSGNY"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

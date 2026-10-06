@@ -1,30 +1,25 @@
 {
   "id": "melty-blood-back-alley-nightmare",
+  "title_romaji": "Melty Blood: Back Alley Nightmare",
+  "title_jp": "MELTY BLOOD 路地裏ナイトメア",
+  "title_en": "Melty Blood: Back Alley Nightmare",
   "alt_titles": [
     "MELTY BLOOD 路地裏ナイトメア",
     "Melty Blood: Back Alley Nightmare",
     "Melty Blood - Rojiura Nightmare"
   ],
-  "series": "Tsukihime",
-  "type": "Spin-Off",
-  "status": "Finished",
-  "release_year": 2016,
-  "artists": [
-    "Kirishima Takeru"
-  ],
-  "publisher": "Kadokawa Comics Ace",
-  "magazine": "Comp Ace",
   "synopsis": "Official spin-off manga focusing on the Back Alley Alliance (Satsuki Yumizuka, Sion Eltnam Atlasia, and Riesbyfe Stridberg) serialized in Comp Ace by Takeru Kirishima, unraveling a mysterious nightmare plaguing Misaki Town.",
-  "notes": null,
+  "show_chapter_artists": false,
   "volumes": [
     {
+      "cover": "https://i.ibb.co/XkdW6ggV/small-melty-blood-back-alley-nightmare-vol-Vol-1.jpg",
+      "cover_full": "https://i.ibb.co/8LwxSCWn/full-melty-blood-back-alley-nightmare-vol-Vol-1.jpg",
       "volume_number": "Vol. 1",
       "title": "Melty Blood: Back Alley Nightmare Vol. 1",
       "title_jp": "MELTY BLOOD 路地裏ナイトメア (1)",
       "release_date": "2016-07-26",
       "isbn": "978-4041045343",
       "asin": "B01I2M62I6",
-      "cover": "https://i.ibb.co/XkdW6ggV/small-melty-blood-back-alley-nightmare-vol-Vol-1.jpg",
       "chapters": [
         {
           "chapter_number": "Dream.01 (Part 1)",
@@ -62,17 +57,17 @@
           "title_jp": "用語辞典",
           "artist": "Kirishima Takeru"
         }
-      ],
-      "cover_full": "https://i.ibb.co/8LwxSCWn/full-melty-blood-back-alley-nightmare-vol-Vol-1.jpg"
+      ]
     },
     {
+      "cover": "https://i.ibb.co/GfyXSWCC/small-melty-blood-back-alley-nightmare-vol-Vol-2.jpg",
+      "cover_full": "https://i.ibb.co/FbGHqB1L/full-melty-blood-back-alley-nightmare-vol-Vol-2.jpg",
       "volume_number": "Vol. 2",
       "title": "Melty Blood: Back Alley Nightmare Vol. 2",
       "title_jp": "MELTY BLOOD 路地裏ナイトメア (2)",
       "release_date": "2016-12-26",
       "isbn": "978-4041051245",
       "asin": "B01N7FGKGE",
-      "cover": "https://i.ibb.co/GfyXSWCC/small-melty-blood-back-alley-nightmare-vol-Vol-2.jpg",
       "chapters": [
         {
           "chapter_number": "Dream.05",
@@ -116,16 +111,15 @@
           "title_jp": "番外編",
           "artist": "Kirishima Takeru"
         }
-      ],
-      "cover_full": "https://i.ibb.co/FbGHqB1L/full-melty-blood-back-alley-nightmare-vol-Vol-2.jpg"
+      ]
     }
   ],
-  "serialization_start": null,
-  "serialization_end": null,
+  "notes": null,
+  "sources": [],
   "custom_roles": [
     {
       "role": "Original Wok",
-      "names": "TYPE-MOON, French Bread"
+      "names": "TYPE-MOON, French-Bread"
     },
     {
       "role": "Supervision",
@@ -136,9 +130,13 @@
       "names": "ACPI"
     }
   ],
-  "sources": [],
-  "show_chapter_artists": false,
-  "title_romaji": "Melty Blood: Back Alley Nightmare",
-  "title_en": "Melty Blood: Back Alley Nightmare",
-  "title_jp": "MELTY BLOOD 路地裏ナイトメア"
+  "artists": [
+    "Kirishima Takeru"
+  ],
+  "publisher": "Kadokawa Comics Ace",
+  "magazine": "Comp Ace",
+  "status": "Finished",
+  "type": "Spin-Off",
+  "series": "Tsukihime",
+  "release_year": 2016
 }

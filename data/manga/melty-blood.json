@@ -1,0 +1,137 @@
+{
+  "id": "melty-blood",
+  "title_romaji": "MELTY BLOOD",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "MELTY BLOOD"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/8nmfkvZv/small-melty-blood-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/VYMvdVnz/full-melty-blood-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "MELTY BLOOD (1)",
+      "title_jp": "MELTY BLOOD(1)",
+      "release_date": "2006-04-07",
+      "isbn": "978-4047138186",
+      "asin": "B0093G7TL0",
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Kirishima Takeru"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/CsK3c5YM/small-melty-blood-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/yc0JSL46/full-melty-blood-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "MELTY BLOOD (2)",
+      "title_jp": "MELTY BLOOD(2)",
+      "release_date": "2006-12-22",
+      "isbn": "978-4047138919",
+      "asin": "B0093G7UXC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/q34j64dg/small-melty-blood-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/KpVHGL9z/full-melty-blood-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "MELTY BLOOD (3)",
+      "title_jp": "MELTY BLOOD(3)",
+      "release_date": "2007-09-26",
+      "isbn": "978-4047139640",
+      "asin": "B0093G7VPO",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4rPPb3r/small-melty-blood-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/JwKsYnYf/full-melty-blood-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "MELTY BLOOD (4)",
+      "title_jp": "MELTY BLOOD(4)",
+      "release_date": "2008-04-26",
+      "isbn": "978-4047150164",
+      "asin": "B0093G7VW2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/dJc2DM8s/small-melty-blood-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/hRpJbfBg/full-melty-blood-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "MELTY BLOOD (5)",
+      "title_jp": "MELTY BLOOD(5)",
+      "release_date": "2008-08-26",
+      "isbn": "978-4047150966",
+      "asin": "B0093G7W2Q",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/QjfYGm1x/small-melty-blood-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/GQtbt6gd/full-melty-blood-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "MELTY BLOOD (6)",
+      "title_jp": "MELTY BLOOD(6)",
+      "release_date": "2009-01-26",
+      "isbn": "978-4047151666",
+      "asin": "B0093G7WFI",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/KxFKnhcR/small-melty-blood-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/p6xGpK9V/full-melty-blood-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "MELTY BLOOD (7)",
+      "title_jp": "MELTY BLOOD(7)",
+      "release_date": "2009-08-26",
+      "isbn": "978-4047152786",
+      "asin": "B0093G7WS0",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/PGCNJ4Vb/small-melty-blood-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/nsgyy5T8/full-melty-blood-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "MELTY BLOOD (8)",
+      "title_jp": "MELTY BLOOD(8)",
+      "release_date": "2010-01-26",
+      "isbn": "978-4047153820",
+      "asin": "B0093G84PK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1YDYXWV2/small-melty-blood-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/1YdwSXG0/full-melty-blood-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "MELTY BLOOD (9)",
+      "title_jp": "MELTY BLOOD(9)",
+      "release_date": "2010-08-26",
+      "isbn": "978-4047155039",
+      "asin": "B0093G84ZA",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07571FH6M"
+  ],
+  "custom_roles": [
+    {
+      "role": "Orignal Work",
+      "names": "TYPE-MOON, French-Bread"
+    }
+  ],
+  "artists": [
+    "Kirishima Takeru"
+  ],
+  "publisher": null,
+  "status": "Finished",
+  "type": "Adaptation",
+  "series": "Tsukihime",
+  "release_year": null
+}

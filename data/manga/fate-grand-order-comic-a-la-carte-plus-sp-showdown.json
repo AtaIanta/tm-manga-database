@@ -1,0 +1,60 @@
+{
+  "id": "fate-grand-order-comic-a-la-carte-plus-sp-showdown",
+  "title_romaji": "Fate/Grand Order Comic a la Carte PLUS! SP Showdown",
+  "title_jp": "Fate/Grand Order コミックアラカルト PLUS! SP 対決編",
+  "title_en": "Fate/Grand Order Comic a la Carte PLUS! SP Showdown",
+  "alt_titles": [
+    "Fate/Grand Order Comic a la Carte PLUS! SP Showdown",
+    "Fate/Grand Order コミックアラカルト PLUS! SP 対決編",
+    "Fate/Grand Order Comic a la Carte PLUS! SP Showdown!"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/s9Msfg5p/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/qMpvYfKt/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-6.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! SP Showdown!",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! SP 対決編！",
+      "release_date": "2020-10-24",
+      "isbn": "978-4041108178",
+      "asin": "B08L2W6QQC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/hFtqX8tS/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/t52xqM9/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-7.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! SP Showdown II",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! SP 対決編II",
+      "release_date": "2021-10-26",
+      "isbn": "978-4041115695",
+      "asin": "B09J88CTZB",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/prWj2W44/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/0jpQ97HC/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-8.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! SP Showdown III",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! SP 対決編III",
+      "release_date": "2024-04-26",
+      "isbn": "978-4041136959",
+      "asin": "B0D1QCD9ND",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": "Anthology",
+  "series": "Fate series",
+  "release_year": null
+}

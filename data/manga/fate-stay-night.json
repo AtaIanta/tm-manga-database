@@ -1,0 +1,247 @@
+{
+  "id": "fate-stay-night",
+  "title_romaji": "Fate/stay night",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/4Zn39CBx/small-fate-stay-night-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/Q32306bX/full-fate-stay-night-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night (1)",
+      "title_jp": "Fate/stay night(1)",
+      "release_date": "2006-05-24",
+      "isbn": "978-4047138254",
+      "asin": "B00932MYP0",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/hFRhCR4t/small-fate-stay-night-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/tPYh7xxp/full-fate-stay-night-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/stay night (2)",
+      "title_jp": "Fate/stay night(2)",
+      "release_date": "2006-10-24",
+      "isbn": "978-4047138650",
+      "asin": "B00932MYZK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/sdF4Kyf4/small-fate-stay-night-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/sY2pjy4/full-fate-stay-night-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/stay night (3)",
+      "title_jp": "Fate/stay night(3)",
+      "release_date": "2007-04-10",
+      "isbn": "978-4047139145",
+      "asin": "B00932MZAY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/dJ2bWNsC/small-fate-stay-night-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/YThpDgVR/full-fate-stay-night-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/stay night (4)",
+      "title_jp": "Fate/stay night(4)",
+      "release_date": "2007-09-26",
+      "isbn": "978-4047139558",
+      "asin": "B00932MZJU",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/bVdRrh8/small-fate-stay-night-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/7dpyD1X3/full-fate-stay-night-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/stay night (5)",
+      "title_jp": "Fate/stay night(5)",
+      "release_date": "2007-12-20",
+      "isbn": "978-4047139954",
+      "asin": "B00932MZRW",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/7d1N6z15/small-fate-stay-night-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/0ybmyqFg/full-fate-stay-night-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/stay night (6)",
+      "title_jp": "Fate/stay night(6)",
+      "release_date": "2008-04-26",
+      "isbn": "978-4047150478",
+      "asin": "B00932N01C",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/qMmTkYDK/small-fate-stay-night-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/N2stZvH2/full-fate-stay-night-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/stay night (7)",
+      "title_jp": "Fate/stay night(7)",
+      "release_date": "2008-08-26",
+      "isbn": "978-4047150942",
+      "asin": "B00932OOAI",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/ZpD9zn5H/small-fate-stay-night-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/9kr298Tk/full-fate-stay-night-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/stay night (8)",
+      "title_jp": "Fate/stay night(8)",
+      "release_date": "2008-12-24",
+      "isbn": "978-4047151444",
+      "asin": "B00932OOIK",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/gbysy89b/small-fate-stay-night-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/chQNKPyp/full-fate-stay-night-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "Fate/stay night (9)",
+      "title_jp": "Fate/stay night(9)",
+      "release_date": "2009-04-25",
+      "isbn": "978-4047152304",
+      "asin": "B00932OTM6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/GfrNK043/small-fate-stay-night-vol-Vol-10.webp",
+      "cover_full": "https://i.ibb.co/rftfYdyN/full-fate-stay-night-vol-Vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "Fate/stay night (10)",
+      "title_jp": "Fate/stay night(10)",
+      "release_date": "2009-08-26",
+      "isbn": "978-4047152830",
+      "asin": "B00932P0LA",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/dsxZCStj/small-fate-stay-night-vol-Vol-11.webp",
+      "cover_full": "https://i.ibb.co/rK5S86hd/full-fate-stay-night-vol-Vol-11.webp",
+      "volume_number": "Vol. 11",
+      "title": "Fate/stay night (11)",
+      "title_jp": "Fate/stay night(11)",
+      "release_date": "2009-12-26",
+      "isbn": "978-4047153486",
+      "asin": "B00932PG9Q",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4R05hjjN/small-fate-stay-night-vol-Vol-12.webp",
+      "cover_full": "https://i.ibb.co/DD93DZR1/full-fate-stay-night-vol-Vol-12.webp",
+      "volume_number": "Vol. 12",
+      "title": "Fate/stay night (12)",
+      "title_jp": "Fate/stay night(12)",
+      "release_date": "2010-04-26",
+      "isbn": "978-4047154247",
+      "asin": "B00932PLCI",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/7tJDGytr/small-fate-stay-night-vol-Vol-13.webp",
+      "cover_full": "https://i.ibb.co/nq7t7jNP/full-fate-stay-night-vol-Vol-13.webp",
+      "volume_number": "Vol. 13",
+      "title": "Fate/stay night (13)",
+      "title_jp": "Fate/stay night(13)",
+      "release_date": "2010-08-26",
+      "isbn": "978-4047155022",
+      "asin": "B00932PLV4",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/yBdnksbK/small-fate-stay-night-vol-Vol-14.webp",
+      "cover_full": "https://i.ibb.co/xKd5wLRP/full-fate-stay-night-vol-Vol-14.webp",
+      "volume_number": "Vol. 14",
+      "title": "Fate/stay night (14)",
+      "title_jp": "Fate/stay night(14)",
+      "release_date": "2010-12-25",
+      "isbn": "978-4047155855",
+      "asin": "B0093G5SNQ",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/fzrQFTys/small-fate-stay-night-vol-Vol-15.webp",
+      "cover_full": "https://i.ibb.co/fd8qYvCM/full-fate-stay-night-vol-Vol-15.webp",
+      "volume_number": "Vol. 15",
+      "title": "Fate/stay night (15)",
+      "title_jp": "Fate/stay night(15)",
+      "release_date": "2011-04-26",
+      "isbn": "978-4047156807",
+      "asin": "B0093G5SRC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/G379Kjwr/small-fate-stay-night-vol-Vol-16.webp",
+      "cover_full": "https://i.ibb.co/ycxWVpWp/full-fate-stay-night-vol-Vol-16.webp",
+      "volume_number": "Vol. 16",
+      "title": "Fate/stay night (16)",
+      "title_jp": "Fate/stay night(16)",
+      "release_date": "2011-09-02",
+      "isbn": "978-4047157644",
+      "asin": "B0093G6E0W",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/pBXqnn31/small-fate-stay-night-vol-Vol-17.webp",
+      "cover_full": "https://i.ibb.co/ZzcbcrSC/full-fate-stay-night-vol-Vol-17.webp",
+      "volume_number": "Vol. 17",
+      "title": "Fate/stay night (17)",
+      "title_jp": "Fate/stay night(17)",
+      "release_date": "2011-12-21",
+      "isbn": "978-4041200490",
+      "asin": "B0093GA7AA",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/9mn8HMrX/small-fate-stay-night-vol-Vol-18.webp",
+      "cover_full": "https://i.ibb.co/d4SdzvVr/full-fate-stay-night-vol-Vol-18.webp",
+      "volume_number": "Vol. 18",
+      "title": "Fate/stay night (18)",
+      "title_jp": "Fate/stay night(18)",
+      "release_date": "2012-04-25",
+      "isbn": "978-4041202029",
+      "asin": "B0093GAXG8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/zWhthVDN/small-fate-stay-night-vol-Vol-19.webp",
+      "cover_full": "https://i.ibb.co/FLRj93Gv/full-fate-stay-night-vol-Vol-19.webp",
+      "volume_number": "Vol. 19",
+      "title": "Fate/stay night (19)",
+      "title_jp": "Fate/stay night(19)",
+      "release_date": "2012-08-24",
+      "isbn": "978-4041203590",
+      "asin": "B00BKVHC22",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4ch9Snb/small-fate-stay-night-vol-Vol-20.webp",
+      "cover_full": "https://i.ibb.co/sdDMvfVv/full-fate-stay-night-vol-Vol-20.webp",
+      "volume_number": "Vol. 20",
+      "title": "Fate/stay night (20)",
+      "title_jp": "Fate/stay night(20)",
+      "release_date": "2012-11-19",
+      "isbn": "978-4041205013",
+      "asin": "B00BKVHF9C",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074CBNT1B"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

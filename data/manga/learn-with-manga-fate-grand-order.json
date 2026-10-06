@@ -1,0 +1,71 @@
+{
+  "id": "learn-with-manga-fate-grand-order",
+  "title_romaji": "Learn with Manga! Fate/Grand Order",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Learn with Manga! Fate/Grand Order"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/nNbPQd92/small-learn-with-manga-fate-grand-order-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/nMCtCgPK/full-learn-with-manga-fate-grand-order-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Learn with Manga! Fate/Grand Order (1)",
+      "title_jp": "マンガで分かる！ Fate/Grand Order(1)",
+      "release_date": "2017-08-02",
+      "isbn": "978-4041061015",
+      "asin": "B07431LX19",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/7tbPLFVF/small-learn-with-manga-fate-grand-order-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/k2zhq9wx/full-learn-with-manga-fate-grand-order-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Learn with Manga! Fate/Grand Order (2)",
+      "title_jp": "マンガで分かる！ Fate/Grand Order(2)",
+      "release_date": "2019-05-25",
+      "isbn": "978-4041082263",
+      "asin": "B07RNJC3YB",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/F4zZPzG8/small-learn-with-manga-fate-grand-order-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/6cyykdht/full-learn-with-manga-fate-grand-order-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Learn with Manga! Fate/Grand Order (3)",
+      "title_jp": "マンガで分かる！ Fate/Grand Order(3)",
+      "release_date": "2022-04-26",
+      "isbn": "978-4041115688",
+      "asin": "B09XPX9DSF",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/V0n1FQ7K/small-learn-with-manga-fate-grand-order-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/XZZSL9Ns/full-learn-with-manga-fate-grand-order-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Learn with Manga! Fate/Grand Order (4)",
+      "title_jp": "マンガで分かる！ Fate/Grand Order(4)",
+      "release_date": "2023-08-10",
+      "isbn": "978-4041140055",
+      "asin": "B0CCX9W5ZV",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07T1F6KF7"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

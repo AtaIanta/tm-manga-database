@@ -1,0 +1,82 @@
+{
+  "id": "fate-grand-order-comic-a-la-carte-plus",
+  "title_romaji": "Fate/Grand Order Comic a la Carte PLUS!",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic a la Carte PLUS!"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/xtGJtzDT/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/ccQbKPTR/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! (1)",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! Ｉ",
+      "release_date": "2018-12-26",
+      "isbn": "978-4041077214",
+      "asin": "B07L6484NM",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Mx6J88cv/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/DfH3sm6c/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! (2)",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! ＩＩ",
+      "release_date": "2019-03-25",
+      "isbn": "978-4041080092",
+      "asin": "B07PGZWT3C",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/6JfmDrP8/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/XxqkwPqk/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! (3)",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! III",
+      "release_date": "2019-06-25",
+      "isbn": "978-4041084762",
+      "asin": "B07STZCSNY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/KxngbYhj/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/rf3v8k44/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! (4)",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! IV",
+      "release_date": "2019-10-25",
+      "isbn": "978-4041084786",
+      "asin": "B07YWGXWT8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/rGhkNX0g/small-fate-grand-order-comic-a-la-carte-plus-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/xt1ZgQYt/full-fate-grand-order-comic-a-la-carte-plus-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Grand Order Comic a la Carte PLUS! (5)",
+      "title_jp": "Fate/Grand Order コミックアラカルト PLUS! V",
+      "release_date": "2020-03-24",
+      "isbn": "978-4041084793",
+      "asin": "B085NBPCL3",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B07V9Y7FHL"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}

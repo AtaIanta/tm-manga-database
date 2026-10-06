@@ -528,7 +528,7 @@ function renderDetailContent(manga) {
         return `<div><span class="text-white text-[11px] font-medium">${escapeHtml(rName)}</span> ${namesHtml}</div>`;
       }).join('');
 
-      const artRowHtml = hasArt ? `<div><span class="text-white text-[11px] font-medium">Art:</span> ${artHtml}</div>` : '';
+      const artRowHtml = hasArt ? `<div><span class="text-white text-[11px] font-medium">Mangaka:</span> ${artHtml}</div>` : '';
 
       authorsEl.innerHTML = `
         <div class="flex flex-col gap-1">
@@ -823,10 +823,11 @@ function renderAuthorRolesInPlace() {
   container.innerHTML = editAuthorRoles.map((r, rIdx) => `
     <div class="flex items-center gap-1.5">
       <input type="text" value="${escapeHtml(r.role || 'Story:')}" placeholder="Role (e.g. Story:)"
+             data-role-suggest="true" autocomplete="off"
              oninput="editAuthorRoles[${rIdx}].role = this.value"
-             class="w-24 px-1.5 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-amber text-xs font-semibold outline-none focus:border-cafe-gold shrink-0">
-      <input type="text" value="${escapeHtml(r.names || '')}" placeholder="Contributor(s) (e.g. TYPE-MOON)"
-             data-artist-suggest="true" autocomplete="off"
+             class="w-32 px-1.5 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-cafe-amber text-xs font-semibold outline-none focus:border-cafe-gold shrink-0">
+      <input type="text" value="${escapeHtml(r.names || '')}" placeholder="Contributor(s) (e.g. TYPE-MOON, Marvelous)"
+             data-credit-suggest="true" autocomplete="off"
              oninput="editAuthorRoles[${rIdx}].names = this.value"
              class="flex-1 min-w-0 px-2 py-1 rounded bg-cafe-900 border border-cafe-gold/30 text-white text-xs outline-none focus:border-cafe-gold">
       <button type="button" onclick="removeAuthorRoleInPlace(${rIdx})" class="p-1 text-red-400 hover:text-red-300 transition-colors shrink-0" title="Remove role">
@@ -2097,6 +2098,59 @@ function applyArtistSuggestion(name) {
   input.focus();
 }
 
+function splitCommaNames(raw) {
+  if (raw == null) return [];
+  const values = Array.isArray(raw) ? raw : [raw];
+  const names = [];
+  values.forEach(value => {
+    String(value).split(',').forEach(part => {
+      const name = part.trim().replace(/^[,]+|[,]+$/g, '');
+      if (name) names.push(name);
+    });
+  });
+  return names;
+}
+
+function collectCachedCreditNames() {
+  const list = [];
+  const seen = new Set();
+  const blocked = new Set(['various', 'various artists', 'n/a', 'unknown', '[no data]', '[insufficient data]', 'tbd']);
+  const add = (name, extra = {}) => {
+    const clean = (name || '').trim();
+    const key = clean.toLowerCase();
+    if (!clean || blocked.has(key) || seen.has(key)) return;
+    seen.add(key);
+    list.push({
+      name: clean,
+      kanji: (extra.kanji || '').trim(),
+      slug: (extra.slug || (typeof slugify === 'function' ? slugify(clean) : '') || '').toLowerCase(),
+      subtitle: extra.subtitle || ''
+    });
+  };
+
+  collectCachedArtists().forEach(artist => add(artist.name, artist));
+
+  const docs = new Map();
+  (allManga || []).forEach(manga => {
+    if (manga && manga.id) docs.set(manga.id, manga);
+  });
+  if (typeof sessionMangaDocs === 'object' && sessionMangaDocs) {
+    Object.values(sessionMangaDocs).forEach(doc => {
+      if (doc && doc.id) docs.set(doc.id, doc);
+    });
+  }
+  docs.forEach(doc => {
+    (doc.custom_roles || []).forEach(role => {
+      splitCommaNames(role && role.names).forEach(name => add(name));
+    });
+  });
+
+  collectCachedPublishers().forEach(publisher => {
+    add(publisher.name, { subtitle: publisher.subtitle });
+  });
+  return list;
+}
+
 function collectCachedPublishers() {
   const list = [];
   const seen = new Set();
@@ -2125,6 +2179,98 @@ function rankPublisherMatch(publisher, query) {
   if (name.startsWith(q)) return 0;
   if (name.includes(q)) return 1;
   return -1;
+}
+
+function normalizeRoleKey(role) {
+  return String(role || '').trim().replace(/[:\s]+$/g, '').toLowerCase();
+}
+
+function collectCachedCreditRoles(currentValue = '') {
+  const byKey = new Map();
+  const add = (role) => {
+    const clean = String(role || '').trim();
+    const key = normalizeRoleKey(clean);
+    if (!key || key === '[no data]' || key === 'n/a' || key === 'unknown') return;
+    const existing = byKey.get(key);
+    if (!existing) byKey.set(key, { name: clean, count: 1, slug: key, kanji: '' });
+    else existing.count += 1;
+  };
+
+  const docs = new Map();
+  (allManga || []).forEach(manga => {
+    if (manga && manga.id) docs.set(manga.id, manga);
+  });
+  if (typeof sessionMangaDocs === 'object' && sessionMangaDocs) {
+    Object.values(sessionMangaDocs).forEach(doc => {
+      if (doc && doc.id) docs.set(doc.id, doc);
+    });
+  }
+  docs.forEach(doc => {
+    (doc.custom_roles || []).forEach(role => add(role && role.role));
+  });
+
+  const currentKey = normalizeRoleKey(currentValue);
+  (editAuthorRoles || []).forEach(role => {
+    const key = normalizeRoleKey(role && role.role);
+    if (key && key === currentKey && !byKey.has(key)) return;
+    add(role && role.role);
+  });
+
+  return [...byKey.values()];
+}
+
+function refreshRoleSuggestions(input) {
+  if (!input || !input.hasAttribute('data-role-suggest')) return;
+  const query = (input.value || '').trim();
+  const matchQuery = query.replace(/[:\s]+$/g, '');
+  const matches = [];
+  collectCachedCreditRoles(query).forEach(role => {
+    if (!matchQuery) {
+      matches.push({ ...role, rank: 0 });
+      return;
+    }
+    const rank = rankArtistMatch(role, matchQuery);
+    if (rank < 0) return;
+    matches.push({ ...role, rank });
+  });
+  matches.sort((a, b) => a.rank - b.rank || b.count - a.count || a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+  if (!matches.length) {
+    hideArtistSuggestMenu();
+    return;
+  }
+  const exact = normalizeRoleKey(query);
+  artistSuggestInput = input;
+  artistSuggestRange = { start: 0, end: (input.value || '').length };
+  artistSuggestMatches = matches.slice(0, 12);
+  const exactIdx = exact ? matches.findIndex(role => normalizeRoleKey(role.name) === exact) : -1;
+  artistSuggestIndex = exactIdx >= 0 ? exactIdx : 0;
+  renderArtistSuggestMenu();
+}
+
+function refreshCreditSuggestions(input, fromFocus = false) {
+  if (!input || !input.hasAttribute('data-credit-suggest')) return;
+  const token = artistTokenAtCaret(input);
+  const query = token.query;
+  if (!query) {
+    hideArtistSuggestMenu();
+    return;
+  }
+  const matches = [];
+  collectCachedCreditNames().forEach(entry => {
+    const rank = rankArtistMatch(entry, query);
+    if (rank < 0) return;
+    matches.push({ ...entry, rank });
+  });
+  matches.sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+  if (fromFocus && matches.some(entry => entry.name.toLowerCase() === query.toLowerCase())) {
+    hideArtistSuggestMenu();
+    return;
+  }
+  artistSuggestInput = input;
+  artistSuggestRange = { start: token.start, end: token.end };
+  artistSuggestMatches = matches.slice(0, 12);
+  artistSuggestIndex = artistSuggestMatches.length ? 0 : -1;
+  renderArtistSuggestMenu();
 }
 
 function refreshPublisherSuggestions(input, fromFocus = false) {
@@ -2156,14 +2302,18 @@ function onArtistSuggestInput(event) {
   if (artistSuggestSuppress) return;
   const input = event.target;
   if (!(input instanceof HTMLInputElement)) return;
-  if (input.hasAttribute('data-artist-suggest')) refreshArtistSuggestions(input);
+  if (input.hasAttribute('data-role-suggest')) refreshRoleSuggestions(input);
+  else if (input.hasAttribute('data-credit-suggest')) refreshCreditSuggestions(input);
+  else if (input.hasAttribute('data-artist-suggest')) refreshArtistSuggestions(input);
   else if (input.hasAttribute('data-publisher-suggest')) refreshPublisherSuggestions(input);
 }
 
 function onArtistSuggestFocus(event) {
   const input = event.target;
   if (!(input instanceof HTMLInputElement)) return;
-  if (input.hasAttribute('data-artist-suggest')) refreshArtistSuggestions(input, true);
+  if (input.hasAttribute('data-role-suggest')) refreshRoleSuggestions(input);
+  else if (input.hasAttribute('data-credit-suggest')) refreshCreditSuggestions(input, true);
+  else if (input.hasAttribute('data-artist-suggest')) refreshArtistSuggestions(input, true);
   else if (input.hasAttribute('data-publisher-suggest')) refreshPublisherSuggestions(input, true);
 }
 

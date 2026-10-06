@@ -1,0 +1,104 @@
+{
+  "id": "fate-extra",
+  "title_romaji": "Fate/Extra",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Extra"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/hjmnnY0/small-fate-extra-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/TMtLG49Z/full-fate-extra-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Extra (1)",
+      "title_jp": "フェイト/エクストラ(1)",
+      "release_date": "2011-09-18",
+      "isbn": "978-4047157767",
+      "asin": "B00FB4SI3Q",
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Robina"
+        }
+      ]
+    },
+    {
+      "cover": "https://i.ibb.co/SDQ5R2pr/small-fate-extra-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/zWj2zJp0/full-fate-extra-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Extra (2)",
+      "title_jp": "フェイト/エクストラ(2)",
+      "release_date": "2012-03-22",
+      "isbn": "978-4041201756",
+      "asin": "B00FB4SIB8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/dJzyHPVf/small-fate-extra-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/GQwXXSWg/full-fate-extra-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Extra (3)",
+      "title_jp": "フェイト/エクストラ(3)",
+      "release_date": "2012-12-07",
+      "isbn": "978-4041204887",
+      "asin": "B00FB4SICC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/x8XCq7mf/small-fate-extra-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/zTF5zjZN/full-fate-extra-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Extra (4)",
+      "title_jp": "フェイト/エクストラ(4)",
+      "release_date": "2013-09-25",
+      "isbn": "978-4041208281",
+      "asin": "B00FB4SII6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/vvv0QYPj/small-fate-extra-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/60LRqMb5/full-fate-extra-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Extra (5)",
+      "title_jp": "フェイト/エクストラ(5)",
+      "release_date": "2014-03-22",
+      "isbn": "978-4041210543",
+      "asin": "B00J4KDW8E",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/P00Ydsm/small-fate-extra-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/p60XMv1y/full-fate-extra-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Extra (6)",
+      "title_jp": "フェイト/エクストラ(6)",
+      "release_date": "2014-12-08",
+      "isbn": "978-4041020173",
+      "asin": "B00QLR0U9W",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B075V77KW1"
+  ],
+  "custom_roles": [
+    {
+      "role": "Original Work:",
+      "names": "TYPE-MOON, Marvelous"
+    }
+  ],
+  "artists": [
+    "Robina"
+  ],
+  "publisher": null,
+  "status": "Finished",
+  "type": "Adaptation",
+  "series": "Fate series",
+  "release_year": null
+}

@@ -438,7 +438,7 @@ function renderFullCredits(manga) {
   const hasCustomArt = manga.custom_roles && Array.isArray(manga.custom_roles) && manga.custom_roles.some(r => /art|illustrat/i.test(r.role || ''));
   if (!hasCustomArt) {
     const artDisplay = renderArtistLinks(manga.artists);
-    parts.push(`<span><span class="text-white font-medium">Art:</span> ${artDisplay}</span>`);
+    parts.push(`<span><span class="text-white font-medium">Mangaka:</span> ${artDisplay}</span>`);
   }
 
   return parts.join(' <span class="text-cafe-gold/40">·</span> ');
@@ -488,7 +488,7 @@ function renderGridCredits(manga) {
     const artDisplay = renderArtistLinks(manga.artists);
     rows.push(`
       <div class="flex items-center text-cafe-cream/80 text-[11px]">
-        <span class="text-white mr-1.5 shrink-0 font-medium">Art:</span>
+        <span class="text-white mr-1.5 shrink-0 font-medium">Mangaka:</span>
         <span class="truncate">${artDisplay}</span>
       </div>
     `);

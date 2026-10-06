@@ -1,0 +1,200 @@
+{
+  "id": "fate-apocrypha",
+  "title_romaji": "Fate/Apocrypha",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Apocrypha"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/pjFwVnxp/small-fate-apocrypha-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/0VWpnxzq/full-fate-apocrypha-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Apocrypha (1)",
+      "title_jp": "Fate/Apocrypha(1)",
+      "release_date": "2016-08-23",
+      "isbn": "978-4041046845",
+      "asin": "B01K197ZG6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/GQHV7Mbq/small-fate-apocrypha-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/fYxyZF3d/full-fate-apocrypha-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Apocrypha (2)",
+      "title_jp": "Fate/Apocrypha(2)",
+      "release_date": "2017-01-26",
+      "isbn": "978-4041052204",
+      "asin": "B01NCX9Q7A",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/svBWpmtJ/small-fate-apocrypha-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/VprRmfwr/full-fate-apocrypha-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Apocrypha (3)",
+      "title_jp": "Fate/Apocrypha(3)",
+      "release_date": "2017-06-24",
+      "isbn": "978-4041057650",
+      "asin": "B071JWZW2D",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/tTWbTKGM/small-fate-apocrypha-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/1YNbW8Qg/full-fate-apocrypha-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Apocrypha (4)",
+      "title_jp": "Fate/Apocrypha(4)",
+      "release_date": "2017-10-24",
+      "isbn": "978-4041060995",
+      "asin": "B076CDLBK8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/jvWdqFnk/small-fate-apocrypha-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/N2jjmXnS/full-fate-apocrypha-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Apocrypha (5)",
+      "title_jp": "Fate/Apocrypha(5)",
+      "release_date": "2018-01-26",
+      "isbn": "978-4041064870",
+      "asin": "B07918C1ZN",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/0RK7YzVB/small-fate-apocrypha-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/YFvvBNN0/full-fate-apocrypha-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Apocrypha (6)",
+      "title_jp": "Fate/Apocrypha(6)",
+      "release_date": "2018-07-26",
+      "isbn": "978-4041071663",
+      "asin": "B07FDS2PR6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/vxBDgCxh/small-fate-apocrypha-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/TB5BRq60/full-fate-apocrypha-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/Apocrypha (7)",
+      "title_jp": "Fate/Apocrypha(7)",
+      "release_date": "2019-02-26",
+      "isbn": "978-4041078112",
+      "asin": "B07NMNKQ5X",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/tw1SVh89/small-fate-apocrypha-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/vxwKhTVs/full-fate-apocrypha-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/Apocrypha (8)",
+      "title_jp": "Fate/Apocrypha(8)",
+      "release_date": "2019-11-26",
+      "isbn": "978-4041086872",
+      "asin": "B081C74MMF",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Xf29PyCS/small-fate-apocrypha-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/4wFs66QH/full-fate-apocrypha-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "Fate/Apocrypha (9)",
+      "title_jp": "Fate/Apocrypha(9)",
+      "release_date": "2020-10-24",
+      "isbn": "978-4041086902",
+      "asin": "B08L2WYVKS",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/spQSpgmH/small-fate-apocrypha-vol-Vol-10.webp",
+      "cover_full": "https://i.ibb.co/wN4G7Q27/full-fate-apocrypha-vol-Vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "Fate/Apocrypha (10)",
+      "title_jp": "Fate/Apocrypha(10)",
+      "release_date": "2021-07-26",
+      "isbn": "978-4041116760",
+      "asin": "B098VZ6S97",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Fb2x6SxK/small-fate-apocrypha-vol-Vol-11.webp",
+      "cover_full": "https://i.ibb.co/zTkwjx9G/full-fate-apocrypha-vol-Vol-11.webp",
+      "volume_number": "Vol. 11",
+      "title": "Fate/Apocrypha (11)",
+      "title_jp": "Fate/Apocrypha(11)",
+      "release_date": "2021-09-25",
+      "isbn": "978-4041116777",
+      "asin": "B09FSLKKYW",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Mkcj2mjy/small-fate-apocrypha-vol-Vol-12.webp",
+      "cover_full": "https://i.ibb.co/KcfpRnMN/full-fate-apocrypha-vol-Vol-12.webp",
+      "volume_number": "Vol. 12",
+      "title": "Fate/Apocrypha (12)",
+      "title_jp": "Fate/Apocrypha(12)",
+      "release_date": "2022-03-26",
+      "isbn": "978-4041116784",
+      "asin": "B09VBM2178",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/20c0BxcY/small-fate-apocrypha-vol-Vol-13.webp",
+      "cover_full": "https://i.ibb.co/LXvnccpf/full-fate-apocrypha-vol-Vol-13.webp",
+      "volume_number": "Vol. 13",
+      "title": "Fate/Apocrypha (13)",
+      "title_jp": "Fate/Apocrypha(13)",
+      "release_date": "2022-09-26",
+      "isbn": "978-4041129456",
+      "asin": "B0BDJSNKM1",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/c0jK1h2/small-fate-apocrypha-vol-Vol-14.webp",
+      "cover_full": "https://i.ibb.co/ymfXp1cK/full-fate-apocrypha-vol-Vol-14.webp",
+      "volume_number": "Vol. 14",
+      "title": "Fate/Apocrypha (14)",
+      "title_jp": "Fate/Apocrypha(14)",
+      "release_date": "2023-03-25",
+      "isbn": "978-4041129463",
+      "asin": "B0BY1F1KHW",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/N86cKcM/small-fate-apocrypha-vol-Vol-15.webp",
+      "cover_full": "https://i.ibb.co/pvCfGgFJ/full-fate-apocrypha-vol-Vol-15.webp",
+      "volume_number": "Vol. 15",
+      "title": "Fate/Apocrypha (15)",
+      "title_jp": "Fate/Apocrypha(15)",
+      "release_date": "2023-10-26",
+      "isbn": "978-4041139455",
+      "asin": "B0CKX4H7K6",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/23mdQqzH/small-fate-apocrypha-vol-Vol-16.webp",
+      "cover_full": "https://i.ibb.co/60ZXdK15/full-fate-apocrypha-vol-Vol-16.webp",
+      "volume_number": "Vol. 16",
+      "title": "Fate/Apocrypha (16)",
+      "title_jp": "Fate/Apocrypha(16)",
+      "release_date": "2024-06-25",
+      "isbn": "978-4041139462",
+      "asin": "B0D7BXV81Q",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074CM9SP6"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "status": "Unknown",
+  "type": "Adaptation",
+  "series": "Fate series",
+  "release_year": null
+}

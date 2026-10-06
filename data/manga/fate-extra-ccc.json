@@ -1,0 +1,117 @@
+{
+  "id": "fate-extra-ccc",
+  "title_romaji": "Fate/Extra CCC",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Extra CCC"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/nM8Px1Yq/small-fate-extra-ccc-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/C3p3PGbb/full-fate-extra-ccc-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Extra CCC (1)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(1)",
+      "release_date": "2016-04-26",
+      "isbn": "978-4041038604",
+      "asin": "B01EH12BHW",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/CKfDJYNH/small-fate-extra-ccc-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/JDGtm8c/full-fate-extra-ccc-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Extra CCC (2)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(2)",
+      "release_date": "2016-11-26",
+      "isbn": "978-4041050248",
+      "asin": "B01N02KZQP",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/8LHKVYKx/small-fate-extra-ccc-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/n8ZZ5L26/full-fate-extra-ccc-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Extra CCC (3)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(3)",
+      "release_date": "2018-02-10",
+      "isbn": "978-4041064924",
+      "asin": "B079DHXGKY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/9H8GSxkS/small-fate-extra-ccc-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/PzsZhqzG/full-fate-extra-ccc-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Extra CCC (4)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(4)",
+      "release_date": "2019-02-09",
+      "isbn": "978-4041078129",
+      "asin": "B07N67KJY2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Xk7rKb2J/small-fate-extra-ccc-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/tMFQS4Q8/full-fate-extra-ccc-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Extra CCC (5)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(5)",
+      "release_date": "2020-02-22",
+      "isbn": "978-4048111683",
+      "asin": "B084KW3SC3",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/rRckvNTT/small-fate-extra-ccc-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/hPhSZWt/full-fate-extra-ccc-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Extra CCC (6)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(6)",
+      "release_date": "2021-02-10",
+      "isbn": "978-4041110041",
+      "asin": "B08V584BVL",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/rKqvrvqP/small-fate-extra-ccc-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/x8jgYNdh/full-fate-extra-ccc-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/Extra CCC (7)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(7)",
+      "release_date": "2024-03-08",
+      "isbn": "978-4041139226",
+      "asin": "B0CW19V3J5",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/JwVtRQ5V/small-fate-extra-ccc-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/LhSLp9rP/full-fate-extra-ccc-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/Extra CCC (8)",
+      "title_jp": "フェイト/エクストラ ＣＣＣ(8)",
+      "release_date": "2024-03-08",
+      "isbn": "978-4041139233",
+      "asin": "B0CW1F2CF9",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B074CMDYB3"
+  ],
+  "custom_roles": [
+    {
+      "role": "Original Work:",
+      "names": "TYPE-MOON, Marvelous"
+    }
+  ],
+  "artists": [],
+  "publisher": null,
+  "status": "Finished",
+  "type": "Adaptation",
+  "series": "Fate series",
+  "release_year": null
+}

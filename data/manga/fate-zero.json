@@ -1,0 +1,181 @@
+{
+  "id": "fate-zero",
+  "title_romaji": "Fate/Zero",
+  "title_jp": null,
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/84gFmFw0/small-fate-zero-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/WNB3Z3JZ/full-fate-zero-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero (1)",
+      "title_jp": "Fate/Zero(1)",
+      "release_date": "2011-09-02",
+      "isbn": "978-4047157712",
+      "asin": "B0093GAKZC",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/8gDq41xj/small-fate-zero-vol-Vol-2.webp",
+      "cover_full": "https://i.ibb.co/ks8XbpNc/full-fate-zero-vol-Vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Zero (2)",
+      "title_jp": "Fate/Zero(2)",
+      "release_date": "2011-10-01",
+      "isbn": "978-4047157873",
+      "asin": "B0093GAL7Y",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/rKTy0xQH/small-fate-zero-vol-Vol-3.webp",
+      "cover_full": "https://i.ibb.co/TBGr0qc3/full-fate-zero-vol-Vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Zero (3)",
+      "title_jp": "Fate/Zero(3)",
+      "release_date": "2012-04-02",
+      "isbn": "978-4047158191",
+      "asin": "B0093GASW2",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/CpTcVz08/small-fate-zero-vol-Vol-4.webp",
+      "cover_full": "https://i.ibb.co/hxx14bb5/full-fate-zero-vol-Vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Zero (4)",
+      "title_jp": "Fate/Zero(4)",
+      "release_date": "2012-10-01",
+      "isbn": "978-4041204016",
+      "asin": "B00BKVHF4W",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Cspv0tDM/small-fate-zero-vol-Vol-5.webp",
+      "cover_full": "https://i.ibb.co/BFB8mFT/full-fate-zero-vol-Vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Zero (5)",
+      "title_jp": "Fate/Zero(5)",
+      "release_date": "2013-02-01",
+      "isbn": "978-4041205631",
+      "asin": "B00C40EW7G",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/nsn8GdJb/small-fate-zero-vol-Vol-6.webp",
+      "cover_full": "https://i.ibb.co/DDSV31tD/full-fate-zero-vol-Vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Zero (6)",
+      "title_jp": "Fate/Zero(6)",
+      "release_date": "2013-07-03",
+      "isbn": "978-4041208007",
+      "asin": "B00DONBU8Q",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/tFY01v0/small-fate-zero-vol-Vol-7.webp",
+      "cover_full": "https://i.ibb.co/gZ69G0WC/full-fate-zero-vol-Vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/Zero (7)",
+      "title_jp": "Fate/Zero(7)",
+      "release_date": "2014-02-01",
+      "isbn": "978-4041209912",
+      "asin": "B00IFWA8IY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/TBCjbn4Z/small-fate-zero-vol-Vol-8.webp",
+      "cover_full": "https://i.ibb.co/FqNntGVd/full-fate-zero-vol-Vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/Zero (8)",
+      "title_jp": "Fate/Zero(8)",
+      "release_date": "2014-09-25",
+      "isbn": "978-4041020227",
+      "asin": "B00NPOETWS",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4g4nBmBZ/small-fate-zero-vol-Vol-9.webp",
+      "cover_full": "https://i.ibb.co/yB4L7rbg/full-fate-zero-vol-Vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "Fate/Zero (9)",
+      "title_jp": "Fate/Zero(9)",
+      "release_date": "2014-12-26",
+      "isbn": "978-4041020234",
+      "asin": "B00R3XZMUA",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/j958cSp4/small-fate-zero-vol-Vol-10.webp",
+      "cover_full": "https://i.ibb.co/DfH9zxVP/full-fate-zero-vol-Vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "Fate/Zero (10)",
+      "title_jp": "Fate/Zero(10)",
+      "release_date": "2015-06-26",
+      "isbn": "978-4041030868",
+      "asin": "B00ZZCGQXI",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/v610RFV0/small-fate-zero-vol-Vol-11.webp",
+      "cover_full": "https://i.ibb.co/jvjyw4MM/full-fate-zero-vol-Vol-11.webp",
+      "volume_number": "Vol. 11",
+      "title": "Fate/Zero (11)",
+      "title_jp": "Fate/Zero(11)",
+      "release_date": "2015-10-30",
+      "isbn": "978-4041030875",
+      "asin": "B01791ZBJW",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/6JYW9sFm/small-fate-zero-vol-Vol-12.webp",
+      "cover_full": "https://i.ibb.co/2Yt64xxt/full-fate-zero-vol-Vol-12.webp",
+      "volume_number": "Vol. 12",
+      "title": "Fate/Zero (12)",
+      "title_jp": "Fate/Zero(12)",
+      "release_date": "2016-06-23",
+      "isbn": "978-4041041680",
+      "asin": "B01GPMSDGY",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/p65gKvXQ/small-fate-zero-vol-Vol-13.webp",
+      "cover_full": "https://i.ibb.co/N2XM5TcT/full-fate-zero-vol-Vol-13.webp",
+      "volume_number": "Vol. 13",
+      "title": "Fate/Zero (13)",
+      "title_jp": "Fate/Zero(13)",
+      "release_date": "2016-12-31",
+      "isbn": "978-4041041697",
+      "asin": "B01N5ET5N8",
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/RTJ0QWxb/small-fate-zero-vol-Vol-14.webp",
+      "cover_full": "https://i.ibb.co/XfPh5c3W/full-fate-zero-vol-Vol-14.webp",
+      "volume_number": "Vol. 14",
+      "title": "Fate/Zero (14)",
+      "title_jp": "Fate/Zero(14)",
+      "release_date": "2017-08-26",
+      "isbn": "978-4041057964",
+      "asin": "B074PJSMS9",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/B075FTT1CB"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": null,
+  "release_year": null
+}
