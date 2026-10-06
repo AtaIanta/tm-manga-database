@@ -20,7 +20,14 @@ async function openMangaDetail(id, pushHistory = true) {
   if (!catalogItem) return;
 
   const actualId = catalogItem.id;
-  activeMangaIndex = allManga.findIndex(m => m.id === actualId);
+  if (typeof currentCategory !== 'undefined' && currentCategory !== 'artists') {
+    const nextCategory = catalogItem.archive_kind === 'doujin' ? 'doujins' : 'manga';
+    if (currentCategory !== nextCategory) {
+      currentCategory = nextCategory;
+      if (typeof syncCategoryTabs === 'function') syncCategoryTabs(nextCategory);
+    }
+  }
+  activeMangaIndex = (typeof filteredManga !== 'undefined' ? filteredManga : allManga).findIndex(m => m.id === actualId);
   if (pushHistory) {
     window.location.hash = `manga=${encodeURIComponent(actualId)}`;
   }
@@ -31,12 +38,12 @@ async function openMangaDetail(id, pushHistory = true) {
   }
   if (!mangaDoc) {
     try {
-      const res = await fetch(`data/manga/${actualId}.json`, { cache: 'no-cache' });
+      const res = await fetch(archiveJsonPathForId(actualId), { cache: 'no-cache' });
       if (res.ok) {
         mangaDoc = await res.json();
       }
     } catch (err) {
-      console.warn(`Could not load data/manga/${actualId}.json directly. Using catalog fallback.`, err);
+      console.warn(`Could not load ${archiveJsonPathForId(actualId)} directly. Using catalog fallback.`, err);
     }
   }
 
@@ -100,7 +107,7 @@ async function revertCurrentMangaChanges() {
   const title = currentDetailDoc.title_romaji || currentDetailDoc.title_en || id;
   let original = null;
   try {
-    const res = await fetch(`data/manga/${id}.json`, { cache: 'no-cache' });
+    const res = await fetch(archiveJsonPathForId(id), { cache: 'no-cache' });
     if (res.ok) original = await res.json();
   } catch (err) {}
 
@@ -144,7 +151,7 @@ function removeLocalOnlyManga(id) {
 
 function applyRevertedManga(id, original) {
   delete sessionMangaDocs[id];
-  const normalized = normalizeMangaDoc(original, `${id}.json`);
+  const normalized = normalizeMangaDoc(original, `${id}.json`, archiveFolderForId(id));
   const index = allManga.findIndex(manga => manga.id === id);
   if (index >= 0) allManga[index] = normalized;
   else allManga.push(normalized);
@@ -168,6 +175,8 @@ function finishCloseFullPageView(updateHistory = true) {
   if (updateHistory) {
     if (typeof currentCategory !== 'undefined' && currentCategory === 'artists') {
       window.location.hash = 'artists';
+    } else if (typeof currentCategory !== 'undefined' && currentCategory === 'doujins') {
+      window.location.hash = 'doujins';
     } else {
       history.pushState('', document.title, window.location.pathname + window.location.search);
     }
@@ -1787,7 +1796,7 @@ function saveDirectMangaEdit() {
 
   const idx = allManga.findIndex(m => m.id === stored.id);
   if (idx >= 0) {
-    const normalized = normalizeMangaDoc(stored, `${stored.id}.json`);
+    const normalized = normalizeMangaDoc(stored, `${stored.id}.json`, archiveFolderForId(stored.id));
     normalized._isLocallyModified = true;
     allManga[idx] = normalized;
   }
@@ -1865,7 +1874,10 @@ async function downloadSingleMangaZip(docToSave = null) {
     : { ...doc };
   delete cleanDoc._isLocallyModified;
 
-  zip.file(`data/manga/${cleanDoc.id}.json`, JSON.stringify(cleanDoc, null, 2));
+  const archivePath = typeof archiveJsonPathForId === 'function'
+    ? archiveJsonPathForId(cleanDoc.id)
+    : `data/manga/${cleanDoc.id}.json`;
+  zip.file(archivePath, JSON.stringify(cleanDoc, null, 2));
 
   const referencedCovers = new Set();
   if (cleanDoc.cover && typeof cleanDoc.cover === 'string') {

@@ -1,0 +1,43 @@
+{
+  "id": "vampire-shutter-chance",
+  "title_romaji": "Vampire Shutter Chance",
+  "title_jp": "ヴァンパイアシャッターチャンス",
+  "title_en": null,
+  "synopsis": "A Tsukihime Remake slice-of-life doujinshi set in a relaxed timeline based on the Arcueid route. Shiki gifts Arcueid a disposable camera to keep her entertained during the day. While built on the Shiki and Arcueid dynamic, the story follows Arcueid wandering the city on her own with a camera, discovering daily human life and reflecting on her feelings for Shiki.",
+  "show_chapter_artists": true,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/cPsTjyt/small-vampire-shutter-chance-vol-1.webp",
+      "cover_full": "https://i.ibb.co/VW7VpsDj/full-vampire-shutter-chance-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Vampire Shutter Chance",
+      "title_jp": "ヴァンパイアシャッターチャンス",
+      "is_uncollected": true,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": "Oneshot",
+          "title": null,
+          "title_jp": null,
+          "artist": "metalog"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [
+    "metalog"
+  ],
+  "publisher": "N/A",
+  "magazine": "N/A",
+  "serialization_start": "N/A",
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Doujinshi",
+  "series": "Tsukihime",
+  "release_year": null
+}

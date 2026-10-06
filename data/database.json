@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-06T12:23:34Z",
-  "count": 31,
+  "updated_at": "2026-10-06T13:19:47Z",
+  "count": 33,
   "manga_files": [
     "all-around-type-moon.json",
     "canaan-comic-anthology.json",
@@ -34,6 +34,10 @@
     "tsuki-no-sango.json",
     "tsukihime-comic-anthology.json"
   ],
+  "doujin_files": [
+    "25-nichi-no-hanashi.json",
+    "vampire-shutter-chance.json"
+  ],
   "artist_files": [],
   "publisher_files": [],
   "file_revs": {
@@ -62,11 +66,13 @@
     "manga/mahoutsukai-no-yoru-comic-anthology.json": "1791223905722256300:1105",
     "manga/melty-blood-back-alley-nightmare.json": "1791286606425666400:4147",
     "manga/melty-blood-comic-anthology.json": "1791223905724251100:4951",
-    "manga/melty-blood-type-lumina-piece-in-paradise.json": "1791197678790997700:6758",
+    "manga/melty-blood-type-lumina-piece-in-paradise.json": "1791292709411839700:6481",
     "manga/melty-blood-x.json": "1791286624781909200:4281",
     "manga/melty-blood.json": "1791286565199933500:4230",
     "manga/shingetsutan-tsukihime.json": "1791286264099732900:5541",
     "manga/tsuki-no-sango.json": "1791220058491955800:3058",
-    "manga/tsukihime-comic-anthology.json": "1791223905725248500:5703"
+    "manga/tsukihime-comic-anthology.json": "1791223905725248500:5703",
+    "doujins/25-nichi-no-hanashi.json": "1791292785164291000:1280",
+    "doujins/vampire-shutter-chance.json": "1791292595077615500:1480"
   }
 }

@@ -208,6 +208,20 @@ function checkUrlHash() {
     return;
   }
 
+  if (hash === 'doujins') {
+    if (mangaFullPageView && !mangaFullPageView.classList.contains('hidden')) {
+      closeFullPageView(false);
+    }
+    if (artistFullPageView && !artistFullPageView.classList.contains('hidden')) {
+      closeArtistPageView(false);
+    }
+    if (publisherFullPageView && !publisherFullPageView.classList.contains('hidden')) {
+      closePublisherPageView(false);
+    }
+    switchCategory('doujins');
+    return;
+  }
+
   if (hash === 'artists') {
     if (mangaFullPageView && !mangaFullPageView.classList.contains('hidden')) {
       closeFullPageView(false);

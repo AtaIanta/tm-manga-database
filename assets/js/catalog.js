@@ -3,29 +3,38 @@ let currentCategory = 'manga';
 let currentView = 'grid';      
 let currentSort = 'title-asc';
 
+function syncCategoryTabs(category) {
+  const tabManga = document.getElementById('tabCategoryManga');
+  const tabDoujins = document.getElementById('tabCategoryDoujins');
+  const tabArtists = document.getElementById('tabCategoryArtists');
+  if (tabManga) tabManga.classList.toggle('active', category === 'manga');
+  if (tabDoujins) tabDoujins.classList.toggle('active', category === 'doujins');
+  if (tabArtists) tabArtists.classList.toggle('active', category === 'artists');
+}
+
+function isWorkCatalog(category = currentCategory) {
+  return category === 'manga' || category === 'doujins';
+}
+
+function worksForCurrentCategory() {
+  return allManga.filter(item => currentCategory === 'doujins'
+    ? item.archive_kind === 'doujin'
+    : item.archive_kind !== 'doujin');
+}
+
 function switchCategory(category) {
   if (currentCategory === category) return;
+  const previous = currentCategory;
   currentCategory = category;
-
-  const tabManga = document.getElementById('tabCategoryManga');
-  const tabArtists = document.getElementById('tabCategoryArtists');
-
-  if (tabManga) tabManga.classList.toggle('active', category === 'manga');
-  if (tabArtists) tabArtists.classList.toggle('active', category === 'artists');
+  syncCategoryTabs(category);
 
   const sortSelect = document.getElementById('sortSelect');
   const searchInput = document.getElementById('searchInput');
+  const enteringArtists = category === 'artists';
+  const leavingArtists = previous === 'artists';
 
-  if (sortSelect) {
-    if (category === 'manga') {
-      sortSelect.innerHTML = `
-        <option value="title-asc">Title (A → Z)</option>
-        <option value="title-desc">Title (Z → A)</option>
-        <option value="vol-desc">Most Volumes</option>
-      `;
-      currentSort = 'title-asc';
-      if (searchInput) searchInput.placeholder = "Search by title, connection, type, artist... (use -word to exclude)";
-    } else {
+  if (sortSelect && (enteringArtists || leavingArtists)) {
+    if (enteringArtists) {
       sortSelect.innerHTML = `
         <option value="works-desc">Most Documented Works</option>
         <option value="name-asc">Name (A → Z)</option>
@@ -33,11 +42,24 @@ function switchCategory(category) {
         <option value="chaps-desc">Most Chapters</option>
       `;
       currentSort = 'works-desc';
-      if (searchInput) searchInput.placeholder = "Search artists by name, kanji, circle... (use -word to exclude)";
+    } else {
+      sortSelect.innerHTML = `
+        <option value="title-asc">Title (A → Z)</option>
+        <option value="title-desc">Title (Z → A)</option>
+        <option value="vol-desc">Most Volumes</option>
+      `;
+      currentSort = 'title-asc';
     }
   }
 
-  if (searchInput) searchInput.value = '';
+  if (searchInput) {
+    searchInput.value = '';
+    searchInput.placeholder = category === 'artists'
+      ? 'Search artists by name, kanji, circle... (use -word to exclude)'
+      : category === 'doujins'
+        ? 'Search doujins by title, connection, type, artist... (use -word to exclude)'
+        : 'Search by title, connection, type, artist... (use -word to exclude)';
+  }
   applyFilters();
 }
 
@@ -47,8 +69,9 @@ function applyFilters() {
   const { includeTerms, excludeTerms } = parseSearchQuery(rawQuery);
   const hasFilter = includeTerms.length > 0 || excludeTerms.length > 0;
 
-  if (currentCategory === 'manga') {
-    filteredManga = allManga.filter(item => {
+  if (isWorkCatalog()) {
+    const catalogWorks = worksForCurrentCategory();
+    filteredManga = catalogWorks.filter(item => {
       if (!hasFilter) return true;
       const searchableParts = [
         item.title_romaji || '',
@@ -104,15 +127,17 @@ function applyFilters() {
 function updateResultsCount() {
   const resultsCount = document.getElementById('resultsCount');
   if (!resultsCount) return;
-  if (currentCategory === 'manga') {
-    resultsCount.innerHTML = `Showing <strong class="text-cafe-gold font-bold font-mono-isbn">${filteredManga.length}</strong> of <strong class="text-white font-bold font-mono-isbn">${allManga.length}</strong> works`;
+  if (isWorkCatalog()) {
+    const pool = worksForCurrentCategory();
+    const label = currentCategory === 'doujins' ? 'doujins' : 'works';
+    resultsCount.innerHTML = `Showing <strong class="text-cafe-gold font-bold font-mono-isbn">${filteredManga.length}</strong> of <strong class="text-white font-bold font-mono-isbn">${pool.length}</strong> ${label}`;
   } else {
     resultsCount.innerHTML = `Showing <strong class="text-cafe-gold font-bold font-mono-isbn">${filteredArtists.length}</strong> of <strong class="text-white font-bold font-mono-isbn">${allArtists.length}</strong> artists`;
   }
 }
 
 function renderCatalog() {
-  const currentCount = currentCategory === 'manga' ? filteredManga.length : filteredArtists.length;
+  const currentCount = isWorkCatalog() ? filteredManga.length : filteredArtists.length;
   const mangaGrid = document.getElementById('mangaGrid');
   const mangaTable = document.getElementById('mangaTable');
   const emptyState = document.getElementById('emptyState');
@@ -123,9 +148,15 @@ function renderCatalog() {
     if (emptyState) {
       emptyState.classList.remove('hidden');
       const emptyTitle = emptyState.querySelector('h3');
-      if (emptyTitle) emptyTitle.textContent = currentCategory === 'manga' ? 'No manga found' : 'No artists found';
+      if (emptyTitle) {
+        emptyTitle.textContent = currentCategory === 'doujins'
+          ? 'No doujins found'
+          : currentCategory === 'manga'
+            ? 'No officially licenced manga found'
+            : 'No artists found';
+      }
       const addTitleBtn = document.getElementById('emptyStateAddTitleBtn');
-      if (addTitleBtn) addTitleBtn.classList.toggle('hidden', currentCategory !== 'manga');
+      if (addTitleBtn) addTitleBtn.classList.toggle('hidden', !isWorkCatalog());
     }
   } else {
     if (emptyState) emptyState.classList.add('hidden');

@@ -95,7 +95,22 @@ function calculateMangaAudit(doc, artists, vols) {
   };
 }
 
-function normalizeMangaDoc(doc, filename) {
+function archiveFolderForKind(kind) {
+  return kind === 'doujin' || kind === 'doujins' ? 'doujins' : 'manga';
+}
+
+function archiveJsonPathForId(id) {
+  const item = (typeof allManga !== 'undefined' ? allManga : []).find(manga => manga.id === id);
+  if (item && item.json_path) return item.json_path;
+  return `data/manga/${id}.json`;
+}
+
+function archiveFolderForId(id) {
+  const item = (typeof allManga !== 'undefined' ? allManga : []).find(manga => manga.id === id);
+  return item && item.archive_kind === 'doujin' ? 'doujins' : 'manga';
+}
+
+function normalizeMangaDoc(doc, filename, folder = 'manga') {
   const eid = doc.id || filename.replace(/\.json$/, '');
   const titleRomaji = doc.title_romaji || eid;
   const titleJp = doc.title_jp || '';
@@ -118,10 +133,12 @@ function normalizeMangaDoc(doc, filename) {
   const series = doc.series || 'TYPE-MOON';
   const audit = calculateMangaAudit(doc, artists, vols);
   const cover = getPrimaryCover({ cover: doc.cover, volumes: vols });
+  const archiveFolder = archiveFolderForKind(folder);
 
   return {
     id: eid,
-    json_path: `data/manga/${filename}`,
+    archive_kind: archiveFolder === 'doujins' ? 'doujin' : 'manga',
+    json_path: `data/${archiveFolder}/${filename}`,
     title_romaji: titleRomaji,
     title_jp: titleJp,
     title_en: titleEn,
@@ -265,7 +282,8 @@ function sanitizeMangaDocForStorage(doc) {
     '_isLocallyModified',
     'completion_score',
     'missing_audit',
-    'json_path'
+    'json_path',
+    'archive_kind'
   ].forEach(key => delete out[key]);
 
   if (Array.isArray(out.volumes)) {
@@ -411,23 +429,25 @@ async function fetchArchiveManifest() {
     if (dbRes.ok) {
       const db = await dbRes.json();
       const mangaFiles = Array.isArray(db.manga_files) ? db.manga_files : [];
+      const doujinFiles = Array.isArray(db.doujin_files) ? db.doujin_files : [];
       const artistFiles = Array.isArray(db.artist_files) ? db.artist_files : [];
       const publisherFiles = Array.isArray(db.publisher_files) ? db.publisher_files : [];
-      if (mangaFiles.length > 0 || artistFiles.length > 0 || publisherFiles.length > 0) {
+      if (mangaFiles.length > 0 || doujinFiles.length > 0 || artistFiles.length > 0 || publisherFiles.length > 0) {
         const fileRevs = db.file_revs && typeof db.file_revs === 'object' && !Array.isArray(db.file_revs)
           ? db.file_revs
           : null;
-        return { mangaFiles, artistFiles, publisherFiles, fileRevs };
+        return { mangaFiles, doujinFiles, artistFiles, publisherFiles, fileRevs };
       }
     }
   } catch (err) {}
 
-  const [mangaFiles, artistFiles, publisherFiles] = await Promise.all([
+  const [mangaFiles, doujinFiles, artistFiles, publisherFiles] = await Promise.all([
     listJsonDirectory('data/manga/', 'data/manga/'),
+    listJsonDirectory('data/doujins/', 'data/doujins/'),
     listJsonDirectory('data/artists/', 'data/artists/'),
     listJsonDirectory('data/publishers/', 'data/publishers/')
   ]);
-  return { mangaFiles, artistFiles, publisherFiles, fileRevs: null };
+  return { mangaFiles, doujinFiles, artistFiles, publisherFiles, fileRevs: null };
 }
 
 async function loadArchiveDoc(kind, filename, fileRevs, cache) {
@@ -731,22 +751,29 @@ async function loadDatabase() {
   if (resultsCount) resultsCount.textContent = 'Loading archive entries...';
 
   try {
-    const { mangaFiles, artistFiles, publisherFiles = [], fileRevs } = await fetchArchiveManifest();
+    const { mangaFiles, doujinFiles = [], artistFiles, publisherFiles = [], fileRevs } = await fetchArchiveManifest();
     const fileCache = fileRevs ? readArchiveFileCache() : {};
 
-    const loadedManga = await mapConcurrent(mangaFiles, 8, async filename => {
-      try {
-        const doc = await loadArchiveDoc('manga', filename, fileRevs, fileCache);
-        if (!doc) return null;
-        const eid = doc.id || filename.replace(/\.json$/, '');
-        sessionMangaDocs[eid] = doc;
-        return normalizeMangaDoc(doc, filename);
-      } catch (err) {
-        console.warn(`Failed loading data/manga/${filename}:`, err);
-        return null;
-      }
-    });
-    allManga = loadedManga.filter(Boolean);
+    async function loadCatalogFiles(files, folder) {
+      return mapConcurrent(files, 8, async filename => {
+        try {
+          const doc = await loadArchiveDoc(folder, filename, fileRevs, fileCache);
+          if (!doc) return null;
+          const eid = doc.id || filename.replace(/\.json$/, '');
+          sessionMangaDocs[eid] = doc;
+          return normalizeMangaDoc(doc, filename, folder);
+        } catch (err) {
+          console.warn(`Failed loading data/${folder}/${filename}:`, err);
+          return null;
+        }
+      });
+    }
+
+    const [loadedManga, loadedDoujins] = await Promise.all([
+      loadCatalogFiles(mangaFiles, 'manga'),
+      loadCatalogFiles(doujinFiles, 'doujins')
+    ]);
+    allManga = [...loadedManga, ...loadedDoujins].filter(Boolean);
 
     const loadedArtists = await mapConcurrent(artistFiles, 8, async filename => {
       try {
@@ -771,6 +798,7 @@ async function loadDatabase() {
     if (fileRevs) {
       const liveKeys = new Set([
         ...mangaFiles.map(filename => `manga/${filename}`),
+        ...doujinFiles.map(filename => `doujins/${filename}`),
         ...artistFiles.map(filename => `artists/${filename}`),
         ...publisherFiles.map(filename => `publishers/${filename}`)
       ]);

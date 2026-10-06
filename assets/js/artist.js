@@ -534,6 +534,9 @@ function renderArtistPageContent(artist) {
   if (!worksListContainer) return;
   worksListContainer.innerHTML = '';
 
+  const licensedCards = [];
+  const doujinCards = [];
+
   works.forEach(work => {
     const mangaDoc = (typeof sessionMangaDocs !== 'undefined' && sessionMangaDocs[work.id]) || 
                      (typeof currentDetailDoc !== 'undefined' && currentDetailDoc && currentDetailDoc.id === work.id ? currentDetailDoc : null) || 
@@ -546,83 +549,135 @@ function renderArtistPageContent(artist) {
           .filter(v => v.chapters.length > 0);
 
     if (vols.length === 0) return;
-    calculatedChaptersTotal += countVolumeChapters(vols);
+    const chapterCount = countVolumeChapters(vols);
+    calculatedChaptersTotal += chapterCount;
 
     const catalogItem = allManga.find(m => m.id === work.id);
-    const workCover = hasValidCover(work.cover) ? work.cover : catalogItem?.cover;
-    const coverHtml = hasValidCover(workCover)
-      ? `<div class="w-12 h-16 rounded overflow-hidden border border-cafe-gold/30 group-hover:border-cafe-gold bg-cafe-950 shrink-0 shadow transition-colors"><img src="${workCover}" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"></div>`
-      : `<div class="no-data-thumb w-12 h-16"><span class="no-data-badge text-[8px]">[no data]</span></div>`;
-    const { main: mainTitle, jp: jpSubtitle } = resolveDisplayTitles(
-      (work.title_en && work.title_en !== '[no data]') ? work.title_en : catalogItem?.title_en,
-      work.title_romaji || catalogItem?.title_romaji,
-      work.title_jp,
-      work.id
-    );
-
-    const volCardsHtml = vols.map(v => {
-      const isUncollected = v.is_uncollected === true;
-      const rawVolNum = (v.volume_number !== undefined && v.volume_number !== null) ? String(v.volume_number).trim() : '';
-      const volBadge = (!isUncollected && rawVolNum && rawVolNum !== 'N/A')
-        ? (/^(vol|volume)\b/i.test(rawVolNum) ? rawVolNum : `Vol. ${rawVolNum}`)
-        : '';
-      const vTitle = (v.title || '').trim();
-      const vTitleJp = (v.title_jp || '').trim();
-
-      return `
-        <div class="volume-card-compact space-y-1.5">
-          <div class="border-b border-cafe-gold/10 pb-1 space-y-0.5">
-            <div class="flex flex-wrap items-center gap-2">
-              ${(vTitle && volBadge) ? `<span class="px-1.5 py-0.5 rounded text-[10px] font-bold font-mono-isbn bg-cafe-gold/20 text-cafe-gold border border-cafe-gold/30 shrink-0 select-none">${escapeHtml(volBadge)}</span>` : ''}
-              <span class="font-cinzel font-bold text-xs sm:text-sm text-cafe-cream leading-tight">${escapeHtml(vTitle || volBadge || (isUncollected ? 'Serialized Chapters' : 'Volume'))}</span>
-            </div>
-            ${vTitleJp ? `<div class="text-[11px] text-cafe-gold/80 font-japanese font-medium">${escapeHtml(vTitleJp)}</div>` : ''}
-            ${renderVolumeReleaseLine(v)}
-          </div>
-          <div class="chapter-list-scroll">
-            ${v.chapters.map(c => renderChapterRow(c)).join('')}
-          </div>
-        </div>
-      `;
-    }).join('');
-
-    const mangaItem = catalogItem || work;
-    const typeTag = mangaItem ? formatTypeTag(mangaItem.type, mangaItem.series) : '';
-
-    const card = document.createElement('div');
-    card.className = 'list-row p-3 sm:p-4 rounded-xl space-y-2.5';
-    card.innerHTML = `
-      <div class="flex items-center gap-4 min-w-0 cursor-pointer group" onclick="openMangaDetail('${work.id}')" title="Click to view manga details">
-        ${coverHtml}
-        <div class="space-y-1 min-w-0 flex-1">
-          <h4 class="font-cinzel font-bold text-sm sm:text-base text-cafe-cream group-hover:text-cafe-gold transition-colors leading-snug line-clamp-1">
-            ${escapeHtml(mainTitle)}
-          </h4>
-          ${jpSubtitle ? `<div class="text-xs text-cafe-gold/90 font-japanese font-medium truncate max-w-md">${escapeHtml(jpSubtitle)}</div>` : ''}
-          ${typeTag ? `<span class="px-2 py-0.5 rounded text-xs font-bold font-mono-isbn bg-cafe-gold/20 text-cafe-gold border border-cafe-gold/40 shrink-0 select-none">${escapeHtml(typeTag)}</span>` : ''}
-        </div>
-      </div>
-
-      ${volCardsHtml ? `
-        <div class="pt-2 border-t border-cafe-gold/15 flex flex-col space-y-2 w-full">
-          ${volCardsHtml}
-        </div>
-      ` : ''}
-    `;
-
-    worksListContainer.appendChild(card);
+    const card = buildArtistWorkCard(work, vols, catalogItem, chapterCount);
+    if ((catalogItem && catalogItem.archive_kind === 'doujin') || work.archive_kind === 'doujin') {
+      doujinCards.push(card);
+    } else {
+      licensedCards.push(card);
+    }
   });
 
-  if (worksListContainer.children.length === 0) {
+  if (licensedCards.length === 0 && doujinCards.length === 0) {
     calculatedChaptersTotal = 0;
     worksListContainer.innerHTML = renderArtistWorksEmptyState();
+  } else {
+    worksListContainer.appendChild(renderArtistWorkCategory('Officially Licenced Manga', licensedCards));
+    worksListContainer.appendChild(renderArtistWorkCategory('Doujins', doujinCards));
   }
 
-  const displayedWorksCount = worksListContainer.querySelectorAll(':scope > .list-row').length;
+  const displayedWorksCount = worksListContainer.querySelectorAll('.list-row').length;
   const sw = document.getElementById('artistStatWorks');
   if (sw) sw.textContent = displayedWorksCount;
   const sc = document.getElementById('artistStatChapters');
   if (sc) sc.textContent = calculatedChaptersTotal;
+}
+
+function renderArtistWorkCategory(label, cards) {
+  const section = document.createElement('section');
+  section.className = 'space-y-3';
+  const heading = document.createElement('h4');
+  heading.className = 'text-[11px] sm:text-xs font-bold uppercase tracking-wider text-cafe-amber font-cinzel border-b border-cafe-gold/15 pb-1.5';
+  heading.textContent = label;
+  section.appendChild(heading);
+
+  if (cards.length === 0) {
+    const empty = document.createElement('p');
+    empty.className = 'text-xs text-cafe-muted px-1';
+    empty.textContent = 'No works in this category.';
+    section.appendChild(empty);
+    return section;
+  }
+
+  const list = document.createElement('div');
+  list.className = 'space-y-3';
+  cards.forEach(card => list.appendChild(card));
+  section.appendChild(list);
+  return section;
+}
+
+function buildArtistWorkCard(work, vols, catalogItem, chapterCount) {
+  const workCover = hasValidCover(work.cover) ? work.cover : catalogItem?.cover;
+  const coverHtml = hasValidCover(workCover)
+    ? `<div class="w-12 h-16 rounded overflow-hidden border border-cafe-gold/30 group-hover:border-cafe-gold bg-cafe-950 shrink-0 shadow transition-colors"><img src="${workCover}" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"></div>`
+    : `<div class="no-data-thumb w-12 h-16"><span class="no-data-badge text-[8px]">[no data]</span></div>`;
+  const { main: mainTitle, jp: jpSubtitle } = resolveDisplayTitles(
+    (work.title_en && work.title_en !== '[no data]') ? work.title_en : catalogItem?.title_en,
+    work.title_romaji || catalogItem?.title_romaji,
+    work.title_jp,
+    work.id
+  );
+
+  const volCardsHtml = vols.map(v => {
+    const isUncollected = v.is_uncollected === true;
+    const rawVolNum = (v.volume_number !== undefined && v.volume_number !== null) ? String(v.volume_number).trim() : '';
+    const volBadge = (!isUncollected && rawVolNum && rawVolNum !== 'N/A')
+      ? (/^(vol|volume)\b/i.test(rawVolNum) ? rawVolNum : `Vol. ${rawVolNum}`)
+      : '';
+    const vTitle = (v.title || '').trim();
+    const vTitleJp = (v.title_jp || '').trim();
+
+    return `
+      <div class="volume-card-compact space-y-1.5">
+        <div class="border-b border-cafe-gold/10 pb-1 space-y-0.5">
+          <div class="flex flex-wrap items-center gap-2">
+            ${(vTitle && volBadge) ? `<span class="px-1.5 py-0.5 rounded text-[10px] font-bold font-mono-isbn bg-cafe-gold/20 text-cafe-gold border border-cafe-gold/30 shrink-0 select-none">${escapeHtml(volBadge)}</span>` : ''}
+            <span class="font-cinzel font-bold text-xs sm:text-sm text-cafe-cream leading-tight">${escapeHtml(vTitle || volBadge || (isUncollected ? 'Serialized Chapters' : 'Volume'))}</span>
+          </div>
+          ${vTitleJp ? `<div class="text-[11px] text-cafe-gold/80 font-japanese font-medium">${escapeHtml(vTitleJp)}</div>` : ''}
+          ${renderVolumeReleaseLine(v)}
+        </div>
+        <div class="chapter-list-scroll">
+          ${v.chapters.map(c => renderChapterRow(c)).join('')}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  const mangaItem = catalogItem || work;
+  const typeTag = mangaItem ? formatTypeTag(mangaItem.type, mangaItem.series) : '';
+  const panelId = `artistChapters-${work.id}`;
+  const chapterLabel = `${chapterCount} chapter${chapterCount === 1 ? '' : 's'}`;
+
+  const card = document.createElement('div');
+  card.className = 'list-row p-3 sm:p-4 rounded-xl space-y-2.5';
+  card.innerHTML = `
+    <div class="flex items-center gap-4 min-w-0 cursor-pointer group" onclick="openMangaDetail('${work.id}')" title="Click to view manga details">
+      ${coverHtml}
+      <div class="space-y-1 min-w-0 flex-1">
+        <h4 class="font-cinzel font-bold text-sm sm:text-base text-cafe-cream group-hover:text-cafe-gold transition-colors leading-snug line-clamp-1">
+          ${escapeHtml(mainTitle)}
+        </h4>
+        ${jpSubtitle ? `<div class="text-xs text-cafe-gold/90 font-japanese font-medium truncate max-w-md">${escapeHtml(jpSubtitle)}</div>` : ''}
+        ${typeTag ? `<span class="px-2 py-0.5 rounded text-xs font-bold font-mono-isbn bg-cafe-gold/20 text-cafe-gold border border-cafe-gold/40 shrink-0 select-none">${escapeHtml(typeTag)}</span>` : ''}
+      </div>
+    </div>
+    <div class="pt-2 border-t border-cafe-gold/15">
+      <button type="button" class="px-3 py-1.5 rounded-lg bg-cafe-950/90 border border-cafe-gold/40 text-cafe-gold hover:text-white hover:border-cafe-gold text-[11px] font-cinzel font-bold uppercase tracking-wider transition-colors" aria-expanded="false" aria-controls="${panelId}" onclick="toggleArtistWorkChapters(this)">
+        <span data-chapter-toggle-label>Show chapters</span>
+        <span class="ml-1.5 font-mono-isbn normal-case tracking-normal text-cafe-cream/80">${escapeHtml(chapterLabel)}</span>
+      </button>
+      <div id="${panelId}" class="hidden">
+        <div class="pt-2 flex flex-col space-y-2 w-full">
+          ${volCardsHtml}
+        </div>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
+function toggleArtistWorkChapters(button) {
+  const panel = document.getElementById(button.getAttribute('aria-controls'));
+  if (!panel) return;
+  const willOpen = panel.classList.contains('hidden');
+  panel.classList.toggle('hidden', !willOpen);
+  button.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  const label = button.querySelector('[data-chapter-toggle-label]');
+  if (label) label.textContent = willOpen ? 'Hide chapters' : 'Show chapters';
 }
 
 function renderArtistWorksEmptyState() {
@@ -758,7 +813,7 @@ function confirmAddDummyTitle() {
     custom_roles: [],
     publisher: null,
     status: 'Unknown',
-    type: 'Unknown',
+    type: currentCategory === 'doujins' ? 'Doujinshi' : 'Unknown',
     series: 'Unknown',
     release_year: null
   };
@@ -769,7 +824,8 @@ function confirmAddDummyTitle() {
   stored._isLocallyModified = true;
   sessionMangaDocs[stored.id] = stored;
 
-  const normalized = normalizeMangaDoc(stored, `${stored.id}.json`);
+  const archiveFolder = currentCategory === 'doujins' ? 'doujins' : 'manga';
+  const normalized = normalizeMangaDoc(stored, `${stored.id}.json`, archiveFolder);
   normalized._isLocallyModified = true;
   allManga.push(normalized);
 

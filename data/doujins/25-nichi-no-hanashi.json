@@ -1,0 +1,47 @@
+{
+  "id": "25-nichi-no-hanashi",
+  "title_romaji": "25-nichi no Hanashi",
+  "title_jp": "２５日の話",
+  "title_en": "Tale of the 25th",
+  "alt_titles": [
+    "25-Nichi no Hanashi",
+    "25日の話"
+  ],
+  "synopsis": "A oneshot by Sasaki Shounen, released at Comiket 99 as a tribute to the Tsukihime series. It depicts a short story set on Arcueid's birthday.",
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/zH2qB34W/small-25-nichi-no-hanashi-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/1JYwvNvR/full-25-nichi-no-hanashi-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "25-nichi no Hanashi",
+      "title_jp": "２５日の話",
+      "is_uncollected": true,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "Sasaki Shounen"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [],
+  "custom_roles": [],
+  "artists": [
+    "Sasaki Shounen"
+  ],
+  "publisher": "N/A",
+  "magazine": "N/A",
+  "serialization_start": "N/A",
+  "serialization_end": "N/A",
+  "status": "Finished",
+  "type": "Doujinshi",
+  "series": "Tsukihime",
+  "release_year": null
+}

@@ -1,226 +1,225 @@
 {
   "id": "melty-blood-type-lumina-piece-in-paradise",
+  "title_romaji": "MELTY BLOOD: TYPE LUMINA Piece in Paradise",
+  "title_jp": "MELTY BLOOD: TYPE LUMINA Piece in Paradise",
+  "title_en": "MELTY BLOOD: TYPE LUMINA Piece in Paradise",
   "alt_titles": [
     "MELTY BLOOD: TYPE LUMINA Piece in Paradise",
-    "メルティブラッド タイプルミナ ピースインパラダイス",
-    "MELTY BLOOD: TYPE LUMINA Piece in Paradise"
+    "メルティブラッド タイプルミナ ピースインパラダイス"
   ],
-  "series": "Tsukihime",
-  "type": "Spin-Off",
-  "status": "Finished",
-  "release_year": 2022,
-  "artists": [
-    "Metalog"
-  ],
-  "publisher": "Kadokawa Comics Ace",
-  "magazine": "TYPE-MOON Comic Ace",
   "synopsis": "Official comedic spin-off manga of MELTY BLOOD: TYPE LUMINA by Metalog, serialized on Kadokawa's TYPE-MOON Comic Ace platform. Follows the everyday and chaotic fighting game antics of the Melty Blood cast.",
-  "notes": "Formerly known as: Oshiete Melty Blood Doujou! ~ Miyako no Hajimete no Kakutou Game ~  (教えてメルブラ道場！ ～都古とはじめての格ゲー～?) before being renamed with the release of Chapter 5.\n\nSide chapter was released in TYPE-MOON ACE Volume 16.",
+  "show_chapter_artists": false,
   "volumes": [
     {
+      "cover": "https://i.ibb.co/D60tmYh/small-melty-blood-type-lumina-piece-in-paradise-vol-Vol-1.jpg",
+      "cover_full": "https://i.ibb.co/QF6Y095S/full-melty-blood-type-lumina-piece-in-paradise-vol-Vol-1.jpg",
       "volume_number": "Vol. 1",
       "title": "MELTY BLOOD: TYPE LUMINA Piece in Paradise Vol. 1",
       "title_jp": "MELTY BLOOD: TYPE LUMINA Piece in Paradise (1)",
       "release_date": "2024-01-10",
       "isbn": "978-4041145173",
       "asin": "B0CQLL2Y6Y",
-      "cover": "https://i.ibb.co/D60tmYh/small-melty-blood-type-lumina-piece-in-paradise-vol-Vol-1.jpg",
       "chapters": [
         {
           "chapter_number": 1,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 2,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 3,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 4,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 5,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 6,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 7,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 8,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": "Extras",
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         }
-      ],
-      "cover_full": "https://i.ibb.co/QF6Y095S/full-melty-blood-type-lumina-piece-in-paradise-vol-Vol-1.jpg"
+      ]
     },
     {
+      "cover": "https://i.ibb.co/5hHKtWmS/small-melty-blood-type-lumina-piece-in-paradise-vol-Vol-2.jpg",
+      "cover_full": "https://i.ibb.co/zV2YBRBv/full-melty-blood-type-lumina-piece-in-paradise-vol-Vol-2.jpg",
       "volume_number": "Vol. 2",
       "title": "MELTY BLOOD: TYPE LUMINA Piece in Paradise Vol. 2",
       "title_jp": "MELTY BLOOD: TYPE LUMINA Piece in Paradise (2)",
       "release_date": "2024-10-09",
       "isbn": "978-4041152225",
       "asin": "B0DJ2528JS",
-      "cover": "https://i.ibb.co/5hHKtWmS/small-melty-blood-type-lumina-piece-in-paradise-vol-Vol-2.jpg",
       "chapters": [
         {
           "chapter_number": 9,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 10,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 11,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 12,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 13,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 14,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 15,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 16,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         }
-      ],
-      "cover_full": "https://i.ibb.co/zV2YBRBv/full-melty-blood-type-lumina-piece-in-paradise-vol-Vol-2.jpg"
+      ]
     },
     {
+      "cover": "https://i.ibb.co/hxfzpfFp/small-melty-blood-type-lumina-piece-in-paradise-vol-Vol-3.jpg",
+      "cover_full": "https://i.ibb.co/GvhFrVrz/full-melty-blood-type-lumina-piece-in-paradise-vol-Vol-3.jpg",
       "volume_number": "Vol. 3",
       "title": "MELTY BLOOD: TYPE LUMINA Piece in Paradise Vol. 3",
       "title_jp": "MELTY BLOOD: TYPE LUMINA Piece in Paradise (3)",
       "release_date": "2026-02-25",
       "isbn": "978-4041153116",
       "asin": "B0GMF7V29V",
-      "cover": "https://i.ibb.co/hxfzpfFp/small-melty-blood-type-lumina-piece-in-paradise-vol-Vol-3.jpg",
       "chapters": [
         {
           "chapter_number": 17,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 18,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 19,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 20,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 21,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 22,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": 23,
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": "Final Chapter",
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         },
         {
           "chapter_number": "Extra Chapters",
           "title": null,
           "title_jp": null,
-          "artist": "Metalog"
+          "artist": "metalog"
         }
-      ],
-      "cover_full": "https://i.ibb.co/GvhFrVrz/full-melty-blood-type-lumina-piece-in-paradise-vol-Vol-3.jpg"
+      ]
     }
   ],
-  "serialization_start": "2022-12-08",
-  "serialization_end": "2025-12-16",
+  "notes": "Formerly known as: Oshiete Melty Blood Doujou! ~ Miyako no Hajimete no Kakutou Game ~  (教えてメルブラ道場！ ～都古とはじめての格ゲー～?) before being renamed with the release of Chapter 5.\n\nSide chapter was released in TYPE-MOON ACE Volume 16.",
+  "sources": [],
   "custom_roles": [
     {
       "role": "Original Work:",
       "names": "TYPE-MOON, French-Bread"
     }
   ],
-  "sources": [],
-  "show_chapter_artists": false,
-  "title_romaji": "MELTY BLOOD: TYPE LUMINA Piece in Paradise",
-  "title_en": "MELTY BLOOD: TYPE LUMINA Piece in Paradise",
-  "title_jp": "MELTY BLOOD: TYPE LUMINA Piece in Paradise"
+  "artists": [
+    "metalog"
+  ],
+  "publisher": "Kadokawa Comics Ace",
+  "magazine": "TYPE-MOON Comic Ace",
+  "serialization_start": "2022-12-08",
+  "serialization_end": "2025-12-16",
+  "status": "Finished",
+  "type": "Spin-Off",
+  "series": "Tsukihime",
+  "release_year": 2022
 }
