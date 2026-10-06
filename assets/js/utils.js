@@ -10,6 +10,7 @@ let missingDataCategory = 'all';
 let lightboxCovers = [];
 let lightboxCurrentIdx = 0;
 let lightboxMangaTitle = '';
+let lightboxRotation = 0;
 
 const TARGET_WORK_SERIES_CODE_MAP = {
   "Fate/stay night": "FSN",
@@ -706,6 +707,7 @@ window.openCoverLightbox = function(coversArray, startIdx, mangaTitle) {
   lightboxCovers = coversArray;
   lightboxCurrentIdx = Math.max(0, Math.min(startIdx || 0, coversArray.length - 1));
   lightboxMangaTitle = mangaTitle || '';
+  lightboxRotation = 0;
   renderCoverLightbox();
   const modal = document.getElementById('coverLightboxModal');
   if (modal) modal.classList.remove('hidden');
@@ -733,11 +735,87 @@ window.navigateCoverLightbox = function(dir) {
   renderCoverLightbox();
 };
 
+window.rotateCoverLightbox = function(dir) {
+  lightboxRotation = (lightboxRotation + (dir || 1) + 4) % 4;
+  applyCoverLightboxRotation();
+};
+
 window.closeCoverLightbox = function() {
   const modal = document.getElementById('coverLightboxModal');
   if (modal) modal.classList.add('hidden');
   document.body.style.overflow = '';
+  lightboxRotation = 0;
+  clearCoverLightboxRotation();
 };
+
+function clearCoverLightboxRotation() {
+  const img = document.getElementById('coverLightboxImg');
+  const frame = document.getElementById('coverLightboxFrame');
+  if (img) {
+    img.classList.remove('is-rotated');
+    img.style.width = '';
+    img.style.height = '';
+    img.style.maxWidth = '';
+    img.style.maxHeight = '';
+    img.style.position = '';
+    img.style.left = '';
+    img.style.top = '';
+    img.style.transform = '';
+  }
+  if (frame) {
+    frame.style.width = '';
+    frame.style.height = '';
+  }
+}
+
+function applyCoverLightboxRotation() {
+  const img = document.getElementById('coverLightboxImg');
+  const frame = document.getElementById('coverLightboxFrame');
+  if (!img) return;
+  if (lightboxRotation % 4 === 0) {
+    clearCoverLightboxRotation();
+    return;
+  }
+
+  const fit = () => {
+    if (lightboxRotation % 4 === 0) return;
+    const stage = document.getElementById('coverLightboxBackdrop');
+    const nw = img.naturalWidth;
+    const nh = img.naturalHeight;
+    if (!nw || !nh || !stage) return;
+    const deg = lightboxRotation * 90;
+    const sideways = lightboxRotation % 2 === 1;
+    const maxW = Math.max(stage.clientWidth - 16, 120);
+    const maxH = Math.max(stage.clientHeight - 16, 120);
+    const boxW = sideways ? nh : nw;
+    const boxH = sideways ? nw : nh;
+    const scale = Math.min(maxW / boxW, maxH / boxH, 1);
+    const layoutW = nw * scale;
+    const layoutH = nh * scale;
+    if (frame) {
+      frame.style.width = (sideways ? layoutH : layoutW) + 'px';
+      frame.style.height = (sideways ? layoutW : layoutH) + 'px';
+    }
+    img.classList.add('is-rotated');
+    img.style.maxWidth = 'none';
+    img.style.maxHeight = 'none';
+    img.style.width = layoutW + 'px';
+    img.style.height = layoutH + 'px';
+    img.style.position = 'absolute';
+    img.style.left = '50%';
+    img.style.top = '50%';
+    img.style.transform = `translate(-50%, -50%) rotate(${deg}deg)`;
+  };
+
+  if (img.complete && img.naturalWidth) fit();
+  else img.addEventListener('load', fit, { once: true });
+}
+
+window.addEventListener('resize', () => {
+  const modal = document.getElementById('coverLightboxModal');
+  if (!modal || modal.classList.contains('hidden') || lightboxRotation % 4 === 0) return;
+  applyCoverLightboxRotation();
+});
 
 function renderCoverLightbox() {
   const cov = lightboxCovers[lightboxCurrentIdx];
@@ -746,9 +824,15 @@ function renderCoverLightbox() {
 
   const img = document.getElementById('coverLightboxImg');
   if (img) {
+    if (lightboxRotation % 4 === 0) clearCoverLightboxRotation();
     img.style.opacity = '0.6';
+    const showLoadedCover = () => {
+      img.style.opacity = '1';
+      applyCoverLightboxRotation();
+    };
+    img.onload = showLoadedCover;
     img.src = fullUrl;
-    img.onload = () => { img.style.opacity = '1'; };
+    if (img.complete && img.naturalWidth) showLoadedCover();
   }
 
   const titleEl = document.getElementById('coverLightboxTitle');
