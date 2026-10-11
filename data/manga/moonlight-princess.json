@@ -1,0 +1,49 @@
+{
+  "id": "moonlight-princess",
+  "title_romaji": "Moonlight Princess",
+  "title_jp": "ムーンライトプリンセス",
+  "title_en": null,
+  "alt_titles": [
+    "Moonlight Princess"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": null,
+      "cover_full": null,
+      "volume_number": "Vol. 1",
+      "title": "Moonlight Princess (1)",
+      "title_jp": "ムーンライトプリンセス : 月姫コミックアンソロジー",
+      "release_date": "2002-12",
+      "isbn": "978-4775500699",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/5ggYRGPS/moonlight-princess-vol-2.webp",
+      "cover_full": "https://i.ibb.co/5ggYRGPS/moonlight-princess-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Moonlight Princess (2)",
+      "title_jp": "ムーンライトプリンセス : 月姫同人セレクション&新作コミックアンソロジー 2",
+      "release_date": "2003-06",
+      "isbn": "978-4775501306",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ndlsearch.ndl.go.jp/books/R100000002-I000004228609"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Oak Comix",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2002
+}

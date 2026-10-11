@@ -1,0 +1,49 @@
+{
+  "id": "majikyu-kara-no-kyoukai-new-border",
+  "title_romaji": "Kara no Kyoukai New Border (Majikyu 4koma)",
+  "title_jp": "劇場版 空の境界 New Border (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Kara no Kyoukai New Border (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/k6kDPBT9/majikyu-kara-no-kyoukai-new-border-vol-1.webp",
+      "cover_full": "https://i.ibb.co/k6kDPBT9/majikyu-kara-no-kyoukai-new-border-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Kara no Kyoukai New Border (1) (Majikyu 4koma)",
+      "title_jp": "劇場版 空の境界 New Border (マジキュー4コマ)",
+      "release_date": "2009-03-25",
+      "isbn": "978-4757747777",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/9mpzr8Vd/majikyu-kara-no-kyoukai-new-border-vol-2.webp",
+      "cover_full": "https://i.ibb.co/9mpzr8Vd/majikyu-kara-no-kyoukai-new-border-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Kara no Kyoukai New Border (2) (Majikyu 4koma)",
+      "title_jp": "劇場版 空の境界 New Border(2) (マジキュー4コマ)",
+      "release_date": "2009-05-30",
+      "isbn": "978-4757749047",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200902000060/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kara no Kyoukai",
+  "release_year": null
+}

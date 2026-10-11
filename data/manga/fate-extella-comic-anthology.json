@@ -1,0 +1,47 @@
+{
+  "id": "fate-extella-comic-anthology",
+  "title_romaji": "Fate/EXTELLA Comic Anthology",
+  "title_jp": "Fate/EXTELLA コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/EXTELLA Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/nMbZpgG7/small-fate-extella-comic-anthology-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/EXTELLA Comic Anthology",
+      "title_jp": "Fate/EXTELLA コミックアンソロジー",
+      "release_date": "2017-03-04",
+      "isbn": "978-4758009416",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/dsBMj1v4/small-fate-extella-comic-anthology-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/EXTELLA Comic Anthology (2)",
+      "title_jp": "Fate/EXTELLA コミックアンソロジー VOL.2",
+      "release_date": "2017-09-25",
+      "isbn": "978-4758009652",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/Fate/EXTELLA%20%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/EXTELLA",
+  "release_year": null
+}

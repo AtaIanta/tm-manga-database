@@ -1,0 +1,50 @@
+{
+  "id": "fate-hollow-ataraxia-anthology-fox",
+  "title_romaji": "Fate/hollow ataraxia Anthology Comic",
+  "title_jp": "Fate/hollow ataraxia アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/hollow ataraxia Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/cRqD7kB/fate-hollow-ataraxia-anthology-fox-vol-1.webp",
+      "cover_full": "https://i.ibb.co/cRqD7kB/fate-hollow-ataraxia-anthology-fox-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/hollow ataraxia Anthology Comic (1)",
+      "title_jp": "Fate/hollow ataraxia アンソロジーコミック",
+      "release_date": "2006",
+      "isbn": "978-4925148986",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/hJ28HQKp/fate-hollow-ataraxia-anthology-fox-vol-2.webp",
+      "cover_full": "https://i.ibb.co/hJ28HQKp/fate-hollow-ataraxia-anthology-fox-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/hollow ataraxia Anthology Comic (2)",
+      "title_jp": "Fate/hollow ataraxia アンソロジーコミック 2",
+      "release_date": "2006-07-08",
+      "isbn": "978-4903421131",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4925148982",
+    "https://www.maruzenjunkudo.co.jp/products/9784903421131"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "FOX Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/hollow ataraxia",
+  "release_year": 2006
+}

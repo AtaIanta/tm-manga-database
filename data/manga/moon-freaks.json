@@ -1,0 +1,41 @@
+{
+  "id": "moon-freaks",
+  "title_romaji": "MOON FREAKS",
+  "title_jp": "MOON FREAKS",
+  "title_en": null,
+  "alt_titles": [
+    "Moon Freaks",
+    "Moon Freak"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/fVG1cqFK/moon-freaks-vol-1.webp",
+      "cover_full": "https://i.ibb.co/fVG1cqFK/moon-freaks-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "MOON FREAKS",
+      "title_jp": "MOON FREAKS",
+      "release_date": "2005-02-17",
+      "isbn": "978-4776715535",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200183/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "AKD"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2005
+}

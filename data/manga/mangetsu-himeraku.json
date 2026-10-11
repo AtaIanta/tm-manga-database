@@ -1,0 +1,40 @@
+{
+  "id": "mangetsu-himeraku",
+  "title_romaji": "Mangetsu Himeraku: TYPE-MOON Masterpiece Selection",
+  "title_jp": "満月姫楽 ―TYPE-MOON傑作選―",
+  "title_en": null,
+  "alt_titles": [
+    "Mangetsu Himeraku: TYPE-MOON Masterpiece Selection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/KxxxFv1h/mangetsu-himeraku-vol-1.webp",
+      "cover_full": "https://i.ibb.co/KxxxFv1h/mangetsu-himeraku-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mangetsu Himeraku: TYPE-MOON Masterpiece Selection",
+      "title_jp": "満月姫楽 ―TYPE-MOON傑作選―",
+      "release_date": "2004-08-24",
+      "isbn": "978-4776713876",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200204/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Makino Yasuhiro"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2004
+}

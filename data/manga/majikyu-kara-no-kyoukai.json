@@ -1,0 +1,60 @@
+{
+  "id": "majikyu-kara-no-kyoukai",
+  "title_romaji": "Kara no Kyoukai (Majikyu 4koma)",
+  "title_jp": "劇場版 空の境界 (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Kara no Kyoukai (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/7JXC4WgC/majikyu-kara-no-kyoukai-vol-1.webp",
+      "cover_full": "https://i.ibb.co/7JXC4WgC/majikyu-kara-no-kyoukai-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Kara no Kyoukai (1) (Majikyu 4koma)",
+      "title_jp": "劇場版 空の境界(1) (マジキュー4コマ)",
+      "release_date": "2008-09-26",
+      "isbn": "978-4757744264",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/TMKw4ttr/majikyu-kara-no-kyoukai-vol-2.webp",
+      "cover_full": "https://i.ibb.co/TMKw4ttr/majikyu-kara-no-kyoukai-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Kara no Kyoukai (2) (Majikyu 4koma)",
+      "title_jp": "劇場版 空の境界(2) (マジキュー4コマ)",
+      "release_date": "2008-11-25",
+      "isbn": "978-4757745339",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/BVKyXBSj/majikyu-kara-no-kyoukai-vol-3.webp",
+      "cover_full": "https://i.ibb.co/BVKyXBSj/majikyu-kara-no-kyoukai-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Kara no Kyoukai (3) (Majikyu 4koma)",
+      "title_jp": "劇場版 空の境界(3) (マジキュー4コマ)",
+      "release_date": "2009-01-29",
+      "isbn": "978-4757746732",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200808000352/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kara no Kyoukai",
+  "release_year": null
+}

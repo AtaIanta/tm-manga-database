@@ -1,0 +1,38 @@
+{
+  "id": "fate-prototype-tribute-phantasm",
+  "title_romaji": "Fate/Prototype Tribute Phantasm",
+  "title_jp": "Fate/Prototype Tribute Phantasm",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Prototype Tribute Phantasm"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/whgFrkmN/fate-prototype-tribute-phantasm-vol-1.webp",
+      "cover_full": "https://i.ibb.co/whgFrkmN/fate-prototype-tribute-phantasm-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Prototype Tribute Phantasm",
+      "title_jp": "Fate/Prototype Tribute Phantasm",
+      "release_date": "2012-08-07",
+      "isbn": "978-4041203934",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/321205000128/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Prototype",
+  "release_year": null
+}

@@ -1,0 +1,57 @@
+{
+  "id": "fate-extra-ccc-comic-anthology",
+  "title_romaji": "Fate/Extra CCC Comic Anthology",
+  "title_jp": "フェイト/エクストラ CCC コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Extra CCC Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/gFV4y0yQ/small-fate-extra-ccc-comic-anthology-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Extra CCC Comic Anthology",
+      "title_jp": "フェイト/エクストラ CCC コミックアンソロジー",
+      "release_date": "2013-06-25",
+      "isbn": "978-4758007597",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/gZgFpgQx/small-fate-extra-ccc-comic-anthology-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Extra CCC Comic Anthology (2)",
+      "title_jp": "フェイト/エクストラ CCC コミックアンソロジー ＶＯＬ.2",
+      "release_date": "2013-10-25",
+      "isbn": "978-4758007726",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/6JmQy0C5/small-fate-extra-ccc-comic-anthology-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Extra CCC Comic Anthology (3)",
+      "title_jp": "フェイト/エクストラ CCC コミックアンソロジー ＶＯＬ.3",
+      "release_date": "2013-12-25",
+      "isbn": "978-4758007894",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/%E3%83%95%E3%82%A7%E3%82%A4%E3%83%88/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%20CCC%20%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Extra",
+  "release_year": null
+}

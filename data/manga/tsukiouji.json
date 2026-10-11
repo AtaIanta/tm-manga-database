@@ -1,0 +1,40 @@
+{
+  "id": "tsukiouji",
+  "title_romaji": "Tsukiouji",
+  "title_jp": "月皇子",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukiouji"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Y4Tw7Q5d/tsukiouji-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Y4Tw7Q5d/tsukiouji-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukiouji",
+      "title_jp": "月皇子",
+      "release_date": "2006-05-24",
+      "isbn": "978-4776719465",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200583/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Kozumi Hato"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2006
+}

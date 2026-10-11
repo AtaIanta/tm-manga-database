@@ -1,0 +1,38 @@
+{
+  "id": "tsukihime-arcueid-vs-ciel",
+  "title_romaji": "Tsukihime Original Comic: Arcueid vs Ciel",
+  "title_jp": "月姫オリジナルコミック アルクェイドVSシエル",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukihime Original Comic Arcueid vs Ciel"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/6CwFbmk/tsukihime-arcueid-vs-ciel-vol-1.webp",
+      "cover_full": "https://i.ibb.co/6CwFbmk/tsukihime-arcueid-vs-ciel-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime Original Comic: Arcueid vs Ciel",
+      "title_jp": "月姫オリジナルコミック アルクェイドVSシエル",
+      "release_date": "2003-04-28",
+      "isbn": "978-4575938302",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.futabasha.co.jp/book/97845759383020000000"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Action Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2003
+}

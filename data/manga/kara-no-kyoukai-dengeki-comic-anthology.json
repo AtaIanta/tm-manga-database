@@ -1,0 +1,38 @@
+{
+  "id": "kara-no-kyoukai-dengeki-comic-anthology",
+  "title_romaji": "Kara no Kyoukai Dengeki Comic Anthology",
+  "title_jp": "劇場版 空の境界 電撃コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Kara no Kyoukai Dengeki Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/3yFJX4pq/kara-no-kyoukai-dengeki-comic-anthology-vol-1.jpg",
+      "cover_full": "https://i.ibb.co/3yFJX4pq/kara-no-kyoukai-dengeki-comic-anthology-vol-1.jpg",
+      "volume_number": "Vol. 1",
+      "title": "Kara no Kyoukai Dengeki Comic Anthology",
+      "title_jp": "劇場版 空の境界 電撃コミックアンソロジー",
+      "release_date": "2008-05-10",
+      "isbn": "978-4048670555",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200804000247/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kara no Kyoukai",
+  "release_year": null
+}

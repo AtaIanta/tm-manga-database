@@ -1,0 +1,60 @@
+{
+  "id": "majikyu-fate-extra",
+  "title_romaji": "Fate/Extra (Majikyu 4koma)",
+  "title_jp": "Fate/EXTRA (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Extra (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/ym3Yy4M0/majikyu-fate-extra-vol-1.webp",
+      "cover_full": "https://i.ibb.co/ym3Yy4M0/majikyu-fate-extra-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Extra (1) (Majikyu 4koma)",
+      "title_jp": "Fate/EXTRA(1) (マジキュー4コマ)",
+      "release_date": "2010-10-25",
+      "isbn": "978-4047268371",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/xtjCNRGB/majikyu-fate-extra-vol-2.webp",
+      "cover_full": "https://i.ibb.co/xtjCNRGB/majikyu-fate-extra-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Extra (2) (Majikyu 4koma)",
+      "title_jp": "Fate/EXTRA(2) (マジキュー4コマ)",
+      "release_date": "2010-12-24",
+      "isbn": "978-4047269378",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/xvZq5ZK/majikyu-fate-extra-vol-3.webp",
+      "cover_full": "https://i.ibb.co/xvZq5ZK/majikyu-fate-extra-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Extra (3) (Majikyu 4koma)",
+      "title_jp": "Fate/EXTRA(3) (マジキュー4コマ)",
+      "release_date": "2011-03-25",
+      "isbn": "978-4047270688",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/201006000528/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Extra",
+  "release_year": null
+}

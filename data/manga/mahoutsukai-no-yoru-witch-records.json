@@ -1,0 +1,80 @@
+{
+  "id": "mahoutsukai-no-yoru-witch-records",
+  "title_romaji": "Mahoutsukai no Yoru: Witch Records",
+  "title_jp": "魔法使いの夜 ウィッチレコーズ",
+  "title_en": "Witch on the Holy Night: Witch Records",
+  "alt_titles": [
+    "Mahoutsukai no Yoru: Witch Records"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/mCfMCYfM/mahoutsukai-no-yoru-witch-records-vol-Vol-1.webp",
+      "cover_full": "https://i.ibb.co/mCfMCYfM/mahoutsukai-no-yoru-witch-records-vol-Vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Yoru: Witch Records",
+      "title_jp": "魔法使いの夜 ウィッチレコーズ",
+      "release_date": "2026-11-10",
+      "isbn": "978-4041179499",
+      "asin": null,
+      "chapters": [
+        {
+          "chapter_number": 1,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        },
+        {
+          "chapter_number": 2,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        },
+        {
+          "chapter_number": 3,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        },
+        {
+          "chapter_number": 4,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        },
+        {
+          "chapter_number": 5,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        },
+        {
+          "chapter_number": 6,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        },
+        {
+          "chapter_number": 7,
+          "title": null,
+          "title_jp": null,
+          "artist": "nakatani"
+        }
+      ]
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/322607000748/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "nakatani"
+  ],
+  "publisher": null,
+  "status": "Unknown",
+  "type": "Unknown",
+  "series": "Mahoyo",
+  "release_year": null
+}

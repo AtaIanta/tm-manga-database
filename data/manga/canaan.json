@@ -1,0 +1,60 @@
+{
+  "id": "canaan",
+  "title_romaji": "Canaan",
+  "title_jp": "CANAAN",
+  "title_en": null,
+  "alt_titles": [
+    "Canaan"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/7xvs3hgX/canaan-vol-1.webp",
+      "cover_full": "https://i.ibb.co/7xvs3hgX/canaan-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Canaan (1)",
+      "title_jp": "CANAAN (1)",
+      "release_date": "2010-01-22",
+      "isbn": "978-4047153813",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/0dSgsVV/canaan-vol-2.webp",
+      "cover_full": "https://i.ibb.co/0dSgsVV/canaan-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Canaan (2)",
+      "title_jp": "CANAAN (2)",
+      "release_date": "2010-07-21",
+      "isbn": "978-4047154872",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/HDR2Qd04/canaan-vol-3.webp",
+      "cover_full": "https://i.ibb.co/HDR2Qd04/canaan-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Canaan (3)",
+      "title_jp": "CANAAN (3)",
+      "release_date": "2011-02-23",
+      "isbn": "978-4047156357",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200910000499/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": null,
+  "series": "Canaan",
+  "release_year": null
+}

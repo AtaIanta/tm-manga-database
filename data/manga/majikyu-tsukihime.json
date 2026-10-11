@@ -1,0 +1,71 @@
+{
+  "id": "majikyu-tsukihime",
+  "title_romaji": "Tsukihime (Majikyu 4koma)",
+  "title_jp": "月姫 (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukihime (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/353gy0J0/majikyu-tsukihime-vol-1.webp",
+      "cover_full": "https://i.ibb.co/353gy0J0/majikyu-tsukihime-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime (1) (Majikyu 4koma)",
+      "title_jp": "月姫1 (マジキュー4コマ)",
+      "release_date": "2004-03-31",
+      "isbn": "978-4757718005",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/TqgRwZt4/majikyu-tsukihime-vol-2.webp",
+      "cover_full": "https://i.ibb.co/TqgRwZt4/majikyu-tsukihime-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Tsukihime (2) (Majikyu 4koma)",
+      "title_jp": "月姫(2) (マジキュー4コマ)",
+      "release_date": "2004-10-25",
+      "isbn": "978-4757720442",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/5g4jpSSg/majikyu-tsukihime-vol-3.webp",
+      "cover_full": "https://i.ibb.co/5g4jpSSg/majikyu-tsukihime-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Tsukihime (3) (Majikyu 4koma)",
+      "title_jp": "月姫(3) (マジキュー4コマ)",
+      "release_date": "2005-02-25",
+      "isbn": "978-4757722262",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/gMm402Km/majikyu-tsukihime-vol-4.webp",
+      "cover_full": "https://i.ibb.co/gMm402Km/majikyu-tsukihime-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Tsukihime (4) (Majikyu 4koma)",
+      "title_jp": "月姫(4) (マジキュー4コマ)",
+      "release_date": "2005-06-25",
+      "isbn": "978-4757723153",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200700002635/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": null
+}

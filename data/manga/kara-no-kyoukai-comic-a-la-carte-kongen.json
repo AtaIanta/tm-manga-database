@@ -1,0 +1,38 @@
+{
+  "id": "kara-no-kyoukai-comic-a-la-carte-kongen",
+  "title_romaji": "Kara no Kyoukai Comic a la carte: Kongen",
+  "title_jp": "劇場版 空の境界 コミックアラカルト ～根源編～",
+  "title_en": null,
+  "alt_titles": [
+    "Kara no Kyoukai Comic a la carte: Kongen"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/6RyMN9z3/kara-no-kyoukai-comic-a-la-carte-kongen-vol-1.jpg",
+      "cover_full": "https://i.ibb.co/6RyMN9z3/kara-no-kyoukai-comic-a-la-carte-kongen-vol-1.jpg",
+      "volume_number": "Vol. 1",
+      "title": "Kara no Kyoukai Comic a la carte: Kongen",
+      "title_jp": "劇場版 空の境界 コミックアラカルト ～根源編～",
+      "release_date": "2008-08-22",
+      "isbn": "978-4047150959",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200804000025/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kara no Kyoukai",
+  "release_year": null
+}

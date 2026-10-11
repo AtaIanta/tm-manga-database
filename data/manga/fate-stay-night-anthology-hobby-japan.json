@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-anthology-hobby-japan",
+  "title_romaji": "Fate/stay night Anthology Comic (Hobby Japan)",
+  "title_jp": "Fate/stay night アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night Anthology Comic (Hobby Japan)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/dwy7fVSz/fate-stay-night-anthology-hobby-japan-vol-1.webp",
+      "cover_full": "https://i.ibb.co/dwy7fVSz/fate-stay-night-anthology-hobby-japan-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night Anthology Comic (Hobby Japan)",
+      "title_jp": "Fate/stay night アンソロジーコミック",
+      "release_date": "2007-03-31",
+      "isbn": "978-4894255425",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://hobbyjapan.co.jp/books/smp/book/b121719.html"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Hobby Japan",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": 2007
+}

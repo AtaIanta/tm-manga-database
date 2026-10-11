@@ -1,0 +1,40 @@
+{
+  "id": "gekka-parade",
+  "title_romaji": "Gekka Parade: TYPE-MOON Masterpiece Selection",
+  "title_jp": "月下パレード 〜TYPE-MOON傑作選〜",
+  "title_en": null,
+  "alt_titles": [
+    "Gekka Parade: TYPE-MOON Masterpiece Selection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/jvhrYQ6C/gekka-parade-vol-1.webp",
+      "cover_full": "https://i.ibb.co/jvhrYQ6C/gekka-parade-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gekka Parade: TYPE-MOON Masterpiece Selection",
+      "title_jp": "月下パレード 〜TYPE-MOON傑作選〜",
+      "release_date": "2004-09-18",
+      "isbn": "978-4776713883",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200067/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "荒木風羽"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2004
+}

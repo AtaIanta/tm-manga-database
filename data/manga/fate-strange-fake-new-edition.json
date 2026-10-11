@@ -1,0 +1,82 @@
+{
+  "id": "fate-strange-fake-new-edition",
+  "title_romaji": "Fate/strange Fake New Edition",
+  "title_jp": "新装版 Fate/strange Fake",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/strange Fake New Edition"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/V0CtH05G/fate-strange-fake-new-edition-vol-1.webp",
+      "cover_full": "https://i.ibb.co/V0CtH05G/fate-strange-fake-new-edition-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/strange Fake New Edition (1)",
+      "title_jp": "新装版 Fate/strange Fake (1)",
+      "release_date": "2025-12-27",
+      "isbn": "978-4048118224",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/3y5vxXDW/fate-strange-fake-new-edition-vol-2.webp",
+      "cover_full": "https://i.ibb.co/3y5vxXDW/fate-strange-fake-new-edition-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/strange Fake New Edition (2)",
+      "title_jp": "新装版 Fate/strange Fake (2)",
+      "release_date": "2026-02-04",
+      "isbn": "978-4048118231",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/SwnFyC4q/fate-strange-fake-new-edition-vol-3.webp",
+      "cover_full": "https://i.ibb.co/SwnFyC4q/fate-strange-fake-new-edition-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/strange Fake New Edition (3)",
+      "title_jp": "新装版 Fate/strange Fake (3)",
+      "release_date": "2026-03-03",
+      "isbn": "978-4048118248",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/BKdSg7fx/fate-strange-fake-new-edition-vol-4.webp",
+      "cover_full": "https://i.ibb.co/BKdSg7fx/fate-strange-fake-new-edition-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/strange Fake New Edition (4)",
+      "title_jp": "新装版 Fate/strange Fake (4)",
+      "release_date": "2026-04-10",
+      "isbn": "978-4048118255",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/sJ25Z0Rh/fate-strange-fake-new-edition-vol-5.webp",
+      "cover_full": "https://i.ibb.co/sJ25Z0Rh/fate-strange-fake-new-edition-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/strange Fake New Edition (5)",
+      "title_jp": "新装版 Fate/strange Fake (5)",
+      "release_date": "2026-05-02",
+      "isbn": "978-4048118262",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/322510000788/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": null,
+  "series": "Fate/strange Fake",
+  "release_year": null
+}

@@ -1,0 +1,49 @@
+{
+  "id": "fate-stay-night-anthology-masterpiece-selection",
+  "title_romaji": "Fate/stay night Anthology Masterpiece Selection",
+  "title_jp": "Fate/stay night アンソロジー傑作選",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night Anthology Masterpiece Selection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/xtXZyswD/fate-stay-night-anthology-masterpiece-selection-vol-1.webp",
+      "cover_full": "https://i.ibb.co/xtXZyswD/fate-stay-night-anthology-masterpiece-selection-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night Anthology Masterpiece Selection (1)",
+      "title_jp": "Fate/stay nightアンソロジー傑作選(上)",
+      "release_date": "2011-11-25",
+      "isbn": "978-4047277335",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/DDCrJZjT/fate-stay-night-anthology-masterpiece-selection-vol-2.webp",
+      "cover_full": "https://i.ibb.co/DDCrJZjT/fate-stay-night-anthology-masterpiece-selection-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/stay night Anthology Masterpiece Selection (2)",
+      "title_jp": "Fate/stay nightアンソロジー傑作選(下)",
+      "release_date": "2011-11-25",
+      "isbn": "978-4047277342",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/201110000516/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": null
+}

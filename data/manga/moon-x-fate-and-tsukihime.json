@@ -1,0 +1,40 @@
+{
+  "id": "moon-x-fate-and-tsukihime",
+  "title_romaji": "MOON X Fate & Tsukihime",
+  "title_jp": "MOON X Fate&TSUKIHIME",
+  "title_en": null,
+  "alt_titles": [
+    "MOON X Fate & Tsukihime"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/0Pk8MNL/moon-x-fate-and-tsukihime-vol-1.webp",
+      "cover_full": "https://i.ibb.co/0Pk8MNL/moon-x-fate-and-tsukihime-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "MOON X Fate & Tsukihime",
+      "title_jp": "MOON X Fate&TSUKIHIME",
+      "release_date": "2005-06-25",
+      "isbn": "978-4776716501",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200335/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Usuiken"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2005
+}

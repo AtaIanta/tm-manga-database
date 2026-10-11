@@ -1,0 +1,93 @@
+{
+  "id": "majikyu-fate-hollow-ataraxia",
+  "title_romaji": "Fate/hollow ataraxia (Majikyu 4koma)",
+  "title_jp": "Fate/hollow ataraxia (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/hollow ataraxia (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/qFrjTnXv/majikyu-fate-hollow-ataraxia-vol-1.webp",
+      "cover_full": "https://i.ibb.co/qFrjTnXv/majikyu-fate-hollow-ataraxia-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/hollow ataraxia (1) (Majikyu 4koma)",
+      "title_jp": "Fate/hollow ataraxia(1) (マジキュー4コマ)",
+      "release_date": "2007-12-25",
+      "isbn": "978-4757739956",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Q7zJQ8tM/majikyu-fate-hollow-ataraxia-vol-2.webp",
+      "cover_full": "https://i.ibb.co/Q7zJQ8tM/majikyu-fate-hollow-ataraxia-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/hollow ataraxia (2) (Majikyu 4koma)",
+      "title_jp": "Fate/hollow ataraxia(2) (マジキュー4コマ)",
+      "release_date": "2008-02-25",
+      "isbn": "978-4757740204",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/pB1BtnBK/majikyu-fate-hollow-ataraxia-vol-3.webp",
+      "cover_full": "https://i.ibb.co/pB1BtnBK/majikyu-fate-hollow-ataraxia-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/hollow ataraxia (3) (Majikyu 4koma)",
+      "title_jp": "Fate/hollow ataraxia(3) (マジキュー4コマ)",
+      "release_date": "2008-04-25",
+      "isbn": "978-4757741669",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Tqk2DyQ2/majikyu-fate-hollow-ataraxia-vol-4.webp",
+      "cover_full": "https://i.ibb.co/Tqk2DyQ2/majikyu-fate-hollow-ataraxia-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/hollow ataraxia (4) (Majikyu 4koma)",
+      "title_jp": "Fate/hollow ataraxia(4) (マジキュー4コマ)",
+      "release_date": "2008-06-25",
+      "isbn": "978-4757742758",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Kzmqts8f/majikyu-fate-hollow-ataraxia-vol-5.webp",
+      "cover_full": "https://i.ibb.co/Kzmqts8f/majikyu-fate-hollow-ataraxia-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/hollow ataraxia (5) (Majikyu 4koma)",
+      "title_jp": "Fate/hollow ataraxia(5) (マジキュー4コマ)",
+      "release_date": "2008-08-25",
+      "isbn": "978-4757743793",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/R43gWXzz/majikyu-fate-hollow-ataraxia-vol-6.webp",
+      "cover_full": "https://i.ibb.co/R43gWXzz/majikyu-fate-hollow-ataraxia-vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/hollow ataraxia (6) (Majikyu 4koma)",
+      "title_jp": "Fate/hollow ataraxia(6) (マジキュー4コマ)",
+      "release_date": "2008-12-25",
+      "isbn": "978-4757745957",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200712000084/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/hollow ataraxia",
+  "release_year": null
+}

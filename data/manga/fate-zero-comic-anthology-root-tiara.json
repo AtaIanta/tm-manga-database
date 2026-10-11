@@ -1,0 +1,47 @@
+{
+  "id": "fate-zero-comic-anthology-root-tiara",
+  "title_romaji": "Fate/Zero Comic Anthology Root-tiara",
+  "title_jp": "Fate/Zero コミックアンソロジー Root-tiara",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Comic Anthology Root-tiara"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": null,
+      "volume_number": "Vol. 1",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/xK339mVL/small-fate-zero-comic-anthology-root-tiara-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Zero Comic Anthology Root-tiara (2)",
+      "title_jp": "Fate/Zero コミックアンソロジー Root-tiara VOL.2",
+      "release_date": "2012-07-25",
+      "isbn": "978-4758007061",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/Fate/Zero%20%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC%20Root-tiara"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": null
+}

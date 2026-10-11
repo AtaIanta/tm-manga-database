@@ -1,0 +1,40 @@
+{
+  "id": "route-blue-knight",
+  "title_romaji": "Route/blue knight: Fate Anthology Works",
+  "title_jp": "Route/blue knight-Fateアンソロジー作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Route/blue knight: Fate Anthology Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/BHBrYCV9/route-blue-knight-vol-1.webp",
+      "cover_full": "https://i.ibb.co/BHBrYCV9/route-blue-knight-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Route/blue knight: Fate Anthology Works",
+      "title_jp": "Route/blue knight",
+      "release_date": "2006-09-25",
+      "isbn": "978-4776720362",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200655/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Yukawa Asami"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": 2006
+}

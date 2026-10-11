@@ -22,6 +22,7 @@ const TARGET_WORK_SERIES_CODE_MAP = {
   "Fate/Apocrypha": "FA",
   "Fate/Grand Order": "FGO",
   "Fate/strange Fake": "FSF",
+  "Do-Tsuki-Man-Zai": "DOTSUKI",
   "Fate/Prototype": "FP",
   "Fate/kaleid liner PRISMA ILLYA": "PI",
   "Fate/Type Redline": "FTR",
@@ -303,6 +304,7 @@ function formatTypeTag(type, series) {
 function mapToCanonicalFranchise(seriesName) {
   if (!seriesName || seriesName === 'Unknown' || seriesName === '[no data]' || seriesName === 'N/A') return 'Unknown';
   const s = seriesName.trim();
+  if (/do-?tsuki-?man-?zai/i.test(s)) return 'Do-Tsuki-Man-Zai';
   if (/^fate/i.test(s) || /el-melloi/i.test(s)) return 'Fate series';
   if (/tsukihime/i.test(s) || /melty blood/i.test(s) || /hana no miyako/i.test(s)) return 'Tsukihime';
   if (/mahoutsukai no yoru/i.test(s) || /mahoyo/i.test(s)) return 'Mahoyo';
@@ -1005,6 +1007,7 @@ function isModalOpen() {
 function openAboutModal() {
   const modal = document.getElementById('aboutModal');
   if (!modal) return;
+  if (typeof updateAboutArchiveStats === 'function') updateAboutArchiveStats();
   syncEditModeToggle();
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';

@@ -1,0 +1,40 @@
+{
+  "id": "king-in-the-moon",
+  "title_romaji": "King in the Moon, Sword in the Princess: TYPE-MOON Works",
+  "title_jp": "月に王様 姫に剣〜TYPE-MOON作品集〜",
+  "title_en": null,
+  "alt_titles": [
+    "King in the Moon, Sword in the Princess: TYPE-MOON Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Pzm8JcHK/king-in-the-moon-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Pzm8JcHK/king-in-the-moon-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "King in the Moon, Sword in the Princess: TYPE-MOON Works",
+      "title_jp": "月に王様 姫に剣〜TYPE-MOON作品集〜",
+      "release_date": "2008-06-24",
+      "isbn": "978-4776725176",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/201321/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Yukawa Asami"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2008
+}

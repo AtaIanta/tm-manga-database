@@ -1,0 +1,71 @@
+{
+  "id": "kagetsu-tohya-anthology-comic",
+  "title_romaji": "Kagetsu Tohya Anthology Comic",
+  "title_jp": "歌月十夜 アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "Kagetsu Tohya Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": null,
+      "cover_full": null,
+      "volume_number": "Vol. 1",
+      "title": "Kagetsu Tohya Anthology Comic (1)",
+      "title_jp": "歌月十夜（1）",
+      "release_date": "2002-08-30",
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "cover_full": null,
+      "volume_number": "Vol. 2",
+      "title": "Kagetsu Tohya Anthology Comic (2)",
+      "title_jp": "歌月十夜（2）",
+      "release_date": "2002-11-30",
+      "isbn": "978-4872877373",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/pBgNnvFB/kagetsu-tohya-anthology-comic-vol-3.webp",
+      "cover_full": "https://i.ibb.co/pBgNnvFB/kagetsu-tohya-anthology-comic-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Kagetsu Tohya Anthology Comic (3)",
+      "title_jp": "歌月十夜（3）",
+      "release_date": "2003-03-30",
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/wXdrv85/kagetsu-tohya-anthology-comic-vol-4.webp",
+      "cover_full": "https://i.ibb.co/wXdrv85/kagetsu-tohya-anthology-comic-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Kagetsu Tohya Anthology Comic (4)",
+      "title_jp": "歌月十夜（4）",
+      "release_date": "2003-06-30",
+      "isbn": "978-4776710523",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": "Ohzora no longer lists this series. Volume 1 and 3 ISBNs were not on the retailer pages used for the dates.",
+  "sources": [
+    "https://www.netoff.co.jp/detail/0001286618/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kagetsu Tohya",
+  "release_year": 2002
+}

@@ -1,0 +1,93 @@
+{
+  "id": "tsukihime-anthology-comic",
+  "title_romaji": "Tsukihime Anthology Comic",
+  "title_jp": "月姫 アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukihime Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/nsktkLt2/tsukihime-anthology-comic-vol-1.webp",
+      "cover_full": "https://i.ibb.co/nsktkLt2/tsukihime-anthology-comic-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime Anthology Comic (1)",
+      "title_jp": "月姫 アンソロジーコミック",
+      "release_date": "2002-05-30",
+      "isbn": "978-4757708693",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/JFpsbDLd/tsukihime-anthology-comic-vol-2.webp",
+      "cover_full": "https://i.ibb.co/JFpsbDLd/tsukihime-anthology-comic-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Tsukihime Anthology Comic (2)",
+      "title_jp": "月姫 アンソロジーコミック2",
+      "release_date": "2002-09-30",
+      "isbn": "978-4757709911",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/BVbGDVLZ/tsukihime-anthology-comic-vol-3.webp",
+      "cover_full": "https://i.ibb.co/BVbGDVLZ/tsukihime-anthology-comic-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Tsukihime Anthology Comic (3)",
+      "title_jp": "月姫 アンソロジーコミック3 -Winter-",
+      "release_date": "2002-12-28",
+      "isbn": "978-4757712461",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/jv8KbQ4R/tsukihime-anthology-comic-vol-4.webp",
+      "cover_full": "https://i.ibb.co/jv8KbQ4R/tsukihime-anthology-comic-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Tsukihime Anthology Comic (4)",
+      "title_jp": "月姫 アンソロジーコミック4 -BLUE-",
+      "release_date": "2003-03-29",
+      "isbn": "978-4757713710",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/C3Wh5Zr0/tsukihime-anthology-comic-vol-5.webp",
+      "cover_full": "https://i.ibb.co/C3Wh5Zr0/tsukihime-anthology-comic-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Tsukihime Anthology Comic (5)",
+      "title_jp": "月姫 アンソロジーコミック5 -CRIMSON-",
+      "release_date": "2003-03-29",
+      "isbn": "978-4757713727",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/XfXsQ1Lg/tsukihime-anthology-comic-vol-6.webp",
+      "cover_full": "https://i.ibb.co/XfXsQ1Lg/tsukihime-anthology-comic-vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Tsukihime Anthology Comic (6)",
+      "title_jp": "月姫 アンソロジーコミック 6 KISS!!",
+      "release_date": "2003-11-25",
+      "isbn": "978-4757716391",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200700002115/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": null
+}

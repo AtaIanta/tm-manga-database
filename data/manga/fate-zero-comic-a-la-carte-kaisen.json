@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-comic-a-la-carte-kaisen",
+  "title_romaji": "Fate/Zero Comic a la carte: Kaisen",
+  "title_jp": "Fate/Zero コミックアラカルト 開戦編",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Comic a la carte: Kaisen"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Z1V3ghp8/fate-zero-comic-a-la-carte-kaisen-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Z1V3ghp8/fate-zero-comic-a-la-carte-kaisen-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Comic a la carte: Kaisen",
+      "title_jp": "Fate/Zero コミックアラカルト 開戦編",
+      "release_date": "2011-03-23",
+      "isbn": "978-4047156623",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/201012000109/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": null
+}

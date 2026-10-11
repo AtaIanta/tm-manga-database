@@ -1,0 +1,82 @@
+{
+  "id": "majikyu-fate-zero-4koma-holy-grail-war",
+  "title_romaji": "Fate/Zero 4-koma Holy Grail War (Majikyu 4koma)",
+  "title_jp": "Fate/Zero 四コマ聖杯戦争 (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero 4-koma Holy Grail War (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/bRgk0MQ2/majikyu-fate-zero-4koma-holy-grail-war-vol-1.webp",
+      "cover_full": "https://i.ibb.co/bRgk0MQ2/majikyu-fate-zero-4koma-holy-grail-war-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero 4-koma Holy Grail War (1) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero 四コマ聖杯戦争(1) (マジキュー4コマ)",
+      "release_date": "2011-11-25",
+      "isbn": "978-4047277359",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/mrRC7Tj2/majikyu-fate-zero-4koma-holy-grail-war-vol-2.webp",
+      "cover_full": "https://i.ibb.co/mrRC7Tj2/majikyu-fate-zero-4koma-holy-grail-war-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Zero 4-koma Holy Grail War (2) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero 四コマ聖杯戦争(2) (マジキュー4コマ)",
+      "release_date": "2012-02-25",
+      "isbn": "978-4047278585",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/zVQxQ1Kk/majikyu-fate-zero-4koma-holy-grail-war-vol-3.webp",
+      "cover_full": "https://i.ibb.co/zVQxQ1Kk/majikyu-fate-zero-4koma-holy-grail-war-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Zero 4-koma Holy Grail War (3) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero 四コマ聖杯戦争(3) (マジキュー4コマ)",
+      "release_date": "2012-05-25",
+      "isbn": "978-4047281219",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/kVbDhvxZ/majikyu-fate-zero-4koma-holy-grail-war-vol-4.webp",
+      "cover_full": "https://i.ibb.co/kVbDhvxZ/majikyu-fate-zero-4koma-holy-grail-war-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Zero 4-koma Holy Grail War (4) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero 四コマ聖杯戦争(4) (マジキュー4コマ)",
+      "release_date": "2012-08-25",
+      "isbn": "978-4047282803",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/chcYmrtV/majikyu-fate-zero-4koma-holy-grail-war-vol-5.webp",
+      "cover_full": "https://i.ibb.co/chcYmrtV/majikyu-fate-zero-4koma-holy-grail-war-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Zero 4-koma Holy Grail War (5) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero 四コマ聖杯戦争(5) (マジキュー4コマ)",
+      "release_date": "2012-11-24",
+      "isbn": "978-4047285767",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/201110000514/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": null
+}

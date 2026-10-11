@@ -1,0 +1,40 @@
+{
+  "id": "moon-tarte",
+  "title_romaji": "Moon Tarte",
+  "title_jp": "MOON TARTE（ムーンタルト）",
+  "title_en": null,
+  "alt_titles": [
+    "Moon Tarte"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/PXGDJ5N/moon-tarte-vol-1.webp",
+      "cover_full": "https://i.ibb.co/PXGDJ5N/moon-tarte-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Moon Tarte",
+      "title_jp": "MOON TARTE（ムーンタルト）",
+      "release_date": "2004-11-17",
+      "isbn": "978-4776714422",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200052/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Kusumi Ranma"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2004
+}

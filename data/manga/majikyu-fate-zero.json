@@ -1,0 +1,49 @@
+{
+  "id": "majikyu-fate-zero",
+  "title_romaji": "Fate/Zero (Majikyu 4koma)",
+  "title_jp": "Fate/Zero (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Pspw66Sk/majikyu-fate-zero-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Pspw66Sk/majikyu-fate-zero-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero (1) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero(1) (マジキュー4コマ)",
+      "release_date": "2007-11-26",
+      "isbn": "978-4757738393",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/pvQkzfPG/majikyu-fate-zero-vol-2.webp",
+      "cover_full": "https://i.ibb.co/pvQkzfPG/majikyu-fate-zero-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Zero (2) (Majikyu 4koma)",
+      "title_jp": "Fate/Zero (2) (マジキュー4コマ)",
+      "release_date": "2008-03-24",
+      "isbn": "978-4757740921",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200711000071/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": null
+}

@@ -1,0 +1,38 @@
+{
+  "id": "mahoutsukai-no-yoru-anthology-hobby-japan",
+  "title_romaji": "Mahoutsukai no Yoru Anthology Comic (Hobby Japan)",
+  "title_jp": "魔法使いの夜アンソロジーコミック",
+  "title_en": "Witch on the Holy Night Anthology Comic (Hobby Japan)",
+  "alt_titles": [
+    "Mahoutsukai no Yoru Anthology Comic (Hobby Japan)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/zhVgPHNk/mahoutsukai-no-yoru-anthology-hobby-japan-vol-1.webp",
+      "cover_full": "https://i.ibb.co/zhVgPHNk/mahoutsukai-no-yoru-anthology-hobby-japan-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Yoru Anthology Comic (Hobby Japan)",
+      "title_jp": "魔法使いの夜アンソロジーコミック",
+      "release_date": "2012-07-27",
+      "isbn": "978-4798604312",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://hobbyjapan.co.jp/books/smp/book/b121733.html"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Hobby Japan",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Mahoyo",
+  "release_year": 2012
+}

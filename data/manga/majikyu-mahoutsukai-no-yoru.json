@@ -1,0 +1,49 @@
+{
+  "id": "majikyu-mahoutsukai-no-yoru",
+  "title_romaji": "Mahoutsukai no Yoru (Majikyu 4koma)",
+  "title_jp": "魔法使いの夜 (マジキュー4コマ)",
+  "title_en": "Witch on the Holy Night (Majikyu 4koma)",
+  "alt_titles": [
+    "Mahoutsukai no Yoru (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/CKZKYmVr/majikyu-mahoutsukai-no-yoru-vol-1.webp",
+      "cover_full": "https://i.ibb.co/CKZKYmVr/majikyu-mahoutsukai-no-yoru-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Mahoutsukai no Yoru (1) (Majikyu 4koma)",
+      "title_jp": "魔法使いの夜(1) (マジキュー4コマ)",
+      "release_date": "2012-08-25",
+      "isbn": "978-4047282827",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/TqPQypcg/majikyu-mahoutsukai-no-yoru-vol-2.webp",
+      "cover_full": "https://i.ibb.co/TqPQypcg/majikyu-mahoutsukai-no-yoru-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Mahoutsukai no Yoru (2) (Majikyu 4koma)",
+      "title_jp": "魔法使いの夜(2) (マジキュー4コマ)",
+      "release_date": "2012-10-25",
+      "isbn": "978-4047285262",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/201008000497/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Mahoutsukai no Yoru",
+  "release_year": null
+}

@@ -1,0 +1,82 @@
+{
+  "id": "fate-strange-fake",
+  "title_romaji": "Fate/strange Fake",
+  "title_jp": "Fate/strange Fake",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/strange Fake"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/HfD7hkYD/fate-strange-fake-vol-1.webp",
+      "cover_full": "https://i.ibb.co/HfD7hkYD/fate-strange-fake-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/strange Fake (1)",
+      "title_jp": "Fate/strange Fake vol.1",
+      "release_date": "2016-01-14",
+      "isbn": "978-4047309883",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/VpYGYb1K/fate-strange-fake-vol-2.webp",
+      "cover_full": "https://i.ibb.co/VpYGYb1K/fate-strange-fake-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/strange Fake (2)",
+      "title_jp": "Fate/strange Fake vol.2",
+      "release_date": "2016-01-14",
+      "isbn": "978-4047309890",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/4CWKTzY/fate-strange-fake-vol-3.webp",
+      "cover_full": "https://i.ibb.co/4CWKTzY/fate-strange-fake-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/strange Fake (3)",
+      "title_jp": "Fate/strange Fake vol.3",
+      "release_date": "2017-08-23",
+      "isbn": "978-4047309906",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/kVszYGwj/fate-strange-fake-vol-4.webp",
+      "cover_full": "https://i.ibb.co/kVszYGwj/fate-strange-fake-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/strange Fake (4)",
+      "title_jp": "Fate/strange Fake vol.4",
+      "release_date": "2019-10-04",
+      "isbn": "978-4047309913",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/YBC3yrpm/fate-strange-fake-vol-5.webp",
+      "cover_full": "https://i.ibb.co/YBC3yrpm/fate-strange-fake-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/strange Fake (5)",
+      "title_jp": "Fate/strange Fake vol.5",
+      "release_date": "2022-02-10",
+      "isbn": "978-4047309920",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/301512000733/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": null,
+  "type": null,
+  "series": "Fate/strange Fake",
+  "release_year": null
+}

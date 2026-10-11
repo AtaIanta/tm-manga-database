@@ -1,0 +1,52 @@
+{
+  "id": "canaan-sfill",
+  "title_romaji": "Canaan Sfill",
+  "title_jp": "CANAAN スフィル",
+  "title_en": null,
+  "alt_titles": [
+    "Canaan Sfill"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/fdmJdhsd/canaan-sfill-vol-1.webp",
+      "cover_full": "https://i.ibb.co/fdmJdhsd/canaan-sfill-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Canaan Sfill (1)",
+      "title_jp": "CANAAN スフィル（1）",
+      "release_date": "2010-12-08",
+      "isbn": "978-4048992022",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/7dWbp4CP/canaan-sfill-vol-2.webp",
+      "cover_full": "https://i.ibb.co/7dWbp4CP/canaan-sfill-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Canaan Sfill (2)",
+      "title_jp": "CANAAN スフィル（2）",
+      "release_date": "2011-05-07",
+      "isbn": "978-4048992237",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://store.kadokawa.co.jp/shop/g/g201011000256/",
+    "https://store.kadokawa.co.jp/shop/g/g201103000417/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Sasameyuki Jun"
+  ],
+  "publisher": "Emotion Comics",
+  "magazine": "Web Comic Gekkin",
+  "serialization_start": "2010-03-01",
+  "serialization_end": "2011-01-01",
+  "status": "Finished",
+  "type": "Spin-off",
+  "series": "Canaan",
+  "release_year": 2010
+}

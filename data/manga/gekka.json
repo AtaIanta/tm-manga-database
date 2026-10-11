@@ -12,7 +12,7 @@
       "volume_number": "Vol. 1",
       "title": "Gekka",
       "title_jp": "月華",
-      "release_date": null,
+      "release_date": "2004-03",
       "isbn": "978-4776712398",
       "asin": null,
       "chapters": [
@@ -104,5 +104,5 @@
   "status": "Finished",
   "type": "Anthology",
   "series": "Tsukihime",
-  "release_year": null
+  "release_year": 2004
 }

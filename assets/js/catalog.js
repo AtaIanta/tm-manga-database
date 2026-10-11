@@ -1,7 +1,7 @@
 
 let currentCategory = 'manga'; 
 let currentView = 'grid';      
-let currentSort = 'title-asc';
+let currentSort = 'release-asc';
 
 function syncCategoryTabs(category) {
   const tabManga = document.getElementById('tabCategoryManga');
@@ -67,11 +67,14 @@ function applyCategoryChange(category) {
       currentSort = 'works-desc';
     } else {
       sortSelect.innerHTML = `
+        <option value="release-asc" selected>Oldest Release</option>
+        <option value="release-desc">Newest Release</option>
         <option value="title-asc">Title (A → Z)</option>
         <option value="title-desc">Title (Z → A)</option>
         <option value="vol-desc">Most Volumes</option>
+        <option value="vol-asc">Least Volumes</option>
       `;
-      currentSort = 'title-asc';
+      currentSort = 'release-asc';
     }
   }
 
@@ -233,12 +236,52 @@ function isMangaMissingMetadata(manga) {
   return getMangaMissingFields(manga).length > 0;
 }
 
+function volumeReleaseStamp(value) {
+  if (value == null || isNA(value)) return null;
+  const raw = String(value).trim();
+  if (!raw || raw === '[no data]' || raw === 'TBD' || raw === 'Unknown') return null;
+  const match = raw.match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?/);
+  if (!match) return null;
+  return `${match[1]}-${match[2] || '01'}-${match[3] || '01'}`;
+}
+
+function volumeReleaseBounds(manga) {
+  let earliest = null;
+  let latest = null;
+  for (const vol of manga.volumes || []) {
+    const stamp = volumeReleaseStamp(vol && vol.release_date);
+    if (!stamp) continue;
+    if (!earliest || stamp < earliest) earliest = stamp;
+    if (!latest || stamp > latest) latest = stamp;
+  }
+  return { earliest, latest };
+}
+
+function compareByVolumeRelease(a, b, newestFirst) {
+  const boundsA = volumeReleaseBounds(a);
+  const boundsB = volumeReleaseBounds(b);
+  const da = newestFirst ? boundsA.latest : boundsA.earliest;
+  const db = newestFirst ? boundsB.latest : boundsB.earliest;
+  if (da && db && da !== db) {
+    if (newestFirst) return da > db ? -1 : 1;
+    return da < db ? -1 : 1;
+  }
+  if (da && !db) return -1;
+  if (!da && db) return 1;
+  const ta = (a.title_en || a.title_romaji || '').toLowerCase();
+  const tb = (b.title_en || b.title_romaji || '').toLowerCase();
+  return ta.localeCompare(tb);
+}
+
 function sortManga() {
   filteredManga.sort((a, b) => {
     const editedDelta = Number(isMangaLocallyEdited(b)) - Number(isMangaLocallyEdited(a));
     if (editedDelta) return editedDelta;
     const missingDelta = Number(isMangaMissingMetadata(b)) - Number(isMangaMissingMetadata(a));
     if (missingDelta) return missingDelta;
+    if (currentSort === 'release-asc' || currentSort === 'release-desc') {
+      return compareByVolumeRelease(a, b, currentSort === 'release-desc');
+    }
     if (currentSort === 'year-desc') {
       return (b.release_year || 0) - (a.release_year || 0);
     }
@@ -255,10 +298,14 @@ function sortManga() {
       const tb = (b.title_en || b.title_romaji || '').toLowerCase();
       return tb.localeCompare(ta);
     }
-    if (currentSort === 'vol-desc') {
+    if (currentSort === 'vol-desc' || currentSort === 'vol-asc') {
       const va = (a.volumes || []).length;
       const vb = (b.volumes || []).length;
-      return vb - va;
+      const delta = currentSort === 'vol-asc' ? va - vb : vb - va;
+      if (delta) return delta;
+      const ta = (a.title_en || a.title_romaji || '').toLowerCase();
+      const tb = (b.title_en || b.title_romaji || '').toLowerCase();
+      return ta.localeCompare(tb);
     }
     return 0;
   });

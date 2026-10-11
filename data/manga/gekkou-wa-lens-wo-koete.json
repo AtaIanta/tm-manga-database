@@ -1,0 +1,40 @@
+{
+  "id": "gekkou-wa-lens-wo-koete",
+  "title_romaji": "Gekkou wa Lens wo Koete",
+  "title_jp": "月光はレンズを超えて",
+  "title_en": null,
+  "alt_titles": [
+    "Gekkou wa Lens wo Koete: TYPE-MOON Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Rph3fd1T/gekkou-wa-lens-wo-koete-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Rph3fd1T/gekkou-wa-lens-wo-koete-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gekkou wa Lens wo Koete",
+      "title_jp": "月光はレンズを超えて TYPE-MOON作品集",
+      "release_date": "2006-12-27",
+      "isbn": "978-4776721130",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200727/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Manobu Eiichiro"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2006
+}

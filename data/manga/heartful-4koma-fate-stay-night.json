@@ -1,0 +1,40 @@
+{
+  "id": "heartful-4koma-fate-stay-night",
+  "title_romaji": "Heartful 4-koma Fate/stay night",
+  "title_jp": "ハートフル4コマ Fate/stay night",
+  "title_en": null,
+  "alt_titles": [
+    "Heartful 4-koma Fate/stay night"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/zhnJzR9d/heartful-4koma-fate-stay-night-vol-1.webp",
+      "cover_full": "https://i.ibb.co/zhnJzR9d/heartful-4koma-fate-stay-night-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Heartful 4-koma Fate/stay night",
+      "title_jp": "ハートフル4コマ Fate/stay night",
+      "release_date": "2006-10-24",
+      "isbn": "978-4776720607",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200676/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Nishieda"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": 2006
+}

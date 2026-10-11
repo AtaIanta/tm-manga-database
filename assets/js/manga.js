@@ -1724,7 +1724,7 @@ function saveDirectMangaEdit() {
       isbn: v.isbn || null,
       asin: v.asin || null,
       cover: coverVal || null,
-      cover_full: (coverFullVal && coverFullVal !== coverVal) ? coverFullVal : null,
+      cover_full: (coverFullVal && (coverFullVal !== coverVal || /^https?:\/\//i.test(coverFullVal))) ? coverFullVal : null,
       chapters: (v.chapters || []).map((c, ci) => {
         let chNum = c.chapter;
         if (chNum !== undefined && chNum !== null && String(chNum).trim() !== '') {

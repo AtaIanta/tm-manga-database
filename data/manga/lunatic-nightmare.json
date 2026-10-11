@@ -1,0 +1,40 @@
+{
+  "id": "lunatic-nightmare",
+  "title_romaji": "Lunatic Nightmare: TYPE-MOON Masterpiece Selection",
+  "title_jp": "Lunatic Nightmare ―TYPE-MOON傑作選―",
+  "title_en": null,
+  "alt_titles": [
+    "Lunatic Nightmare: TYPE-MOON Masterpiece Selection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/tpKpMgqG/lunatic-nightmare-vol-1.webp",
+      "cover_full": "https://i.ibb.co/tpKpMgqG/lunatic-nightmare-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Lunatic Nightmare: TYPE-MOON Masterpiece Selection",
+      "title_jp": "Lunatic Nightmare ―TYPE-MOON傑作選―",
+      "release_date": "2004-10-25",
+      "isbn": "978-4776714347",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200053/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "真行寺たつや"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2004
+}

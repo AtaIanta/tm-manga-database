@@ -1,0 +1,50 @@
+{
+  "id": "fate-zero-anthology-missy",
+  "title_romaji": "Fate/Zero Anthology (Missy Comics)",
+  "title_jp": "Fate/Zero アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Anthology (Missy Comics)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/xtrjJCfQ/fate-zero-anthology-missy-vol-1.webp",
+      "cover_full": "https://i.ibb.co/xtrjJCfQ/fate-zero-anthology-missy-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Anthology (Missy Comics) (1)",
+      "title_jp": "Fate／Zero",
+      "release_date": "2007-11-24",
+      "isbn": "978-4776723424",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/8LxzFYRB/fate-zero-anthology-missy-vol-2.webp",
+      "cover_full": "https://i.ibb.co/8LxzFYRB/fate-zero-anthology-missy-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Zero Anthology (Missy Comics) (2)",
+      "title_jp": "Fate/Zero（2）",
+      "release_date": "2008-02-23",
+      "isbn": "978-4776724360",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/201014/",
+    "https://ohzora.jp/comics/201216/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": 2007
+}

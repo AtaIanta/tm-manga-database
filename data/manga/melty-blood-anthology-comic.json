@@ -1,0 +1,49 @@
+{
+  "id": "melty-blood-anthology-comic",
+  "title_romaji": "MELTY BLOOD Anthology Comic",
+  "title_jp": "メルティブラッド アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "MELTY BLOOD Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/tpBRRYJk/melty-blood-anthology-comic-vol-1.webp",
+      "cover_full": "https://i.ibb.co/tpBRRYJk/melty-blood-anthology-comic-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "MELTY BLOOD Anthology Comic (1)",
+      "title_jp": "メルティブラッド アンソロジーコミック",
+      "release_date": "2003-07-25",
+      "isbn": "978-4757715202",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/YFgH9fvZ/melty-blood-anthology-comic-vol-2.webp",
+      "cover_full": "https://i.ibb.co/YFgH9fvZ/melty-blood-anthology-comic-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "MELTY BLOOD Anthology Comic (2)",
+      "title_jp": "メルティブラッド アンソロジーコミック2",
+      "release_date": "2003-12-25",
+      "isbn": "978-4757716780",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200700002439/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "MELTY BLOOD",
+  "release_year": null
+}

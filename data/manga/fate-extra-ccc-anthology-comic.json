@@ -1,0 +1,38 @@
+{
+  "id": "fate-extra-ccc-anthology-comic",
+  "title_romaji": "Fate/Extra CCC Anthology Comic",
+  "title_jp": "Fate/EXTRA CCC コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Extra CCC Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/HLv8QP2N/fate-extra-ccc-anthology-comic-vol-1.webp",
+      "cover_full": "https://i.ibb.co/HLv8QP2N/fate-extra-ccc-anthology-comic-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Extra CCC Anthology Comic",
+      "title_jp": "Fate/EXTRA CCC コミックアンソロジー",
+      "release_date": "2013-11-27",
+      "isbn": "978-4048919340",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/311924300000/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Extra CCC",
+  "release_year": null
+}

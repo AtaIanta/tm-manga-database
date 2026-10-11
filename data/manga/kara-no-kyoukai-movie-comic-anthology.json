@@ -1,0 +1,97 @@
+{
+  "id": "kara-no-kyoukai-movie-comic-anthology",
+  "title_romaji": "Kara no Kyoukai Movie Comic Anthology",
+  "title_jp": "劇場版 空の境界 コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Kara no Kyoukai Movie Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": null,
+      "volume_number": "Vol. 1",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 2",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 3",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 4",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/zhfv5xNh/small-kara-no-kyoukai-movie-comic-anthology-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Kara no Kyoukai Movie Comic Anthology (Chapter 5)",
+      "title_jp": "劇場版 空の境界 コミックアンソロジー 第五章 矛盾螺旋編",
+      "release_date": "2008-10-25",
+      "isbn": "978-4758004688",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "volume_number": "Vol. 6",
+      "title": null,
+      "title_jp": null,
+      "release_date": null,
+      "isbn": null,
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/1fGV4DS7/small-kara-no-kyoukai-movie-comic-anthology-vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Kara no Kyoukai Movie Comic Anthology (Chapter 7)",
+      "title_jp": "劇場版 空の境界 コミックアンソロジー 第七章 殺人考察（後)編",
+      "release_date": "2009-11-25",
+      "isbn": "978-4758005241",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/%E5%8A%87%E5%A0%B4%E7%89%88%20%E7%A9%BA%E3%81%AE%E5%A2%83%E7%95%8C%20%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kara no Kyoukai",
+  "release_year": null
+}

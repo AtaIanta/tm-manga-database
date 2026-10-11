@@ -1,0 +1,60 @@
+{
+  "id": "majikyu-fate-stay-night",
+  "title_romaji": "Fate/stay night (Majikyu 4koma)",
+  "title_jp": "Fate/stay night (マジキュー4コマ)",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night (Majikyu 4koma)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/tpcgFdnZ/majikyu-fate-stay-night-vol-1.webp",
+      "cover_full": "https://i.ibb.co/tpcgFdnZ/majikyu-fate-stay-night-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night (1) (Majikyu 4koma)",
+      "title_jp": "Fate/stay night1 (マジキュー4コマ)",
+      "release_date": "2005-08-31",
+      "isbn": "978-4757723870",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/r2vcSg2x/majikyu-fate-stay-night-vol-2.webp",
+      "cover_full": "https://i.ibb.co/r2vcSg2x/majikyu-fate-stay-night-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/stay night (2) (Majikyu 4koma)",
+      "title_jp": "Fate/stay night(2) (マジキュー4コマ)",
+      "release_date": "2005-10-24",
+      "isbn": "978-4757724846",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/qYF1M0VY/majikyu-fate-stay-night-vol-3.webp",
+      "cover_full": "https://i.ibb.co/qYF1M0VY/majikyu-fate-stay-night-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/stay night (3) (Majikyu 4koma)",
+      "title_jp": "Fate/stay night(3) (マジキュー4コマ)",
+      "release_date": "2005-12-26",
+      "isbn": "978-4757725393",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200700002978/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": null
+}

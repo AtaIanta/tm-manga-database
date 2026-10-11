@@ -1,0 +1,65 @@
+{
+  "id": "gessekai-ryokou",
+  "title_romaji": "Gessekai Ryokou: Fly Me to TYPE-MOON",
+  "title_jp": "月世界旅行～Fly me to TYPE-MOON～",
+  "title_en": null,
+  "alt_titles": [
+    "Gessekai Ryokou",
+    "Fly Me to TYPE-MOON"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/bRRxJFHn/gessekai-ryokou-vol-1.webp",
+      "cover_full": "https://i.ibb.co/bRRxJFHn/gessekai-ryokou-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Gessekai Ryokou (1)",
+      "title_jp": "月世界旅行～Fly me to TYPE-MOON～",
+      "release_date": "2013-03-26",
+      "isbn": "978-4797373394",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/3mWYh271/gessekai-ryokou-vol-2.webp",
+      "cover_full": "https://i.ibb.co/3mWYh271/gessekai-ryokou-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Gessekai Ryokou (2)",
+      "title_jp": "月世界旅行～Fly me to TYPE-MOON～ (2)",
+      "release_date": "2014-09-13",
+      "isbn": "978-4797377125",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/WWjm7wQL/gessekai-ryokou-vol-3.webp",
+      "cover_full": "https://i.ibb.co/WWjm7wQL/gessekai-ryokou-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Gessekai Ryokou (3)",
+      "title_jp": "月世界旅行～Fly me to TYPE-MOON～ (3)",
+      "release_date": "2016-06-15",
+      "isbn": "978-4797387322",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.sbcr.jp/product/4797373394/",
+    "https://www.sbcr.jp/product/4797377125/",
+    "https://www.sbcr.jp/product/4797387322/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Yamada Sekijin"
+  ],
+  "publisher": "SB Creative",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": null,
+  "series": "TYPE-MOON",
+  "release_year": 2013
+}

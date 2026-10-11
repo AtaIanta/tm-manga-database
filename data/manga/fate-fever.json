@@ -1,0 +1,40 @@
+{
+  "id": "fate-fever",
+  "title_romaji": "Fate/fever: TYPE-MOON Works",
+  "title_jp": "Fate/fever（フェイトフィーバー）〜TYPE MOON作品集〜",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/fever: TYPE-MOON Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/bcnxv9t/fate-fever-vol-1.webp",
+      "cover_full": "https://i.ibb.co/bcnxv9t/fate-fever-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/fever: TYPE-MOON Works",
+      "title_jp": "Fate/fever（フェイトフィーバー）〜TYPE MOON作品集〜",
+      "release_date": "2007-02-24",
+      "isbn": "978-4776721642",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200811/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Usuiken"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2007
+}

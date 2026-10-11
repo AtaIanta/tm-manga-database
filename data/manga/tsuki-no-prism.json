@@ -1,0 +1,38 @@
+{
+  "id": "tsuki-no-prism",
+  "title_romaji": "Tsuki no Prism",
+  "title_jp": "月のプリズム 邪 武丸 TYPE-MOON作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Tsuki no Prism"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/RkBqYdqf/tsuki-no-prism-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsuki no Prism",
+      "title_jp": "月のプリズム 邪 武丸 TYPE-MOON作品集",
+      "release_date": "2008-02-25",
+      "isbn": "978-4758004305",
+      "asin": null,
+      "chapters": [],
+      "cover_full": "https://i.ibb.co/RkBqYdqf/tsuki-no-prism-vol-1.webp"
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/%E6%9C%88%E3%81%AE%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0%20%E9%82%AA%20%E6%AD%A6%E4%B8%B8%20TYPE-MOON%E4%BD%9C%E5%93%81%E9%9B%86"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": null
+}

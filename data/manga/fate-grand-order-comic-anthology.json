@@ -1,0 +1,127 @@
+{
+  "id": "fate-grand-order-comic-anthology",
+  "title_romaji": "Fate/Grand Order Comic Anthology",
+  "title_jp": "Fate/Grand Order コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Grand Order Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/d0cVvTJP/small-fate-grand-order-comic-anthology-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Grand Order Comic Anthology",
+      "title_jp": "Fate/Grand Order コミックアンソロジー",
+      "release_date": "2016-03-25",
+      "isbn": "978-4758008976",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/B5sKWkWF/small-fate-grand-order-comic-anthology-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Fate/Grand Order Comic Anthology (2)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.2",
+      "release_date": "2016-06-30",
+      "isbn": "978-4758009058",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/6c6Grn1J/small-fate-grand-order-comic-anthology-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Fate/Grand Order Comic Anthology (3)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.3",
+      "release_date": "2016-11-04",
+      "isbn": "978-4758009256",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/bRdH36WZ/small-fate-grand-order-comic-anthology-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Fate/Grand Order Comic Anthology (4)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.4",
+      "release_date": "2017-01-25",
+      "isbn": "978-4758009379",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/bh9TTnm/small-fate-grand-order-comic-anthology-vol-5.webp",
+      "volume_number": "Vol. 5",
+      "title": "Fate/Grand Order Comic Anthology (5)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.5",
+      "release_date": "2017-06-23",
+      "isbn": "978-4758009423",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/5xCBTHG8/small-fate-grand-order-comic-anthology-vol-6.webp",
+      "volume_number": "Vol. 6",
+      "title": "Fate/Grand Order Comic Anthology (6)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.6",
+      "release_date": "2017-08-25",
+      "isbn": "978-4758009614",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/WW1sChzz/small-fate-grand-order-comic-anthology-vol-7.webp",
+      "volume_number": "Vol. 7",
+      "title": "Fate/Grand Order Comic Anthology (7)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.7",
+      "release_date": "2017-10-25",
+      "isbn": "978-4758009669",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/Kc96DdHD/small-fate-grand-order-comic-anthology-vol-8.webp",
+      "volume_number": "Vol. 8",
+      "title": "Fate/Grand Order Comic Anthology (8)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.8",
+      "release_date": "2017-12-25",
+      "isbn": "978-4758009737",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/zWhsZxgL/small-fate-grand-order-comic-anthology-vol-9.webp",
+      "volume_number": "Vol. 9",
+      "title": "Fate/Grand Order Comic Anthology (9)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.9",
+      "release_date": "2018-03-24",
+      "isbn": "978-4758009829",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/TBT31k0r/small-fate-grand-order-comic-anthology-vol-10.webp",
+      "volume_number": "Vol. 10",
+      "title": "Fate/Grand Order Comic Anthology (10)",
+      "title_jp": "Fate/Grand Order コミックアンソロジー VOL.10",
+      "release_date": "2018-06-25",
+      "isbn": "978-4758009881",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/Fate/Grand%20Order%20%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Grand Order",
+  "release_year": null
+}

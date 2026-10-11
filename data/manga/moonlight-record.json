@@ -1,0 +1,38 @@
+{
+  "id": "moonlight-record",
+  "title_romaji": "Moonlight Record: Tsukihime Masterpiece Selection",
+  "title_jp": "月光録 〜月姫傑作選〜",
+  "title_en": null,
+  "alt_titles": [
+    "Moonlight Record: Tsukihime Masterpiece Selection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/bRy4v761/moonlight-record-vol-1.webp",
+      "cover_full": "https://i.ibb.co/bRy4v761/moonlight-record-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Moonlight Record: Tsukihime Masterpiece Selection",
+      "title_jp": "月光録 〜月姫傑作選〜",
+      "release_date": "2005-01-24",
+      "isbn": "978-4776715283",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200820/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2005
+}

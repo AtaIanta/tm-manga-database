@@ -1,0 +1,38 @@
+{
+  "id": "fate-hollow-ataraxia-anthology-hobby-japan",
+  "title_romaji": "Fate/hollow ataraxia Anthology Comic (Hobby Japan)",
+  "title_jp": "Fate/hollow ataraxia アンソロジーコミック",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/hollow ataraxia Anthology Comic (Hobby Japan)"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Y77nWsrn/fate-hollow-ataraxia-anthology-hobby-japan-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Y77nWsrn/fate-hollow-ataraxia-anthology-hobby-japan-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/hollow ataraxia Anthology Comic (Hobby Japan)",
+      "title_jp": "Fate/hollow ataraxia アンソロジーコミック",
+      "release_date": "2006-01-25",
+      "isbn": "978-4894254060",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://hobbyjapan.co.jp/books/smp/book/b121715.html"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Hobby Japan",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/hollow ataraxia",
+  "release_year": 2006
+}

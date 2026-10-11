@@ -1,0 +1,40 @@
+{
+  "id": "fantasy-moonlight-night",
+  "title_romaji": "Fantasy Moonlight Night: TYPE-MOON Masterpiece Selection",
+  "title_jp": "幻想月光夜 ―TYPE-MOON傑作選―",
+  "title_en": null,
+  "alt_titles": [
+    "Fantasy Moonlight Night: TYPE-MOON Masterpiece Selection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/BKtL0kwJ/fantasy-moonlight-night-vol-1.webp",
+      "cover_full": "https://i.ibb.co/BKtL0kwJ/fantasy-moonlight-night-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fantasy Moonlight Night: TYPE-MOON Masterpiece Selection",
+      "title_jp": "幻想月光夜 ―TYPE-MOON傑作選―",
+      "release_date": "2005-01-17",
+      "isbn": "978-4776715139",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200142/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Usami Wataru"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2005
+}

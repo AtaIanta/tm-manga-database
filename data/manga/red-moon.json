@@ -1,0 +1,40 @@
+{
+  "id": "red-moon",
+  "title_romaji": "Red Moon: A Story of Blood Moon Princess",
+  "title_jp": "紅月抄 A story of BLOOD MOON PRINCESS",
+  "title_en": null,
+  "alt_titles": [
+    "Red Moon: A Story of Blood Moon Princess"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/n8KgzNqC/red-moon-vol-1.webp",
+      "cover_full": "https://i.ibb.co/n8KgzNqC/red-moon-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Red Moon: A Story of Blood Moon Princess",
+      "title_jp": "紅月抄 A story of BLOOD MOON PRINCESS",
+      "release_date": "2004-05-17",
+      "isbn": "978-4776713135",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200288/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Nagi Ayame"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2004
+}

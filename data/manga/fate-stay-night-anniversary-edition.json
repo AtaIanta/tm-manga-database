@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-anniversary-edition",
+  "title_romaji": "Fate/stay night Anniversary Edition",
+  "title_jp": "Fate/stay night Anniversary Edition",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night Anniversary Edition"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/N2wDMr5T/fate-stay-night-anniversary-edition-vol-1.webp",
+      "cover_full": "https://i.ibb.co/N2wDMr5T/fate-stay-night-anniversary-edition-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night Anniversary Edition",
+      "title_jp": "Fate/stay night Anniversary Edition",
+      "release_date": "2005-01-31",
+      "isbn": "978-4776715207",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200151/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": 2005
+}

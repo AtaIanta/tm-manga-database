@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-comic-battle-gekitotsu",
+  "title_romaji": "Fate/stay night Comic Battle: Gekitotsu",
+  "title_jp": "Fate/stay night コミックバトル -激突編-",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night Comic Battle: Gekitotsu"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/0RQpcBGM/fate-stay-night-comic-battle-gekitotsu-vol-1.webp",
+      "cover_full": "https://i.ibb.co/0RQpcBGM/fate-stay-night-comic-battle-gekitotsu-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night Comic Battle: Gekitotsu",
+      "title_jp": "Fate/stay night コミックバトル -激突編-",
+      "release_date": "2004-08-06",
+      "isbn": "978-4048537605",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200403000427/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": null
+}

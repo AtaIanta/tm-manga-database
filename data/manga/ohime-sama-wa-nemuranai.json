@@ -1,0 +1,40 @@
+{
+  "id": "ohime-sama-wa-nemuranai",
+  "title_romaji": "Ohime-sama wa Nemuranai: TYPE-MOON Masterpieces",
+  "title_jp": "お姫サマは眠らない ～TYPE-MOON傑作選～",
+  "title_en": null,
+  "alt_titles": [
+    "Ohime-sama wa Nemuranai"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/RGMMFcw7/ohime-sama-wa-nemuranai-vol-1.webp",
+      "cover_full": "https://i.ibb.co/RGMMFcw7/ohime-sama-wa-nemuranai-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Ohime-sama wa Nemuranai: TYPE-MOON Masterpieces",
+      "title_jp": "お姫サマは眠らない ～TYPE-MOON傑作選～",
+      "release_date": "2004-04-24",
+      "isbn": "978-4776712679",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200402/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Takahashi Sanae"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2004
+}

@@ -1,0 +1,94 @@
+{
+  "id": "fate-stay-night-unlimited-phantasm",
+  "title_romaji": "Unlimited Phantasm",
+  "title_jp": "アンリミテッドファンタズム",
+  "title_en": null,
+  "alt_titles": [
+    "Unlimited Phantasm",
+    "Fate/stay night Anthology Comic"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/YBzVvVK4/fate-stay-night-unlimited-phantasm-vol-1.webp",
+      "cover_full": "https://i.ibb.co/YBzVvVK4/fate-stay-night-unlimited-phantasm-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Unlimited Phantasm (1)",
+      "title_jp": "アンリミテッドファンタズム Vol.1",
+      "release_date": "2004-04",
+      "isbn": "978-4925148559",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/84LMC8XW/fate-stay-night-unlimited-phantasm-vol-2.webp",
+      "cover_full": "https://i.ibb.co/84LMC8XW/fate-stay-night-unlimited-phantasm-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "Unlimited Phantasm (2)",
+      "title_jp": "アンリミテッドファンタズム Vol.2",
+      "release_date": "2004-06",
+      "isbn": "978-4925148566",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/B1hPjDM/fate-stay-night-unlimited-phantasm-vol-3.webp",
+      "cover_full": "https://i.ibb.co/B1hPjDM/fate-stay-night-unlimited-phantasm-vol-3.webp",
+      "volume_number": "Vol. 3",
+      "title": "Unlimited Phantasm (3)",
+      "title_jp": "アンリミテッドファンタズム Vol.3",
+      "release_date": "2004-08",
+      "isbn": "978-4925148580",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/JNW2LrP/fate-stay-night-unlimited-phantasm-vol-4.webp",
+      "cover_full": "https://i.ibb.co/JNW2LrP/fate-stay-night-unlimited-phantasm-vol-4.webp",
+      "volume_number": "Vol. 4",
+      "title": "Unlimited Phantasm (4)",
+      "title_jp": "アンリミテッドファンタズム Vol.4",
+      "release_date": "2004-11",
+      "isbn": "978-4925148610",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/5gvzDhtC/fate-stay-night-unlimited-phantasm-vol-5a.webp",
+      "cover_full": "https://i.ibb.co/5gvzDhtC/fate-stay-night-unlimited-phantasm-vol-5a.webp",
+      "volume_number": "Vol. 5A",
+      "title": "Unlimited Phantasm (5A)",
+      "title_jp": "アンリミテッドファンタズム Vol.5 side A",
+      "release_date": "2005-02",
+      "isbn": "978-4925148658",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/xS7zYt5k/fate-stay-night-unlimited-phantasm-vol-5b.webp",
+      "cover_full": "https://i.ibb.co/xS7zYt5k/fate-stay-night-unlimited-phantasm-vol-5b.webp",
+      "volume_number": "Vol. 5B",
+      "title": "Unlimited Phantasm (5B)",
+      "title_jp": "アンリミテッドファンタズム Vol.5 side B",
+      "release_date": "2005-02",
+      "isbn": "978-4925148672",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ndlsearch.ndl.go.jp/books/R100000002-I000007833498"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "FOX Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": 2004
+}

@@ -1,0 +1,40 @@
+{
+  "id": "heartful-4koma-fate-hollow-ataraxia",
+  "title_romaji": "Heartful 4-koma Fate/hollow ataraxia",
+  "title_jp": "ハートフル4コマ Fate/hollow ataraxia",
+  "title_en": null,
+  "alt_titles": [
+    "Heartful 4-koma Fate/hollow ataraxia"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/3mR2GrMT/heartful-4koma-fate-hollow-ataraxia-vol-1.webp",
+      "cover_full": "https://i.ibb.co/3mR2GrMT/heartful-4koma-fate-hollow-ataraxia-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Heartful 4-koma Fate/hollow ataraxia",
+      "title_jp": "ハートフル4コマ Fate/hollow ataraxia",
+      "release_date": "2006-09-25",
+      "isbn": "978-4776720386",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200656/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Hirai Yukio"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/hollow ataraxia",
+  "release_year": 2006
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fate-stay-night-comic-battle-kessen",
+  "title_romaji": "Fate/stay night Comic Battle: Kessen",
+  "title_jp": "Fate/stay night コミックバトル -血戦編-",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/stay night Comic Battle: Kessen"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/ztdGdpN/fate-stay-night-comic-battle-kessen-vol-1.webp",
+      "cover_full": "https://i.ibb.co/ztdGdpN/fate-stay-night-comic-battle-kessen-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/stay night Comic Battle: Kessen",
+      "title_jp": "Fate/stay night コミックバトル -血戦編-",
+      "release_date": "2004-12-07",
+      "isbn": "978-4048537896",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200403000428/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/stay night",
+  "release_year": null
+}

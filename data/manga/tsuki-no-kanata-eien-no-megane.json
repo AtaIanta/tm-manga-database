@@ -1,0 +1,38 @@
+{
+  "id": "tsuki-no-kanata-eien-no-megane",
+  "title_romaji": "Tsuki no Kanata, Eien no Megane",
+  "title_jp": "月の彼方、永遠の眼鏡　磨伸映一郎TYPE-MOON作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Tsuki no Kanata, Eien no Megane"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/wNPnrfMC/tsuki-no-kanata-eien-no-megane-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsuki no Kanata, Eien no Megane",
+      "title_jp": "月の彼方、永遠の眼鏡　磨伸映一郎TYPE-MOON作品集",
+      "release_date": "2006-03-25",
+      "isbn": "978-4758003056",
+      "asin": null,
+      "chapters": [],
+      "cover_full": "https://i.ibb.co/wNPnrfMC/tsuki-no-kanata-eien-no-megane-vol-1.webp"
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/%E6%9C%88%E3%81%AE%E5%BD%BC%E6%96%B9%E3%80%81%E6%B0%B8%E9%81%A0%E3%81%AE%E7%9C%BC%E9%8F%A1%E3%80%80%E7%A3%A8%E4%BC%B8%E6%98%A0%E4%B8%80%E9%83%8ETYPE-MOON%E4%BD%9C%E5%93%81%E9%9B%86"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": null
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fate-hollow-ataraxia-bc-anthology-collection",
+  "title_romaji": "Fate/hollow ataraxia BC Anthology Collection",
+  "title_jp": "Fate/hollow ataraxia BCアンソロジーコレクション",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/hollow ataraxia Anthology Collection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/gMLH8Kw3/fate-hollow-ataraxia-bc-anthology-collection-vol-1.webp",
+      "cover_full": "https://i.ibb.co/gMLH8Kw3/fate-hollow-ataraxia-bc-anthology-collection-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/hollow ataraxia BC Anthology Collection",
+      "title_jp": "Fate/hollow ataraxia BCアンソロジーコレクション",
+      "release_date": "2006-03-22",
+      "isbn": "978-4861272592",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.mag-garden.co.jp/comics/7165/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Mag Garden",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/hollow ataraxia",
+  "release_year": 2006
+}

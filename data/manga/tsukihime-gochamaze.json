@@ -1,0 +1,61 @@
+{
+  "id": "tsukihime-gochamaze",
+  "title_romaji": "Tsukihime Gochamaze",
+  "title_jp": "月姫ごちゃまぜ!!",
+  "title_en": null,
+  "alt_titles": [
+    "Tsukihime Gochamaze",
+    "月姫いっぱいアンソロジー"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/NgtrCrWX/tsukihime-gochamaze-vol-1.webp",
+      "cover_full": "https://i.ibb.co/NgtrCrWX/tsukihime-gochamaze-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Tsukihime Gochamaze (1)",
+      "title_jp": "月姫ごちゃまぜ!!",
+      "release_date": "2003-03",
+      "isbn": "978-4872878639",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "cover_full": null,
+      "volume_number": "Vol. 2",
+      "title": "Tsukihime Gochamaze (2)",
+      "title_jp": "月姫ごちゃまぜ!! 幕の内",
+      "release_date": "2003-10",
+      "isbn": "978-4872878936",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": null,
+      "cover_full": null,
+      "volume_number": "Vol. 3",
+      "title": "Tsukihime Gochamaze (3)",
+      "title_jp": "月姫ごちゃまぜ!! 福袋",
+      "release_date": "2004-02",
+      "isbn": "978-4776790143",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ndlsearch.ndl.go.jp/books/R100000002-I000004303394"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "Ohzora Publishing",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2003
+}

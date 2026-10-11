@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-comic-anthology-root-crown",
+  "title_romaji": "Fate/Zero Comic Anthology Root-crown",
+  "title_jp": "Fate/Zero コミックアンソロジー Root-crown",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Comic Anthology Root-crown"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/jZqLpVGp/fate-zero-comic-anthology-root-crown-vol-1.webp",
+      "cover_full": "https://i.ibb.co/jZqLpVGp/fate-zero-comic-anthology-root-crown-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Comic Anthology Root-crown",
+      "title_jp": "Fate/Zero コミックアンソロジー Root-crown",
+      "release_date": "2012-05-25",
+      "isbn": "978-4758006903",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/4758006903"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "DNA Media Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": 2012
+}

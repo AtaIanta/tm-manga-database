@@ -1,0 +1,38 @@
+{
+  "id": "fate-hollow-ataraxia-comic-a-la-carte-happy-life",
+  "title_romaji": "Fate/hollow ataraxia Comic a la carte: Happy Life",
+  "title_jp": "Fate/hollow ataraxia コミックアラカルト ~ハッピーライフ編~",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/hollow ataraxia Comic a la carte: Happy Life"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/7tnyxx1z/fate-hollow-ataraxia-comic-a-la-carte-happy-life-vol-1.webp",
+      "cover_full": "https://i.ibb.co/7tnyxx1z/fate-hollow-ataraxia-comic-a-la-carte-happy-life-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/hollow ataraxia Comic a la carte: Happy Life",
+      "title_jp": "Fate/hollow ataraxia コミックアラカルト ~ハッピーライフ編~",
+      "release_date": "2006-05-23",
+      "isbn": "978-4047138261",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200602000156/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/hollow ataraxia",
+  "release_year": null
+}

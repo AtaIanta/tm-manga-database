@@ -293,7 +293,7 @@ function sanitizeMangaDocForStorage(doc) {
       delete vol.remote_cover;
       delete vol.title_japanese;
       delete vol.show_chapter_artists;
-      if (!vol.cover_full || vol.cover_full === vol.cover) delete vol.cover_full;
+      if (!vol.cover_full || (vol.cover_full === vol.cover && !/^https?:\/\//i.test(vol.cover_full))) delete vol.cover_full;
       if (Array.isArray(vol.chapters)) {
         vol.chapters = vol.chapters.map(ch => {
           if (!ch || typeof ch !== 'object') return ch;
@@ -717,7 +717,49 @@ function compilePublishersList() {
   return list;
 }
 
+function notedChapterCount(item) {
+  let count = 0;
+  for (const vol of item.volumes || []) {
+    if (vol && Array.isArray(vol.chapters)) count += vol.chapters.length;
+  }
+  if (Array.isArray(item.chapters)) count += item.chapters.length;
+  return count;
+}
+
+function isNotedVolume(vol) {
+  return Boolean(vol) && vol.is_uncollected !== true;
+}
+
+function updateAboutArchiveStats() {
+  const works = allManga || [];
+  const licensed = works.filter(item => item.archive_kind !== 'doujin');
+  const doujins = works.filter(item => item.archive_kind === 'doujin');
+  let volumes = 0;
+  let chapters = 0;
+  for (const item of licensed) {
+    for (const vol of item.volumes || []) {
+      if (isNotedVolume(vol)) volumes += 1;
+    }
+    chapters += notedChapterCount(item);
+  }
+  for (const item of doujins) chapters += notedChapterCount(item);
+
+  const rows = {
+    aboutStatLicensed: licensed.length,
+    aboutStatVolumes: volumes,
+    aboutStatDoujins: doujins.length,
+    aboutStatChapters: chapters,
+    aboutStatArtists: (allArtists || []).length,
+    aboutStatPublishers: (allPublishers || []).length
+  };
+  for (const [id, value] of Object.entries(rows)) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = Number(value).toLocaleString();
+  }
+}
+
 function updateStats() {
+  updateAboutArchiveStats();
   let incompleteCount = 0;
   allManga.forEach(m => {
     if (m.missing_audit?.has_missing) {

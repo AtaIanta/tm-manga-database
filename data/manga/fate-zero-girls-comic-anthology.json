@@ -1,0 +1,38 @@
+{
+  "id": "fate-zero-girls-comic-anthology",
+  "title_romaji": "Fate/Zero Girl's Comic Anthology",
+  "title_jp": "Fate/Zero Girl's コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Zero Girl's Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/q30v0rT7/fate-zero-girls-comic-anthology-vol-1.webp",
+      "cover_full": "https://i.ibb.co/q30v0rT7/fate-zero-girls-comic-anthology-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Zero Girl's Comic Anthology",
+      "title_jp": "Fate/Zero Girl's コミックアンソロジー",
+      "release_date": "2012-08-24",
+      "isbn": "978-4893937711",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.suruga-ya.jp/kaitori/kaitori_detail/WR4953"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": "POE BACKS",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Zero",
+  "release_year": 2012
+}

@@ -1,0 +1,38 @@
+{
+  "id": "koha-ace-collection",
+  "title_romaji": "Koha-Ace Collection",
+  "title_jp": "コハエースこれくしょん",
+  "title_en": null,
+  "alt_titles": [
+    "Koha-Ace Collection"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Lh2n6jKp/koha-ace-collection-vol-1.webp",
+      "cover_full": "https://i.ibb.co/Lh2n6jKp/koha-ace-collection-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Koha-Ace Collection",
+      "title_jp": "コハエースこれくしょん",
+      "release_date": "2015-03-10",
+      "isbn": "978-4041028872",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/321411000139/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Koha-Ace",
+  "release_year": null
+}

@@ -1,0 +1,37 @@
+{
+  "id": "fate-apocrypha-comic-anthology",
+  "title_romaji": "Fate/Apocrypha Comic Anthology",
+  "title_jp": "Fate/Apocrypha コミックアンソロジー",
+  "title_en": null,
+  "alt_titles": [
+    "Fate/Apocrypha Comic Anthology"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/Zp5gLR6H/small-fate-apocrypha-comic-anthology-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Fate/Apocrypha Comic Anthology",
+      "title_jp": "Fate/Apocrypha コミックアンソロジー",
+      "release_date": "2018-02-05",
+      "isbn": "978-4758009768",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://data.ichijinsha.co.jp/series/Fate/Apocrypha%20%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%82%B8%E3%83%BC"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Fate/Apocrypha",
+  "release_year": null
+}

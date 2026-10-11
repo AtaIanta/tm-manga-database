@@ -1,0 +1,40 @@
+{
+  "id": "hime-no-tsukiyo",
+  "title_romaji": "Hime no Tsukiyo",
+  "title_jp": "姫ノ月夜",
+  "title_en": null,
+  "alt_titles": [
+    "Hime no Tsukiyo"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/ksS3YWsr/hime-no-tsukiyo-vol-1.webp",
+      "cover_full": "https://i.ibb.co/ksS3YWsr/hime-no-tsukiyo-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Hime no Tsukiyo",
+      "title_jp": "姫ノ月夜",
+      "release_date": "2004-12-15",
+      "isbn": "978-4776714750",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/200046/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Yukawa Asami"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Tsukihime",
+  "release_year": 2004
+}

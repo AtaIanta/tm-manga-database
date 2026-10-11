@@ -1,0 +1,64 @@
+{
+  "id": "take-moon",
+  "title_romaji": "TAKE MOON",
+  "title_jp": "TAKE MOON",
+  "title_en": null,
+  "alt_titles": [
+    "TAKE MOON TYPE-MOON作品集 特別版"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/qLRNCmFM/take-moon-vol-1.webp",
+      "cover_full": "https://i.ibb.co/qLRNCmFM/take-moon-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "TAKE MOON (1)",
+      "title_jp": "TAKE MOON",
+      "release_date": "2004-06-25",
+      "isbn": "978-4758001885",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/f5Yv97k/take-moon-vol-2.webp",
+      "cover_full": "https://i.ibb.co/f5Yv97k/take-moon-vol-2.webp",
+      "volume_number": "Vol. 2",
+      "title": "TAKE MOON (2)",
+      "title_jp": "TAKE MOON 2",
+      "release_date": "2006-08-09",
+      "isbn": "978-4758003360",
+      "asin": null,
+      "chapters": []
+    },
+    {
+      "cover": "https://i.ibb.co/C3Vj7Stk/take-moon-vol-special-edition.webp",
+      "cover_full": "https://i.ibb.co/C3Vj7Stk/take-moon-vol-special-edition.webp",
+      "volume_number": "Special Edition",
+      "title": "TAKE MOON - Special Edition",
+      "title_jp": "TAKE MOON TYPE-MOON作品集 特別版",
+      "release_date": "2011-11-26",
+      "isbn": null,
+      "asin": "B095XW819R",
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.amazon.co.jp/dp/475800188X",
+    "https://www.amazon.co.jp/dp/475800336X",
+    "https://www.amazon.co.jp/dp/B095XW819R"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Takenashi Eri"
+  ],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Type-Moon",
+  "release_year": null
+}

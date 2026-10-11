@@ -1,0 +1,40 @@
+{
+  "id": "hime-to-neko-to-majutsushi",
+  "title_romaji": "Hime to Neko to Majutsushi: TYPE-MOON Works",
+  "title_jp": "姫と猫と魔術師〜Blood Princess，Snow dream＆Red mage〜TYPE-MOON作品集",
+  "title_en": null,
+  "alt_titles": [
+    "Hime to Neko to Majutsushi: TYPE-MOON Works"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/BKQF8nBs/hime-to-neko-to-majutsushi-vol-1.webp",
+      "cover_full": "https://i.ibb.co/BKQF8nBs/hime-to-neko-to-majutsushi-vol-1.webp",
+      "volume_number": "Vol. 1",
+      "title": "Hime to Neko to Majutsushi: TYPE-MOON Works",
+      "title_jp": "姫と猫と魔術師〜Blood Princess，Snow dream＆Red mage〜TYPE-MOON作品集",
+      "release_date": "2007-12-21",
+      "isbn": "978-4776723752",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://ohzora.jp/comics/201050/"
+  ],
+  "custom_roles": [],
+  "artists": [
+    "Nagi Ayame"
+  ],
+  "publisher": "Missy Comics",
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "TYPE-MOON",
+  "release_year": 2007
+}

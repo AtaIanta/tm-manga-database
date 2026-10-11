@@ -1,0 +1,38 @@
+{
+  "id": "kara-no-kyoukai-comic-a-la-carte-kakusei",
+  "title_romaji": "Kara no Kyoukai Comic a la carte: Kakusei",
+  "title_jp": "劇場版 空の境界 コミックアラカルト ～覚醒編～",
+  "title_en": null,
+  "alt_titles": [
+    "Kara no Kyoukai Comic a la carte: Kakusei"
+  ],
+  "synopsis": null,
+  "show_chapter_artists": false,
+  "volumes": [
+    {
+      "cover": "https://i.ibb.co/7xJbnh4P/kara-no-kyoukai-comic-a-la-carte-kakusei-vol-1.jpg",
+      "cover_full": "https://i.ibb.co/7xJbnh4P/kara-no-kyoukai-comic-a-la-carte-kakusei-vol-1.jpg",
+      "volume_number": "Vol. 1",
+      "title": "Kara no Kyoukai Comic a la carte: Kakusei",
+      "title_jp": "劇場版 空の境界 コミックアラカルト ～覚醒編～",
+      "release_date": "2008-12-24",
+      "isbn": "978-4047151536",
+      "asin": null,
+      "chapters": []
+    }
+  ],
+  "notes": null,
+  "sources": [
+    "https://www.kadokawa.co.jp/product/200808000458/"
+  ],
+  "custom_roles": [],
+  "artists": [],
+  "publisher": null,
+  "magazine": null,
+  "serialization_start": null,
+  "serialization_end": null,
+  "status": "Finished",
+  "type": "Anthology",
+  "series": "Kara no Kyoukai",
+  "release_year": null
+}
